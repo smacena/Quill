@@ -445,14 +445,17 @@ static int bgr(uint32_t rgb) {
 	[v message:SCI_SETMARGINWIDTHN wParam:1 lParam:0];
 	[v message:SCI_SETMARGINWIDTHN wParam:2 lParam:0];
 	[v message:SCI_SETWRAPMODE wParam:SC_WRAP_NONE];
-	[v message:SCI_SETCARETLINEVISIBLEALWAYS wParam:1];
+	[v message:SCI_RESETELEMENTCOLOUR wParam:SC_ELEMENT_CARET_LINE_BACK];
+	[v message:SCI_SETSELECTIONLAYER wParam:SC_LAYER_UNDER_TEXT];
 }
 
 - (void)loadSide:(int)side {
 	ScintillaView *v = _views[side];
 	Side &s = _sides[side];
 	[v message:SCI_SETREADONLY wParam:0];
+	[v message:SCI_SETCHANGEHISTORY wParam:SC_CHANGE_HISTORY_DISABLED];
 	[v message:SCI_SETTEXT wParam:0 lParam:(sptr_t)s.display.c_str()];
+	[v message:SCI_SETEMPTYSELECTION wParam:0];
 	[v message:SCI_EMPTYUNDOBUFFER];
 	[v message:SCI_MARKERDELETEALL wParam:(uptr_t)-1];
 	[self styleView:v side:side];
