@@ -3,6 +3,7 @@
 #include "quill/Diff.h"
 
 #include <algorithm>
+#include <cstdint>
 #include <cctype>
 #include <unordered_map>
 

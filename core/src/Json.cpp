@@ -2,6 +2,7 @@
 #include "quill/Json.h"
 
 #include <algorithm>
+#include <cstdint>
 #include <cstdio>
 
 namespace quill {

@@ -2,6 +2,7 @@
 #include "quill/TextTools.h"
 
 #include <algorithm>
+#include <cstdint>
 #include <cctype>
 #include <cstdio>
 #include <cstdlib>

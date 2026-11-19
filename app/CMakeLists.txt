@@ -1,3 +1,17 @@
+# Scintilla looks for its cursor / info bar images as TIFF in the bundle that
+# contains the ScintillaView class (our app bundle).
+set(SCI_RES ${SCI_DIR}/cocoa/res)
+set(SCI_TIFFS)
+foreach(img mac_cursor_busy mac_cursor_flipped info_bar_bg)
+  set(out ${CMAKE_CURRENT_BINARY_DIR}/sci_res/${img}.tiff)
+  add_custom_command(OUTPUT ${out}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_CURRENT_BINARY_DIR}/sci_res
+    COMMAND tiffutil -cathidpicheck ${SCI_RES}/${img}.png ${SCI_RES}/${img}@2x.png -out ${out}
+    DEPENDS ${SCI_RES}/${img}.png ${SCI_RES}/${img}@2x.png
+    VERBATIM)
+  list(APPEND SCI_TIFFS ${out})
+endforeach()
+
 file(GLOB QUILL_APP_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.mm)
 
 set(QUILL_RESOURCES
