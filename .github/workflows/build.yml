@@ -1,0 +1,98 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core-linux:
+    name: Core tests (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test portable core
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build -j 4
+          ctest --test-dir build --output-on-failure
+
+  macos:
+    name: macOS app
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build (universal arm64 + x86_64)
+        run: |
+          set -o pipefail
+          cmake --build build -j "$(sysctl -n hw.ncpu)" 2>&1 | tee build.log
+
+      - name: Show compile errors
+        if: failure()
+        run: grep -E "error:|Error |undefined|ld:" build.log | head -150 || true
+
+      - name: Unit tests
+        run: ctest --test-dir build --output-on-failure
+
+      - name: Sign (ad-hoc) and package
+        run: |
+          APP=build/app/Quill.app
+          lipo -info "$APP/Contents/MacOS/Quill"
+          ls -la "$APP/Contents/PlugIns" || true
+          codesign --force --deep --sign - "$APP"
+          codesign --verify --deep --strict "$APP"
+          ditto -c -k --keepParent "$APP" Quill-macOS.zip
+
+      - name: Self test (opens the app and exercises every feature)
+        id: selftest
+        run: |
+          mkdir -p selftest
+          set +e
+          perl -e 'alarm 300; exec @ARGV' build/app/Quill.app/Contents/MacOS/Quill -UILanguage en --selftest "$PWD/selftest" > selftest/stdout.txt 2>&1
+          code=$?
+          set -e
+          cat selftest/stdout.txt | tail -80
+          echo "exit=$code" >> "$GITHUB_OUTPUT"
+          exit $code
+
+      - name: Upload app
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Quill-macOS
+          path: Quill-macOS.zip
+          if-no-files-found: ignore
+
+      - name: Upload self test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: selftest
+          path: |
+            selftest
+            build.log
+          if-no-files-found: ignore
+
+      - name: Publish "latest" release
+        if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest Quill-macOS.zip \
+            --prerelease \
+            --target "${{ github.sha }}" \
+            --title "Quill — latest build" \
+            --notes "Automatic build of ${{ github.sha }}. Download Quill-macOS.zip, unzip, move Quill.app to Applications. First launch: right-click → Open (the app is ad-hoc signed)."
