@@ -1,0 +1,71 @@
+Quill self test — 2026-11-20 03:08:15 +0000
+Plugins: 9
+  Compare (Compare.dylib) ok
+  Exec (Exec.dylib) ok
+  Explorer (Explorer.dylib) ok
+  FTP (FTP.dylib) ok
+  Hex Editor (HexEditor.dylib) ok
+  JSON Viewer (JSONViewer.dylib) ok
+  Markdown Viewer (MarkdownViewer.dylib) ok
+  Spell Check (SpellCheck.dylib) ok
+  XML Tools (XMLTools.dylib) ok
+[PASS] open C++ file, detect language
+[PASS] snapshot light theme
+[PASS] find text
+[PASS] toggle comment
+[PASS] open Latin-1 file
+[PASS] sort lines
+[PASS] JSON: format
+[PASS] JSON: tree
+[PASS] snapshot JSON tree
+[PASS] XML: pretty print
+[PASS] Markdown preview
+[PASS] snapshot markdown
+[PASS] Explorer: open folder
+[PASS] snapshot explorer
+[PASS] Compare two files
+[PASS] snapshot compare
+[PASS] close compare
+[PASS] Exec: run python file
+    console:  | $ python3 "/var/folders/2s/vty41l455yv698g4xkgfv7z00000gn/T/quill-selftest-samples/hello.py" | hello from python | << finished with exit code 0 (0.19 s) | 
+[PASS] Exec: output
+[PASS] Hex view
+[PASS] snapshot hex
+[PASS] Spell check
+[PASS] spell check marks
+[PASS] FTP panel
+[PASS] snapshot ftp
+[PASS] save as Windows-1252
+    replaced: a dog; a dog
+[PASS] replace all (plain and regex)
+[PASS] find in files
+[PASS] find in files results
+[PASS] reload file changed on disk
+[PASS] session saved
+    ok   list 
+    ok   mkdir 
+    ok   upload 
+    ok   list sub 
+    ok   uploaded file listed
+    ok   download 
+    ok   content round trip
+    ok   rename 
+    ok   delete file 
+    ok   delete folder 
+[PASS] FTP: SFTP server round trip
+    ok   list 
+    ok   mkdir 
+    ok   upload 
+    ok   list sub 
+    ok   uploaded file listed
+    ok   download 
+    ok   content round trip
+    ok   rename 
+    ok   delete file 
+    ok   delete folder 
+[PASS] FTP: FTP server round trip
+[PASS] dark theme
+[PASS] snapshot dark
+[PASS] Portuguese UI strings available
+
+0 failure(s)

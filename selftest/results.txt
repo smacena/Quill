@@ -1,0 +1,15 @@
+Quill self test — 2026-11-20 03:08:44 +0000
+Plugins: 9
+  Comparar (Compare.dylib) ok
+  Executar (Exec.dylib) ok
+  Explorador (Explorer.dylib) ok
+  FTP (FTP.dylib) ok
+  Editor hexadecimal (HexEditor.dylib) ok
+  Visualizador JSON (JSONViewer.dylib) ok
+  Visualizador Markdown (MarkdownViewer.dylib) ok
+  Verificação ortográfica (SpellCheck.dylib) ok
+  Ferramentas XML (XMLTools.dylib) ok
+[PASS] open file
+[PASS] snapshot
+
+0 failure(s)
