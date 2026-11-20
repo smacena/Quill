@@ -79,3 +79,5 @@ typedef void (*QuillContextMenuHandler)(void *nsMenu, intptr_t clickPosition);
 // Messages understood by the bundled Explorer plugin through NPPM_MSGTOPLUGIN
 // (CommunicationInfo.internalMsg). info = const wchar_t* folder path.
 #define QUILL_EXPLORER_OPENFOLDER 1
+// Bundled FTP plugin: internal end-to-end test (used by the app self test).
+#define QUILL_FTP_SELFTEST 100

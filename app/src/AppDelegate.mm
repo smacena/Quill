@@ -42,6 +42,7 @@
 		[c finishLaunchingWithFiles:@[]];
 		_launched = YES;
 		_selfTest = [[QSelfTest alloc] initWithOutputDirectory:outDir];
+		_selfTest.quick = [args containsObject:@"--quick"];
 		[_selfTest run];
 		return;
 	}

@@ -55,6 +55,29 @@ jobs:
           codesign --verify --deep --strict "$APP"
           ditto -c -k --keepParent "$APP" Quill-macOS.zip
 
+      - name: Start test SFTP and FTP servers (for the FTP plugin test)
+        continue-on-error: true
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          ssh-keygen -t ed25519 -N "" -f ~/.ssh/quill_test -q
+          cat ~/.ssh/quill_test.pub >> ~/.ssh/authorized_keys
+          chmod 600 ~/.ssh/authorized_keys
+          sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist 2>/dev/null || sudo systemsetup -setremotelogin on || true
+          for i in $(seq 1 15); do nc -z 127.0.0.1 22 && break; sleep 1; done
+          mkdir -p ~/quill-sftp-test
+          if ssh -i ~/.ssh/quill_test -o StrictHostKeyChecking=accept-new -o BatchMode=yes 127.0.0.1 true; then
+            echo "QUILL_TEST_SFTP_USER=$(whoami)" >> "$GITHUB_ENV"
+            echo "QUILL_TEST_SFTP_KEY=$HOME/.ssh/quill_test" >> "$GITHUB_ENV"
+            echo "QUILL_TEST_SFTP_DIR=$HOME/quill-sftp-test" >> "$GITHUB_ENV"
+            echo "SFTP server ready"
+          fi
+          python3 -m venv /tmp/ftpenv
+          /tmp/ftpenv/bin/pip install -q pyftpdlib
+          mkdir -p /tmp/ftproot
+          nohup /tmp/ftpenv/bin/python -m pyftpdlib -i 127.0.0.1 -p 2121 -w -d /tmp/ftproot -u quill -P secret > /tmp/ftpd.log 2>&1 &
+          for i in $(seq 1 15); do nc -z 127.0.0.1 2121 && break; sleep 1; done
+          if nc -z 127.0.0.1 2121; then echo "QUILL_TEST_FTP_PORT=2121" >> "$GITHUB_ENV"; echo "FTP server ready"; fi
+
       - name: Self test (opens the app and exercises every feature)
         id: selftest
         run: |
@@ -65,6 +88,8 @@ jobs:
           set -e
           cat selftest/stdout.txt | tail -80
           echo "exit=$code" >> "$GITHUB_OUTPUT"
+          # Portuguese interface screenshot
+          perl -e 'alarm 120; exec @ARGV' build/app/Quill.app/Contents/MacOS/Quill -UILanguage pt --selftest "$PWD/selftest" --quick > selftest/stdout-pt.txt 2>&1 || true
           exit $code
 
       - name: Upload app
@@ -84,6 +109,20 @@ jobs:
             selftest
             build.log
           if-no-files-found: ignore
+
+      - name: Store self test results (branch ci-results)
+        if: always() && github.event_name == 'push'
+        run: |
+          rm -rf /tmp/results && mkdir -p /tmp/results
+          cp -R selftest /tmp/results/ 2>/dev/null || true
+          cd /tmp/results
+          git init -q
+          git checkout -q -b ci-results
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Self test results for ${{ github.sha }}"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-results
 
       - name: Publish "latest" release
         if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'

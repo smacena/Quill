@@ -334,7 +334,59 @@ static void pluginNotify(SCNotification *n) {
 	}
 }
 
-static LRESULT pluginMessage(UINT, WPARAM, LPARAM) {
+// End-to-end check used by the app self test (NPPM_MSGTOPLUGIN, internalMsg
+// QUILL_FTP_SELFTEST). info is an NSMutableDictionary with "profile",
+// "password", "dir"; the result goes to "ok" (NSNumber) and "log" (NSString).
+static void runSelfTest(NSMutableDictionary *io) {
+	NSMutableString *log = [NSMutableString string];
+	QFTPSession *s = [[QFTPSession alloc] init];
+	s.profile = io[@"profile"];
+	s.password = io[@"password"];
+	NSString *dir = io[@"dir"];
+	NSString *sub = QStr(quill::joinRemotePath(QUtf8(dir), "quill-test-dir"));
+	NSString *remote = QStr(quill::joinRemotePath(QUtf8(sub), "hello.txt"));
+	NSString *renamed = QStr(quill::joinRemotePath(QUtf8(sub), "renamed.txt"));
+	NSString *tmp = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSUUID UUID].UUIDString];
+	[[NSFileManager defaultManager] createDirectoryAtPath:tmp withIntermediateDirectories:YES attributes:nil error:nil];
+	NSString *local = [tmp stringByAppendingPathComponent:@"hello.txt"];
+	NSString *back = [tmp stringByAppendingPathComponent:@"back.txt"];
+	NSString *content = @"Olá do Quill — FTP test\n";
+	[content writeToFile:local atomically:YES encoding:NSUTF8StringEncoding error:nil];
+	BOOL ok = YES;
+	auto step = [&](NSString *name, OpResult r) {
+		[log appendFormat:@"%@ %@ %@\n", r.ok ? @"ok  " : @"FAIL", name, r.ok ? @"" : QStr(r.error)];
+		if (!r.ok) ok = NO;
+		return r;
+	};
+	step(@"list", [s list:dir]);
+	[s remove:renamed isDirectory:NO];
+	[s remove:sub isDirectory:YES];
+	step(@"mkdir", [s mkdir:sub]);
+	step(@"upload", [s upload:local to:remote]);
+	OpResult l = step(@"list sub", [s list:sub]);
+	BOOL listed = NO;
+	for (const auto &e : quill::parseDirectoryListing(l.output))
+		if (e.name == "hello.txt") listed = YES;
+	[log appendFormat:@"%@ uploaded file listed\n", listed ? @"ok  " : @"FAIL"];
+	ok = ok && listed;
+	step(@"download", [s download:remote to:back]);
+	NSString *got = [NSString stringWithContentsOfFile:back encoding:NSUTF8StringEncoding error:nil];
+	BOOL same = [got isEqualToString:content];
+	[log appendFormat:@"%@ content round trip\n", same ? @"ok  " : @"FAIL"];
+	ok = ok && same;
+	step(@"rename", [s rename:remote to:renamed]);
+	step(@"delete file", [s remove:renamed isDirectory:NO]);
+	step(@"delete folder", [s remove:sub isDirectory:YES]);
+	[[NSFileManager defaultManager] removeItemAtPath:tmp error:nil];
+	io[@"ok"] = @(ok);
+	io[@"log"] = log;
+}
+
+static LRESULT pluginMessage(UINT msg, WPARAM, LPARAM l) {
+	if (msg == NPPM_MSGTOPLUGIN && l) {
+		CommunicationInfo *ci = (CommunicationInfo *)l;
+		if (ci->internalMsg == QUILL_FTP_SELFTEST && ci->info) runSelfTest((__bridge NSMutableDictionary *)ci->info);
+	}
 	return TRUE;
 }
 

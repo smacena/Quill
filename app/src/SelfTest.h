@@ -8,4 +8,6 @@
 @interface QSelfTest : NSObject
 - (instancetype)initWithOutputDirectory:(NSString *)dir;
 - (void)run;
+// Only opens a file and takes a screenshot (used to check the Portuguese UI).
+@property (nonatomic) BOOL quick;
 @end

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #import "SelfTest.h"
 #import "Languages.h"
-#import "MainWindowController.h"
+#import "MainWindowController+Private.h"
 #import "PluginManager.h"
 #import "Preferences.h"
 
@@ -122,6 +122,39 @@ static NSOutlineView *findOutline(NSView *v) {
 
 - (void)logLine:(NSString *)line {
 	[_log appendFormat:@"%@\n", line];
+}
+
+- (BOOL)ftpTest:(NSMutableDictionary *)io {
+	CommunicationInfo ci;
+	ci.internalMsg = QUILL_FTP_SELFTEST;
+	ci.srcModuleName = L"SelfTest";
+	ci.info = (__bridge void *)io;
+	if (![[QPluginManager shared] sendToPlugin:@"FTP.dylib" msg:NPPM_MSGTOPLUGIN wParam:0 lParam:(intptr_t)&ci]) return NO;
+	for (NSString *line in [io[@"log"] componentsSeparatedByString:@"\n"])
+		if (line.length) [self logLine:[@"    " stringByAppendingString:line]];
+	return [io[@"ok"] boolValue];
+}
+
+- (void)buildQuickSteps {
+	__weak QSelfTest *ws = self;
+	NSString *samplesDir = _samples;
+	NSString *py = [self sample:@"ola.py" content:@"# Olá, Quill!\nprint(\"olá\")\n"];
+	[self step:@"open file" wait:0.5 block:^BOOL {
+		[[ws ctl] openPath:py];
+		[ws runPlugin:@"Executar" title:@"Mostrar console"];
+		std::wstring w = QWide(samplesDir);
+		CommunicationInfo ci;
+		ci.internalMsg = QUILL_EXPLORER_OPENFOLDER;
+		ci.srcModuleName = L"SelfTest";
+		ci.info = (void *)w.c_str();
+		[[QPluginManager shared] sendToPlugin:@"Explorer.dylib" msg:NPPM_MSGTOPLUGIN wParam:0 lParam:(intptr_t)&ci];
+		[[ws ctl] showFindBarReplace:YES];
+		return YES;
+	}];
+	[self step:@"snapshot" wait:1.0 block:^BOOL {
+		[ws snapshot:@"12-interface-pt"];
+		return YES;
+	}];
 }
 
 - (void)buildSteps {
@@ -267,6 +300,91 @@ static NSOutlineView *findOutline(NSView *v) {
 		[ws snapshot:@"09-ftp"];
 		return YES;
 	}];
+	[self step:@"save as Windows-1252" wait:0.2 block:^BOOL {
+		QDocument *d = [[ws ctl] newDocumentWithText:@"olá mundo\n" language:nil];
+		d.encoding = QEncodingWindows1252;
+		NSString *p = [samplesDir stringByAppendingPathComponent:@"saved-1252.txt"];
+		if (![d saveToPath:p error:nil]) return NO;
+		NSData *bytes = [NSData dataWithContentsOfFile:p];
+		return [bytes isEqualToData:[NSData dataWithBytes:"ol\xE1 mundo\n" length:10]] && !d.isDirty;
+	}];
+	[self step:@"replace all (plain and regex)" wait:0.2 block:^BOOL {
+		QMainWindowController *c = [ws ctl];
+		QDocument *d = [c newDocumentWithText:@"a cat, a cat" language:nil];
+		[c showFindBarReplace:YES];
+		c.findBar.regex = NO;
+		c.findBar.matchCase = NO;
+		c.findBar.wholeWord = NO;
+		c.findBar.inSelection = NO;
+		c.findBar.searchString = @"cat";
+		c.findBar.replaceString = @"dog";
+		NSInteger n = [c.findBar replaceAll];
+		BOOL plain = n == 2 && [d.text isEqualToString:@"a dog, a dog"];
+		c.findBar.regex = YES;
+		c.findBar.searchString = @"(dog), ";
+		c.findBar.replaceString = @"\\1; ";
+		[c.findBar replaceAll];
+		BOOL re = [d.text isEqualToString:@"a dog; a dog"];
+		c.findBar.regex = NO;
+		[c hideFindBar];
+		[ws logLine:[NSString stringWithFormat:@"    replaced: %@", d.text]];
+		return plain && re;
+	}];
+	[self step:@"find in files" wait:0.2 block:^BOOL {
+		QMainWindowController *c = [ws ctl];
+		[c.findInFiles showWithSearch:@"Hello, Quill" directory:samplesDir];
+		[c.findInFiles performSelector:@selector(findAll:) withObject:nil];
+		return YES;
+	}];
+	[self step:@"find in files results" wait:2.5 block:^BOOL {
+		QMainWindowController *c = [ws ctl];
+		[ws snapshot:@"11-find-in-files"];
+		NSOutlineView *o = findOutline(c.findInFiles.resultsView);
+		[c.findInFiles close];
+		return o && o.numberOfRows >= 1;
+	}];
+	[self step:@"reload file changed on disk" wait:0.2 block:^BOOL {
+		NSString *p = [ws sample:@"external.txt" content:@"version 1\n"];
+		QDocument *d = [[ws ctl] openPath:p];
+		[@"version 2\n" writeToFile:p atomically:YES encoding:NSUTF8StringEncoding error:nil];
+		[[NSFileManager defaultManager] setAttributes:@{NSFileModificationDate : [NSDate dateWithTimeIntervalSinceNow:5]} ofItemAtPath:p error:nil];
+		[[ws ctl] performSelector:NSSelectorFromString(@"checkExternalChanges")];
+		return [d.text isEqualToString:@"version 2\n"];
+	}];
+	[self step:@"session saved" wait:0.1 block:^BOOL {
+		[[ws ctl] saveSession];
+		NSString *path = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES).firstObject
+			stringByAppendingPathComponent:@"Quill/session.json"];
+		NSString *json = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+		return [json containsString:@"latin1.txt"] && [json containsString:@"external.txt"];
+	}];
+	[self step:@"FTP: SFTP server round trip" wait:0.1 block:^BOOL {
+		NSDictionary *env = [NSProcessInfo processInfo].environment;
+		if (!env[@"QUILL_TEST_SFTP_USER"]) {
+			[ws logLine:@"    (skipped: no test SFTP server)"];
+			return YES;
+		}
+		NSMutableDictionary *io = [@{
+			@"profile" : @{@"name" : @"test-sftp", @"protocol" : @"sftp", @"host" : @"127.0.0.1", @"user" : env[@"QUILL_TEST_SFTP_USER"],
+				       @"keyFile" : env[@"QUILL_TEST_SFTP_KEY"] ?: @""},
+			@"dir" : env[@"QUILL_TEST_SFTP_DIR"] ?: @".",
+		} mutableCopy];
+		return [ws ftpTest:io];
+	}];
+	[self step:@"FTP: FTP server round trip" wait:0.1 block:^BOOL {
+		NSDictionary *env = [NSProcessInfo processInfo].environment;
+		if (!env[@"QUILL_TEST_FTP_PORT"]) {
+			[ws logLine:@"    (skipped: no test FTP server)"];
+			return YES;
+		}
+		NSMutableDictionary *io = [@{
+			@"profile" : @{@"name" : @"test-ftp", @"protocol" : @"ftp", @"host" : @"127.0.0.1", @"port" : @([env[@"QUILL_TEST_FTP_PORT"] integerValue]),
+				       @"user" : @"quill"},
+			@"password" : @"secret",
+			@"dir" : @"/",
+		} mutableCopy];
+		return [ws ftpTest:io];
+	}];
 	[self step:@"dark theme" wait:0.3 block:^BOOL {
 		[[ws ctl] openPath:cpp];
 		[QPrefs shared].theme = QThemeModeDark;
@@ -287,7 +405,8 @@ static NSOutlineView *findOutline(NSView *v) {
 	[_log appendFormat:@"Plugins: %lu\n", (unsigned long)[QPluginManager shared].plugins.count];
 	for (QPluginInfo *p in [QPluginManager shared].plugins)
 		[_log appendFormat:@"  %@ (%@) %@\n", p.name, p.fileName, p.loadError ?: @"ok"];
-	[self buildSteps];
+	if (self.quick) [self buildQuickSteps];
+	else [self buildSteps];
 	_index = 0;
 	[self next];
 }
