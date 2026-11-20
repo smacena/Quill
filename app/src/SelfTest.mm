@@ -433,7 +433,7 @@ static NSOutlineView *findOutline(NSView *v) {
 
 - (void)finish {
 	[_log appendFormat:@"\n%ld failure(s)\n", (long)_failures];
-	[_log writeToFile:[_out stringByAppendingPathComponent:@"results.txt"] atomically:YES encoding:NSUTF8StringEncoding error:nil];
+	[_log writeToFile:[_out stringByAppendingPathComponent:self.quick ? @"results-quick.txt" : @"results.txt"] atomically:YES encoding:NSUTF8StringEncoding error:nil];
 	fprintf(stdout, "%s", _log.UTF8String);
 	fflush(stdout);
 	exit(_failures == 0 ? 0 : 1);
