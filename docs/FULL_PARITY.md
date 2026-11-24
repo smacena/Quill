@@ -1555,3 +1555,34 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **SDK**: pacote para baixar (cabeçalhos, exemplo, guia e lista de mensagens suportadas)
 - [ ] [IMPL] **SDK**: lista das mensagens do Notepad++ ainda não suportadas, com motivo, retornando erro explícito ao plugin
 - [ ] [IMPL] **SDK**: versão da API exposta por `QUILL_SDK_VERSION` e checada na carga do plugin
+
+## Escopo completo (comportamento e formatos, além dos textos)
+
+Decisão do dono do projeto: o programa inteiro, não só os textos. Formatos de configuração são lidos e gravados como no Notepad++ (opção a).
+
+### Configuração (formatos do Notepad++)
+- [ ] [IMPL] **Config**: `config.xml` (preferências gerais), lido e gravado como no Notepad++
+- [ ] [IMPL] **Config**: `shortcuts.xml` (atalhos), lido e gravado; mapeador de atalhos grava aqui
+- [ ] [IMPL] **Config**: `stylers.xml` (cores e fontes de cada linguagem e tema), lido e gravado
+- [ ] [IMPL] **Config**: `langs.xml` (extensões e linguagens), lido e gravado
+- [ ] [IMPL] **Config**: `session.xml` (sessão salva), lido e gravado
+- [ ] [IMPL] **Config**: `contextMenu.xml` (menu de contexto), lido e gravado
+- [ ] [IMPL] **Config**: arquivos UDL (linguagens definidas pelo usuário), importar e exportar
+- [ ] [IMPL] **Config**: copiar a configuração de uma instalação do Notepad++ (Windows) para o Quill funciona sem conversão manual
+- [ ] [IMPL] **Config**: pasta `~/Library/Application Support/Quill/` com os mesmos nomes de arquivo
+
+### Temas e linguagens
+- [ ] [IMPL] **Temas**: os temas do Notepad++ (XML) carregados e aplicados, com o tema padrão seguindo o macOS
+- [ ] [IMPL] **Linguagens**: realce e dobra para todas as linguagens do Notepad++ (lexers do Lexilla), com a mesma detecção por extensão
+- [ ] [IMPL] **Idiomas**: os arquivos `nativeLang/*.xml` do Notepad++ carregados em tempo de execução, com inglês e português completos
+
+### Linha de comando e sistema
+- [ ] [IMPL] **CLI**: os switches do Notepad++ (`-n`, `-c`, `-ro`, `-l`, `-nosession`, `-multiInst`, etc.)
+- [ ] [IMPL] **CLI**: comando `quill` em `/usr/local/bin`
+- [ ] [IMPL] **Atalhos padrão**: os mesmos atalhos do Notepad++, com ⌘ no lugar de Ctrl e ⌥ no lugar de Alt
+
+### Plugins (comportamento, além dos menus)
+- [ ] [IMPL] **Plugins**: portar os plugins de código aberto que vêm com o Notepad++ (NppExec, NppExport, Converter, mimeTools, e os demais do pacote padrão), com o mesmo comportamento
+- [ ] [IMPL] **NppExec**: linguagem de script completa (variáveis, `if`, `goto`, `npp_*`, `sci_*`, `env_*`)
+- [ ] [IMPL] **Plugins Admin**: catálogo com a lista oficial, instalação e remoção
+- [ ] [NA] **Plugins DLL**: DLLs de Windows não rodam no Mac, aparecem como indisponíveis
