@@ -1546,3 +1546,12 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **tabbar-tabcompactlabellen-tip**: Limits the visible length of long tab names. Enter to apply the given value. Value range: 1-257 characters (0 disables the truncation).
 - [ ] [NA] **networkpathwarning-serverwhitelist-tip**: Puts the server of the current file into Notepad++ serverWhiteList.xml. For more info, click on this button to open website with relevant User Manual section. — Caminho de rede UNC do Windows
 
+
+## SDK do Quill (itens próprios, não vêm do Notepad++)
+
+- [ ] [IMPL] **SDK**: documentar cada mensagem `NPPM_*`, `NPPN_*`, `QUILLM_*` e `QUILLN_*` que o Quill trata, com significado e exemplo
+- [ ] [IMPL] **SDK**: plugin de exemplo mínimo (menu, painel e notificação), com modelo para copiar
+- [ ] [IMPL] **SDK**: teste no CI que compila o exemplo, carrega no app e confere se aparece no menu
+- [ ] [IMPL] **SDK**: pacote para baixar (cabeçalhos, exemplo, guia e lista de mensagens suportadas)
+- [ ] [IMPL] **SDK**: lista das mensagens do Notepad++ ainda não suportadas, com motivo, retornando erro explícito ao plugin
+- [ ] [IMPL] **SDK**: versão da API exposta por `QUILL_SDK_VERSION` e checada na carga do plugin
