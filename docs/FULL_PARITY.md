@@ -1,0 +1,1546 @@
+# Quill × Notepad++ — lista completa de 1 para 1
+
+Gerada de `PowerEditor/installer/nativeLang/english.xml` (fonte oficial do Notepad++).
+Cada linha é um texto de interface do Notepad++: item de menu, opção, rótulo de
+diálogo, dica, mensagem ou título de painel. Marque `[x]` só quando o Quill tiver
+o mesmo item, com o mesmo comportamento, validado no autoteste.
+
+Para cada item: a seção (Menu, Dialog, MessageBox, ...) e o texto original em inglês.
+Total de itens: **1499**. Feitos: **0**. (Atualizado pelo script; marque conforme implementa.)
+
+
+## Menu (399)
+
+- [ ] **Item**: File
+- [ ] **Item**: Edit
+- [ ] **Item**: Search
+- [ ] **Item**: View
+- [ ] **Item**: Encoding
+- [ ] **Item**: Language
+- [ ] **Item**: Settings
+- [ ] **Item**: Tools
+- [ ] **Item**: Macro
+- [ ] **Item**: Run
+- [ ] **Item**: Plugins
+- [ ] **Item**: Window
+- [ ] **Item**: Open Containing Folder
+- [ ] **Item**: Close Multiple Documents
+- [ ] **Item**: Recent Files
+- [ ] **Item**: Insert
+- [ ] **Item**: Copy to Clipboard
+- [ ] **Item**: Indent
+- [ ] **Item**: Convert Case to
+- [ ] **Item**: Line Operations
+- [ ] **Item**: Comment/Uncomment
+- [ ] **Item**: Auto-Completion
+- [ ] **Item**: EOL Conversion
+- [ ] **Item**: Blank Operations
+- [ ] **Item**: Paste Special
+- [ ] **Item**: On Selection
+- [ ] **Item**: Multi-select ALL
+- [ ] **Item**: Multi-select Next
+- [ ] **Item**: Read-Only in Notepad++
+- [ ] **Item**: Change History
+- [ ] **Item**: Style All Occurrences of Token
+- [ ] **Item**: Style One Token
+- [ ] **Item**: Clear Style
+- [ ] **Item**: Jump Up
+- [ ] **Item**: Jump Down
+- [ ] **Item**: Copy Styled Text
+- [ ] **Item**: Bookmark
+- [ ] **Item**: View Current File in
+- [ ] **Item**: Show Symbol
+- [ ] **Item**: Zoom
+- [ ] **Item**: Move/Clone Current Document
+- [ ] **Item**: Tab
+- [ ] **Item**: Fold Level
+- [ ] **Item**: Unfold Level
+- [ ] **Item**: Project
+- [ ] **Item**: Character Set
+- [ ] **Item**: Arabic
+- [ ] **Item**: Baltic
+- [ ] **Item**: Celtic
+- [ ] **Item**: Cyrillic
+- [ ] **Item**: Central European
+- [ ] **Item**: Chinese
+- [ ] **Item**: Eastern European
+- [ ] **Item**: Greek
+- [ ] **Item**: Hebrew
+- [ ] **Item**: Japanese
+- [ ] **Item**: Korean
+- [ ] **Item**: North European
+- [ ] **Item**: Thai
+- [ ] **Item**: Turkish
+- [ ] **Item**: Western European
+- [ ] **Item**: Vietnamese
+- [ ] **Item**: User Defined Language
+- [ ] **Item**: Import
+- [ ] **Item**: MD5
+- [ ] **Item**: SHA-1
+- [ ] **Item**: SHA-256
+- [ ] **Item**: SHA-512
+- [ ] **Item**: Sort By
+- [ ] **Item**: New `id 41001`
+- [ ] **Item**: Open... `id 41002`
+- [ ] **Item**: Explorer `id 41019`
+- [ ] **Item**: cmd `id 41020`
+- [ ] **Item**: PowerShell `id 41027`
+- [ ] **Item**: Folder as Workspace `id 41025`
+- [ ] **Item**: Close `id 41003`
+- [ ] **Item**: Close All `id 41004`
+- [ ] **Item**: Close All BUT Current Document `id 41005`
+- [ ] **Item**: Close All BUT Pinned Documents `id 41026`
+- [ ] **Item**: Close All to the Left `id 41009`
+- [ ] **Item**: Close All to the Right `id 41018`
+- [ ] **Item**: Close All Unchanged `id 41024`
+- [ ] **Item**: Save `id 41006`
+- [ ] **Item**: Save All `id 41007`
+- [ ] **Item**: Save As... `id 41008`
+- [ ] **Item**: Print... `id 41010`
+- [ ] **Item**: Print Now `id 1001`
+- [ ] **Item**: Exit `id 41011`
+- [ ] **Item**: Load Session... `id 41012`
+- [ ] **Item**: Save Session... `id 41013`
+- [ ] **Item**: Reload from Disk `id 41014`
+- [ ] **Item**: Save a Copy As... `id 41015`
+- [ ] **Item**: Move to Recycle Bin `id 41016`
+- [ ] **Item**: Rename... `id 41017`
+- [ ] **Item**: Restore Recent Closed File `id 41021`
+- [ ] **Item**: Open Folder as Workspace... `id 41022`
+- [ ] **Item**: Open in Default Viewer `id 41023`
+- [ ] **Item**: Cut `id 42001`
+- [ ] **Item**: Copy `id 42002`
+- [ ] **Item**: Undo `id 42003`
+- [ ] **Item**: Redo `id 42004`
+- [ ] **Item**: Paste `id 42005`
+- [ ] **Item**: Delete `id 42006`
+- [ ] **Item**: Select All `id 42007`
+- [ ] **Item**: Begin/End Select `id 42020`
+- [ ] **Item**: Begin/End Select in Column Mode `id 42089`
+- [ ] **Item**: Date Time (short) `id 42084`
+- [ ] **Item**: Date Time (long) `id 42085`
+- [ ] **Item**: Date Time (customized) `id 42086`
+- [ ] **Item**: Increase Line Indent `id 42008`
+- [ ] **Item**: Decrease Line Indent `id 42009`
+- [ ] **Item**: Duplicate Current Line `id 42010`
+- [ ] **Item**: Remove Duplicate Lines `id 42079`
+- [ ] **Item**: Remove Consecutive Duplicate Lines `id 42077`
+- [ ] **Item**: Split Lines `id 42012`
+- [ ] **Item**: Join Lines `id 42013`
+- [ ] **Item**: Move Up Current Line `id 42014`
+- [ ] **Item**: Move Down Current Line `id 42015`
+- [ ] **Item**: Sort Lines Lexicographically Ascending `id 42059`
+- [ ] **Item**: Sort Lines Lexicographically Descending `id 42060`
+- [ ] **Item**: Sort Lines Lex. Ascending Ignoring Case `id 42080`
+- [ ] **Item**: Sort Lines Lex. Descending Ignoring Case `id 42081`
+- [ ] **Item**: Sort Lines In Locale Order Ascending `id 42100`
+- [ ] **Item**: Sort Lines In Locale Order Descending `id 42101`
+- [ ] **Item**: Sort Lines By Length Ascending `id 42104`
+- [ ] **Item**: Sort Lines By Length Descending `id 42105`
+- [ ] **Item**: Sort Lines As Integers Ascending `id 42061`
+- [ ] **Item**: Sort Lines As Integers Descending `id 42062`
+- [ ] **Item**: Sort Lines As Decimals (Comma) Ascending `id 42063`
+- [ ] **Item**: Sort Lines As Decimals (Comma) Descending `id 42064`
+- [ ] **Item**: Sort Lines As Decimals (Dot) Ascending `id 42065`
+- [ ] **Item**: Sort Lines As Decimals (Dot) Descending `id 42066`
+- [ ] **Item**: Reverse Line Order `id 42083`
+- [ ] **Item**: Randomize Line Order `id 42078`
+- [ ] **Item**: UPPERCASE `id 42016`
+- [ ] **Item**: lowercase `id 42017`
+- [ ] **Item**: Proper Case `id 42067`
+- [ ] **Item**: Proper Case (blend) `id 42068`
+- [ ] **Item**: Sentence case `id 42069`
+- [ ] **Item**: Sentence case (blend) `id 42070`
+- [ ] **Item**: iNVERT cASE `id 42071`
+- [ ] **Item**: ranDOm CasE `id 42072`
+- [ ] **Item**: Open File `id 42073`
+- [ ] **Item**: Open Containing Folder in Explorer `id 42074`
+- [ ] **Item**: Redact Selection █ (Shift: ●) `id 42106`
+- [ ] **Item**: Search on Internet `id 42075`
+- [ ] **Item**: Change Search Engine... `id 42076`
+- [ ] **Item**: Ignore Case Whole Word `id 42090`
+- [ ] **Item**: Match Case Only `id 42091`
+- [ ] **Item**: Match Whole Word Only `id 42092`
+- [ ] **Item**: Match Case Whole Word `id 42093`
+- [ ] **Item**: Undo the Latest Added Multi-Select `id 42098`
+- [ ] **Item**: Skip Current Go to Next Multi-select `id 42099`
+- [ ] **Item**: Start Recording `id 42018`
+- [ ] **Item**: Stop Recording `id 42019`
+- [ ] **Item**: Playback `id 42021`
+- [ ] **Item**: Toggle Single Line Comment `id 42022`
+- [ ] **Item**: Block Comment `id 42023`
+- [ ] **Item**: Block Uncomment `id 42047`
+- [ ] **Item**: Trim Trailing Space `id 42024`
+- [ ] **Item**: Trim Leading Space `id 42042`
+- [ ] **Item**: Trim Leading and Trailing Space `id 42043`
+- [ ] **Item**: EOL to Space `id 42044`
+- [ ] **Item**: Trim both and EOL to Space `id 42045`
+- [ ] **Item**: TAB to Space `id 42046`
+- [ ] **Item**: Space to TAB (All) `id 42054`
+- [ ] **Item**: Space to TAB (Leading) `id 42053`
+- [ ] **Item**: Paste HTML Content `id 42038`
+- [ ] **Item**: Paste RTF Content `id 42039`
+- [ ] **Item**: Copy Binary Content `id 42048`
+- [ ] **Item**: Cut Binary Content `id 42049`
+- [ ] **Item**: Paste Binary Content `id 42050`
+- [ ] **Item**: Copy link `id 42082`
+- [ ] **Item**: Column Mode... `id 42037`
+- [ ] **Item**: Column Editor... `id 42034`
+- [ ] **Item**: Character Panel `id 42051`
+- [ ] **Item**: Clipboard History `id 42052`
+- [ ] **Item**: Save Currently Recorded Macro... `id 42025`
+- [ ] **Item**: Text Direction RTL `id 42026`
+- [ ] **Item**: Text Direction LTR `id 42027`
+- [ ] **Item**: Read-Only on Current Document `id 42028`
+- [ ] **Item**: Read-Only for All Documents `id 42102`
+- [ ] **Item**: Clear Read-Only for All Documents `id 42103`
+- [ ] **Item**: Copy Current File Path `id 42029`
+- [ ] **Item**: Copy Current Filename `id 42030`
+- [ ] **Item**: Copy Current Dir. Path `id 42031`
+- [ ] **Item**: Copy All Filenames `id 42087`
+- [ ] **Item**: Copy All File Paths `id 42088`
+- [ ] **Item**: Run a Macro Multiple Times... `id 42032`
+- [ ] **Item**: Read-Only Attribute in Windows `id 42033`
+- [ ] **Item**: Single Line Comment `id 42035`
+- [ ] **Item**: Single Line Uncomment `id 42036`
+- [ ] **Item**: Remove Empty Lines `id 42055`
+- [ ] **Item**: Remove Empty Lines (Containing Blank characters) `id 42056`
+- [ ] **Item**: Insert Blank Line Above Current `id 42057`
+- [ ] **Item**: Insert Blank Line Below Current `id 42058`
+- [ ] **Item**: Find... `id 43001`
+- [ ] **Item**: Find Next `id 43002`
+- [ ] **Item**: Replace... `id 43003`
+- [ ] **Item**: Go to... `id 43004`
+- [ ] **Item**: Toggle Bookmark `id 43005`
+- [ ] **Item**: Next Bookmark `id 43006`
+- [ ] **Item**: Previous Bookmark `id 43007`
+- [ ] **Item**: Clear All Bookmarks `id 43008`
+- [ ] **Item**: Cut Bookmarked Lines `id 43018`
+- [ ] **Item**: Copy Bookmarked Lines `id 43019`
+- [ ] **Item**: Paste to (Replace) Bookmarked Lines `id 43020`
+- [ ] **Item**: Remove Bookmarked Lines `id 43021`
+- [ ] **Item**: Remove Non-Bookmarked Lines `id 43051`
+- [ ] **Item**: Inverse Bookmarks `id 43050`
+- [ ] **Item**: Find characters in range... `id 43052`
+- [ ] **Item**: Select All In-between {} [] or () `id 43053`
+- [ ] **Item**: Go to Matching Brace `id 43009`
+- [ ] **Item**: Find Previous `id 43010`
+- [ ] **Item**: Incremental Search `id 43011`
+- [ ] **Item**: Find in Files `id 43013`
+- [ ] **Item**: Find (Volatile) Next `id 43014`
+- [ ] **Item**: Find (Volatile) Previous `id 43015`
+- [ ] **Item**: Using 1st Style `id 43022`
+- [ ] **Item**: Clear 1st Style `id 43023`
+- [ ] **Item**: Using 2nd Style `id 43024`
+- [ ] **Item**: Clear 2nd Style `id 43025`
+- [ ] **Item**: Using 3rd Style `id 43026`
+- [ ] **Item**: Clear 3rd Style `id 43027`
+- [ ] **Item**: Using 4th Style `id 43028`
+- [ ] **Item**: Clear 4th Style `id 43029`
+- [ ] **Item**: Using 5th Style `id 43030`
+- [ ] **Item**: Clear 5th Style `id 43031`
+- [ ] **Item**: Clear All Styles `id 43032`
+- [ ] **Item**: 1st style `id 43033`
+- [ ] **Item**: 2nd style `id 43034`
+- [ ] **Item**: 3rd style `id 43035`
+- [ ] **Item**: 4th style `id 43036`
+- [ ] **Item**: 5th style `id 43037`
+- [ ] **Item**: Find Mark Style `id 43038`
+- [ ] **Item**: 1st Style `id 43055`
+- [ ] **Item**: 2nd Style `id 43056`
+- [ ] **Item**: 3rd Style `id 43057`
+- [ ] **Item**: 4th Style `id 43058`
+- [ ] **Item**: 5th Style `id 43059`
+- [ ] **Item**: All Styles `id 43060`
+- [ ] **Item**: Go to Next Change `id 43067`
+- [ ] **Item**: Go to Previous Change `id 43068`
+- [ ] **Item**: Clear Change History `id 43069`
+- [ ] **Item**: Search Results Window `id 43045`
+- [ ] **Item**: Next Search Result `id 43046`
+- [ ] **Item**: Previous Search Result `id 43047`
+- [ ] **Item**: Select and Find Next `id 43048`
+- [ ] **Item**: Select and Find Previous `id 43049`
+- [ ] **Item**: Mark... `id 43054`
+- [ ] **Item**: Close Selected `id 43501`
+- [ ] **Item**: Close Others `id 43502`
+- [ ] **Item**: Copy Selected Names `id 43503`
+- [ ] **Item**: Copy Selected Pathnames `id 43504`
+- [ ] **Item**: Post-It `id 44009`
+- [ ] **Item**: Fold All `id 44010`
+- [ ] **Item**: Distraction Free Mode `id 44011`
+- [ ] **Item**: Show All Characters `id 44019`
+- [ ] **Item**: Show Indent Guide `id 44020`
+- [ ] **Item**: Word wrap `id 44022`
+- [ ] **Item**: Zoom In (Ctrl+Mouse Wheel Up) `id 44023`
+- [ ] **Item**: Zoom Out (Ctrl+Mouse Wheel Down) `id 44024`
+- [ ] **Item**: Show Space and Tab `id 44025`
+- [ ] **Item**: Show End of Line `id 44026`
+- [ ] **Item**: Synchronize Across Views `id 44027`
+- [ ] **Item**: Unfold All `id 44029`
+- [ ] **Item**: Fold Current Level `id 44030`
+- [ ] **Item**: Unfold Current Level `id 44031`
+- [ ] **Item**: Summary... `id 44049`
+- [ ] **Item**: Document Map `id 44080`
+- [ ] **Item**: Document List `id 44070`
+- [ ] **Item**: Function List `id 44084`
+- [ ] **Item**: 1st Tab `id 44086`
+- [ ] **Item**: 2nd Tab `id 44087`
+- [ ] **Item**: 3rd Tab `id 44088`
+- [ ] **Item**: 4th Tab `id 44089`
+- [ ] **Item**: 5th Tab `id 44090`
+- [ ] **Item**: 6th Tab `id 44091`
+- [ ] **Item**: 7th Tab `id 44092`
+- [ ] **Item**: 8th Tab `id 44093`
+- [ ] **Item**: 9th Tab `id 44094`
+- [ ] **Item**: First Tab `id 44116`
+- [ ] **Item**: Last Tab `id 44117`
+- [ ] **Item**: Next Tab `id 44095`
+- [ ] **Item**: Previous Tab `id 44096`
+- [ ] **Item**: Monitoring (tail -f) `id 44097`
+- [ ] **Item**: Move Tab Forward `id 44098`
+- [ ] **Item**: Move Tab Backward `id 44099`
+- [ ] **Item**: Remove Color `id 44110`
+- [ ] **Item**: Apply Color 1 `id 44111`
+- [ ] **Item**: Apply Color 2 `id 44112`
+- [ ] **Item**: Apply Color 3 `id 44113`
+- [ ] **Item**: Apply Color 4 `id 44114`
+- [ ] **Item**: Apply Color 5 `id 44115`
+- [ ] **Item**: Show Non-Printing Characters `id 44130`
+- [ ] **Item**: Show Control Characters Unicode EOL `id 44131`
+- [ ] **Item**: Toggle Full Screen Mode `id 44032`
+- [ ] **Item**: Restore Default Zoom `id 44033`
+- [ ] **Item**: Always on Top `id 44034`
+- [ ] **Item**: Synchronise Vertical Scrolling `id 44035`
+- [ ] **Item**: Synchronise Horizontal Scrolling `id 44036`
+- [ ] **Item**: Show Wrap Symbol `id 44041`
+- [ ] **Item**: Focus on Another View `id 44072`
+- [ ] **Item**: Project Panel 1 `id 44081`
+- [ ] **Item**: Project Panel 2 `id 44082`
+- [ ] **Item**: Project Panel 3 `id 44083`
+- [ ] **Item**: Windows (CR LF) `id 45001`
+- [ ] **Item**: Unix (LF) `id 45002`
+- [ ] **Item**: Macintosh (CR) `id 45003`
+- [ ] **Item**: ANSI `id 45004`
+- [ ] **Item**: UTF-8-BOM `id 45005`
+- [ ] **Item**: UTF-16 BE BOM `id 45006`
+- [ ] **Item**: UTF-16 LE BOM `id 45007`
+- [ ] **Item**: UTF-8 `id 45008`
+- [ ] **Item**: Convert to ANSI `id 45009`
+- [ ] **Item**: Convert to UTF-8 `id 45010`
+- [ ] **Item**: Convert to UTF-8-BOM `id 45011`
+- [ ] **Item**: Convert to UTF-16 BE BOM `id 45012`
+- [ ] **Item**: Convert to UTF-16 LE BOM `id 45013`
+- [ ] **Item**: Big5 (Traditional) `id 45060`
+- [ ] **Item**: GB2312 (Simplified) `id 45061`
+- [ ] **Item**: OEM 861: Icelandic `id 45054`
+- [ ] **Item**: OEM 865: Nordic `id 45057`
+- [ ] **Item**: OEM 860: Portuguese `id 45053`
+- [ ] **Item**: OEM 863: French `id 45056`
+- [ ] **Item**: Move to Other View `id 10001`
+- [ ] **Item**: Clone to Other View `id 10002`
+- [ ] **Item**: Move to New Instance `id 10003`
+- [ ] **Item**: Open in New Instance `id 10004`
+- [ ] **Item**: Move to Start `id 10005`
+- [ ] **Item**: Move to End `id 10006`
+- [ ] **Item**: Style Configurator... `id 46001`
+- [ ] **Item**: None (Normal Text) `id 46016`
+- [ ] **Item**: Define your language... `id 46250`
+- [ ] **Item**: Open User Defined Language folder... `id 46300`
+- [ ] **Item**: Notepad++ User Defined Languages Collection `id 46301`
+- [ ] **Item**: User-Defined `id 46180`
+- [ ] **Item**: About Notepad++ `id 47000`
+- [ ] **Item**: Command Line Arguments... `id 47010`
+- [ ] **Item**: Notepad++ Home `id 47001`
+- [ ] **Item**: Notepad++ Project Page `id 47002`
+- [ ] **Item**: Notepad++ Online User Manual `id 47003`
+- [ ] **Item**: Notepad++ Community (Forum) `id 47004`
+- [ ] **Item**: Debug Info... `id 47012`
+- [ ] **Item**: Get More Plugins `id 47005`
+- [ ] **Item**: Update Notepad++ `id 47006`
+- [ ] **Item**: Set Updater Proxy... `id 47009`
+- [ ] **Item**: Import plugin(s)... `id 48005`
+- [ ] **Item**: Import style theme(s)... `id 48006`
+- [ ] **Item**: Edit Popup ContextMenu `id 48018`
+- [ ] **Item**: Shortcut Mapper... `id 48009`
+- [ ] **Item**: Preferences... `id 48011`
+- [ ] **Item**: Open Plugins Folder... `id 48014`
+- [ ] **Item**: Plugins Admin... `id 48015`
+- [ ] **Item**: Generate... `id 48501`
+- [ ] **Item**: Generate from files... `id 48502`
+- [ ] **Item**: Generate from selection into clipboard `id 48503`
+- [ ] **Item**: Run... `id 49000`
+- [ ] **Item**: Validate shortcuts.xml `id 49001`
+- [ ] **Item**: Function Completion `id 50000`
+- [ ] **Item**: Word Completion `id 50001`
+- [ ] **Item**: Function Parameters Hint `id 50002`
+- [ ] **Item**: Function Parameters Previous Hint `id 50010`
+- [ ] **Item**: Function Parameters Next Hint `id 50011`
+- [ ] **Item**: Toggle macro record `id 50005`
+- [ ] **Item**: Path Completion `id 50006`
+- [ ] **Item**: Hide Lines `id 44042`
+- [ ] **Item**: Open All Recent Files `id 42040`
+- [ ] **Item**: Empty Recent Files List `id 42041`
+- [ ] **Item**: Modify Shortcut/Delete Macro... `id 48016`
+- [ ] **Item**: Modify Shortcut/Delete Command... `id 48017`
+- [ ] **Item**: Windows... `id 11001`
+- [ ] **Item**: Name A to Z `id 11002`
+- [ ] **Item**: Name Z to A `id 11003`
+- [ ] **Item**: Path A to Z `id 11004`
+- [ ] **Item**: Path Z to A `id 11005`
+- [ ] **Item**: Type A to Z `id 11006`
+- [ ] **Item**: Type Z to A `id 11007`
+- [ ] **Item**: Content Length Ascending `id 11008`
+- [ ] **Item**: Content Length Descending `id 11009`
+- [ ] **Item**: Modified Time Ascending `id 11010`
+- [ ] **Item**: Modified Time Descending `id 11011`
+- [ ] **Item**: Close Multiple Tabs `id 0`
+- [ ] **Item**: Close All BUT This `id 41005`
+- [ ] **Item**: Close All BUT Pinned `id 41026`
+- [ ] **Item**: Pin Tab `id 44048`
+- [ ] **Item**: Open into `id 1`
+- [ ] **Item**: Open Containing Folder in cmd `id 41020`
+- [ ] **Item**: Open Containing Folder in PowerShell `id 41027`
+- [ ] **Item**: Open Containing Folder as Workspace `id 41025`
+- [ ] **Item**: Reload `id 41014`
+- [ ] **Item**: Copy Full File Path `id 42029`
+- [ ] **Item**: Copy Filename `id 42030`
+- [ ] **Item**: Move Document `id 3`
+- [ ] **Item**: Apply Color to Tab `id 4`
+- [ ] **Item**: Activate `id 43101`
+- [ ] **Item**: New and Paste `id 43103`
+- [ ] **Item**: Find in Files... `id 43013`
+- [ ] **Item**: Close Tray Icon `id 43105`
+
+## Dialog (719)
+
+- [ ] **Find**: Find
+- [ ] **Find**: Replace
+- [ ] **Find**: Find in Files
+- [ ] **Find**: Find in Projects
+- [ ] **Find**: Mark
+- [ ] **Item**: Find Next `id 1`
+- [ ] **Item**: Backward direction `id 1722`
+- [ ] **Item**: Close `id 2`
+- [ ] **Item**: Find what: `id 1620`
+- [ ] **Item**: Match whole word only `id 1603`
+- [ ] **Item**: Match case `id 1604`
+- [ ] **Item**: Regular expression `id 1605`
+- [ ] **Item**: Wrap around `id 1606`
+- [ ] **Item**: Count `id 1614`
+- [ ] **Item**: Mark All `id 1615`
+- [ ] **Item**: Bookmark line `id 1616`
+- [ ] **Item**: Purge for each search `id 1618`
+- [ ] **Item**: Replace with: `id 1611`
+- [ ] **Item**: Replace `id 1608`
+- [ ] **Item**: Replace All `id 1609`
+- [ ] **Item**: On losing focus `id 1687`
+- [ ] **Item**: Always `id 1688`
+- [ ] **Item**: In selection `id 1632`
+- [ ] **Item**: Clear all marks `id 1633`
+- [ ] **Item**: Replace All in All Opened Documents `id 1635`
+- [ ] **Item**: Find All in All Opened Documents `id 1636`
+- [ ] **Item**: Filters: `id 1654`
+- [ ] **Item**: Directory: `id 1655`
+- [ ] **Item**: Find All `id 1656`
+- [ ] **Item**: In all sub-folders `id 1658`
+- [ ] **Item**: In hidden folders `id 1659`
+- [ ] **Item**: Search mode `id 1624`
+- [ ] **Item**: Normal `id 1625`
+- [ ] **Item**: Extended (\n, \r, \t, \0, \x...) `id 1626`
+- [ ] **Item**: Replace in Files `id 1660`
+- [ ] **Item**: Replace in Projects `id 1665`
+- [ ] **Item**: Project Panel 1 `id 1662`
+- [ ] **Item**: Project Panel 2 `id 1663`
+- [ ] **Item**: Project Panel 3 `id 1664`
+- [ ] **Item**: Find All in Current Document `id 1641`
+- [ ] **Item**: Transparency `id 1686`
+- [ ] **Item**: . matches newline `id 1703`
+- [ ] **Item**: ▲ `id 1721`
+- [ ] **Item**: ▼ Find Next `id 1723`
+- [ ] **Item**: Copy Marked Text `id 1725`
+- [ ] **Item**: ⇅ Swap Find with Replace `id 1726`
+- [ ] **Item**: ⤵ Copy from Find to Replace `id 1727`
+- [ ] **Item**: ⤴ Copy from Replace to Find `id 1728`
+- [ ] **Item**: Find: `id 1681`
+- [ ] **Item**: Highlight all `id 1690`
+- [ ] **FindCharsInRange**: Find Characters in Range...
+- [ ] **Item**: Non-ASCII characters (128–255) `id 2901`
+- [ ] **Item**: ASCII characters (0–127) `id 2902`
+- [ ] **Item**: Custom range (0–255): `id 2903`
+- [ ] **Item**: Up `id 2906`
+- [ ] **Item**: Down `id 2907`
+- [ ] **Item**: Direction `id 2908`
+- [ ] **Item**: Find `id 2910`
+- [ ] **GoToLine**: Go to...
+- [ ] **Item**: Line `id 2007`
+- [ ] **Item**: Offset `id 2008`
+- [ ] **Item**: Go `id 1`
+- [ ] **Item**: I'm going nowhere `id 2`
+- [ ] **Item**: You are here: `id 2004`
+- [ ] **Item**: You want to go to: `id 2005`
+- [ ] **Item**: You can't go further than: `id 2006`
+- [ ] **Run**: Run...
+- [ ] **Item**: The Program to Run `id 1903`
+- [ ] **Item**: Run `id 1`
+- [ ] **Item**: Cancel `id 2`
+- [ ] **Item**: Save... `id 1904`
+- [ ] **MD5FromFilesDlg**: Generate MD5 digest from files
+- [ ] **Item**: Choose files to generate MD5... `id 1922`
+- [ ] **Item**: Copy to Clipboard `id 1924`
+- [ ] **MD5FromTextDlg**: Generate MD5 digest
+- [ ] **Item**: Treat each line as a separate string `id 1932`
+- [ ] **SHA256FromFilesDlg**: Generate SHA-256 digest from files
+- [ ] **Item**: Choose files to generate SHA-256... `id 1922`
+- [ ] **SHA256FromTextDlg**: Generate SHA-256 digest
+- [ ] **SHA1FromFilesDlg**: Generate SHA-1 digest from files
+- [ ] **Item**: Choose files to generate SHA-1... `id 1922`
+- [ ] **SHA1FromTextDlg**: Generate SHA-1 digest
+- [ ] **SHA512FromFilesDlg**: Generate SHA-512 digest from files
+- [ ] **Item**: Choose files to generate SHA-512... `id 1922`
+- [ ] **SHA512FromTextDlg**: Generate SHA-512 digest
+- [ ] **PluginsAdminDlg**: Plugins Admin
+- [ ] **ColumnPlugin**: Plugin
+- [ ] **ColumnVersion**: Version
+- [ ] **Item**: Search: `id 5501`
+- [ ] **Item**: Install `id 5503`
+- [ ] **Item**: Update `id 5504`
+- [ ] **Item**: Remove `id 5505`
+- [ ] **Item**: Next `id 5508`
+- [ ] **Item**: Plugin list version: `id 5509`
+- [ ] **Item**: Plugin list repository `id 5511`
+- [ ] **Item**: Deactivate `id 5512`
+- [ ] **Item**: Activate `id 5513`
+- [ ] **StyleConfig**: Style Configurator
+- [ ] **Item**: Save Close `id 2301`
+- [ ] **Item**: Select theme: `id 2306`
+- [ ] **Item**: Bold `id 2204`
+- [ ] **Item**: Italic `id 2205`
+- [ ] **Item**: Foreground color `id 2206`
+- [ ] **Item**: Background color `id 2207`
+- [ ] **Item**: Font name: `id 2208`
+- [ ] **Item**: Font size: `id 2209`
+- [ ] **Item**: Style: `id 2211`
+- [ ] **Item**: Color Style `id 2212`
+- [ ] **Item**: Font Style `id 2213`
+- [ ] **Item**: Default ext.: `id 2214`
+- [ ] **Item**: User ext.: `id 2216`
+- [ ] **Item**: Underline `id 2218`
+- [ ] **Item**: Default keywords `id 2219`
+- [ ] **Item**: User-defined keywords `id 2221`
+- [ ] **Item**: Language: `id 2225`
+- [ ] **Item**: Force foreground color for all styles `id 2226`
+- [ ] **Item**: Force background color for all styles `id 2227`
+- [ ] **Item**: Force font choice for all styles `id 2228`
+- [ ] **Item**: Force font size choice for all styles `id 2229`
+- [ ] **Item**: Force bold choice for all styles `id 2230`
+- [ ] **Item**: Force italic choice for all styles `id 2231`
+- [ ] **Item**: Force underline choice for all styles `id 2232`
+- [ ] **Item**: Go to settings `id 2234`
+- [ ] **Item**: What is Global override? `id 2235`
+- [ ] **Item**: More Colors... `id 1`
+- [ ] **ShortcutMapper**: Shortcut Mapper
+- [ ] **Item**: Modify `id 2602`
+- [ ] **Item**: Delete `id 2603`
+- [ ] **Item**: Clear `id 2606`
+- [ ] **Item**: Filter: `id 2607`
+- [ ] **ColumnName**: Name
+- [ ] **ColumnShortcut**: Shortcut
+- [ ] **ColumnCategory**: Category
+- [ ] **MainMenuTab**: Main menu
+- [ ] **MacrosTab**: Macros
+- [ ] **RunCommandsTab**: Run commands
+- [ ] **PluginCommandsTab**: Plugin commands
+- [ ] **ScintillaCommandsTab**: Scintilla commands
+- [ ] **ConflictInfoOk**: No shortcut conflicts for this item.
+- [ ] **ConflictInfoEditing**: No conflicts . . .
+- [ ] **AboutCategory**: About
+- [ ] **ModifyContextMenu**: Modify
+- [ ] **DeleteContextMenu**: Delete
+- [ ] **ClearContextMenu**: Clear
+- [ ] **Item**: Open containing folder in Explorer `id 41019`
+- [ ] **Item**: Open containing folder in Command Prompt `id 41020`
+- [ ] **Item**: Open containing folder in PowerShell `id 41027`
+- [ ] **Item**: Open Containing Folder as Workspace `id 41025`
+- [ ] **Item**: Restore Recent Closed File `id 41021`
+- [ ] **Item**: EOL Conversion to Windows (CR LF) `id 45001`
+- [ ] **Item**: EOL Conversion to Unix (LF) `id 45002`
+- [ ] **Item**: EOL Conversion to Macintosh (CR) `id 45003`
+- [ ] **Item**: Style all using 1st style `id 43022`
+- [ ] **Item**: Style all using 2nd style `id 43024`
+- [ ] **Item**: Style all using 3rd style `id 43026`
+- [ ] **Item**: Style all using 4th style `id 43028`
+- [ ] **Item**: Style all using 5th style `id 43030`
+- [ ] **Item**: Style one using 1st style `id 43062`
+- [ ] **Item**: Style one using 2nd style `id 43063`
+- [ ] **Item**: Style one using 3rd style `id 43064`
+- [ ] **Item**: Style one using 4th style `id 43065`
+- [ ] **Item**: Style one using 5th style `id 43066`
+- [ ] **Item**: Clear 1st style `id 43023`
+- [ ] **Item**: Clear 2nd style `id 43025`
+- [ ] **Item**: Clear 3rd style `id 43027`
+- [ ] **Item**: Clear 4th style `id 43029`
+- [ ] **Item**: Clear 5th style `id 43031`
+- [ ] **Item**: Clear all styles `id 43032`
+- [ ] **Item**: Previous style of 1st style `id 43033`
+- [ ] **Item**: Previous style of 2nd style `id 43034`
+- [ ] **Item**: Previous style of 3rd style `id 43035`
+- [ ] **Item**: Previous style of 4th style `id 43036`
+- [ ] **Item**: Previous style of 5th style `id 43037`
+- [ ] **Item**: Previous style of Find Mark style `id 43038`
+- [ ] **Item**: Next style of 1st style `id 43039`
+- [ ] **Item**: Next style of 2nd style `id 43040`
+- [ ] **Item**: Next style of 3rd style `id 43041`
+- [ ] **Item**: Next style of 4th style `id 43042`
+- [ ] **Item**: Next style of 5th style `id 43043`
+- [ ] **Item**: Next style of Find Mark style `id 43044`
+- [ ] **Item**: Copy Styled Text of 1st Style `id 43055`
+- [ ] **Item**: Copy Styled Text of 2nd Style `id 43056`
+- [ ] **Item**: Copy Styled Text of 3rd Style `id 43057`
+- [ ] **Item**: Copy Styled Text of 4th Style `id 43058`
+- [ ] **Item**: Copy Styled Text of 5th Style `id 43059`
+- [ ] **Item**: Copy Styled Text of All Styles `id 43060`
+- [ ] **Item**: Copy Styled Text of Find Mark style `id 43061`
+- [ ] **Item**: View current file in Firefox `id 44100`
+- [ ] **Item**: View current file in Chrome `id 44101`
+- [ ] **Item**: View current file in IE `id 44103`
+- [ ] **Item**: View current file in Edge `id 44102`
+- [ ] **Item**: Switch to previous document `id 50003`
+- [ ] **Item**: Switch to next document `id 50004`
+- [ ] **Item**: Fold Level 1 `id 44051`
+- [ ] **Item**: Fold Level 2 `id 44052`
+- [ ] **Item**: Fold Level 3 `id 44053`
+- [ ] **Item**: Fold Level 4 `id 44054`
+- [ ] **Item**: Fold Level 5 `id 44055`
+- [ ] **Item**: Fold Level 6 `id 44056`
+- [ ] **Item**: Fold Level 7 `id 44057`
+- [ ] **Item**: Fold Level 8 `id 44058`
+- [ ] **Item**: Unfold Level 1 `id 44061`
+- [ ] **Item**: Unfold Level 2 `id 44062`
+- [ ] **Item**: Unfold Level 3 `id 44063`
+- [ ] **Item**: Unfold Level 4 `id 44064`
+- [ ] **Item**: Unfold Level 5 `id 44065`
+- [ ] **Item**: Unfold Level 6 `id 44066`
+- [ ] **Item**: Unfold Level 7 `id 44067`
+- [ ] **Item**: Unfold Level 8 `id 44068`
+- [ ] **Item**: Toggle Project Panel 1 `id 44081`
+- [ ] **Item**: Toggle Project Panel 2 `id 44082`
+- [ ] **Item**: Toggle Project Panel 3 `id 44083`
+- [ ] **Item**: Toggle Folder as Workspace `id 44085`
+- [ ] **Item**: Toggle Document Map `id 44080`
+- [ ] **Item**: Toggle Document List `id 44070`
+- [ ] **Item**: Toggle Function List `id 44084`
+- [ ] **Item**: Toggle macro recording `id 50005`
+- [ ] **Item**: Switch to Project Panel 1 `id 44104`
+- [ ] **Item**: Switch to Project Panel 2 `id 44105`
+- [ ] **Item**: Switch to Project Panel 3 `id 44106`
+- [ ] **Item**: Switch to Folder as Workspace `id 44107`
+- [ ] **Item**: Switch to Document List `id 44109`
+- [ ] **Item**: Switch to Function List `id 44108`
+- [ ] **Item**: Remove Tab Color `id 44110`
+- [ ] **Item**: Apply Tab Color 1 `id 44111`
+- [ ] **Item**: Apply Tab Color 2 `id 44112`
+- [ ] **Item**: Apply Tab Color 3 `id 44113`
+- [ ] **Item**: Apply Tab Color 4 `id 44114`
+- [ ] **Item**: Apply Tab Color 5 `id 44115`
+- [ ] **Item**: Sort by Name A to Z `id 11002`
+- [ ] **Item**: Sort by Name Z to A `id 11003`
+- [ ] **Item**: Sort by Path A to Z `id 11004`
+- [ ] **Item**: Sort by Path Z to A `id 11005`
+- [ ] **Item**: Sort by Type A to Z `id 11006`
+- [ ] **Item**: Sort by Type Z to A `id 11007`
+- [ ] **Item**: Sort by Content Length Ascending `id 11008`
+- [ ] **Item**: Sort by Content Length Descending `id 11009`
+- [ ] **ShortcutMapperSubDialg**: Shortcut
+- [ ] **Item**: OK `id 1`
+- [ ] **Item**: Name `id 5006`
+- [ ] **Item**: Add `id 5008`
+- [ ] **Item**: Apply `id 5010`
+- [ ] **Item**: This will remove shortcut from this command `id 5007`
+- [ ] **Item**: CONFLICT FOUND! `id 5012`
+- [ ] **UserDefine**: User-Defined
+- [ ] **Item**: Dock `id 20001`
+- [ ] **Item**: Rename `id 20002`
+- [ ] **Item**: Create new... `id 20003`
+- [ ] **Item**: Save As... `id 20005`
+- [ ] **Item**: User language `id 20007`
+- [ ] **Item**: Ext.: `id 20009`
+- [ ] **Item**: Ignore case `id 20012`
+- [ ] **Item**: Import... `id 20015`
+- [ ] **Item**: Export... `id 20016`
+- [ ] **Item**: Undock `id 20017`
+- [ ] **StylerDialog**: Styler Dialog
+- [ ] **Item**: Font options `id 25030`
+- [ ] **Item**: Name: `id 25031`
+- [ ] **Item**: Size: `id 25032`
+- [ ] **Item**: Nesting `id 25029`
+- [ ] **Item**: Delimiter 1 `id 25008`
+- [ ] **Item**: Delimiter 2 `id 25009`
+- [ ] **Item**: Delimiter 3 `id 25010`
+- [ ] **Item**: Delimiter 4 `id 25011`
+- [ ] **Item**: Delimiter 5 `id 25012`
+- [ ] **Item**: Delimiter 6 `id 25013`
+- [ ] **Item**: Delimiter 7 `id 25014`
+- [ ] **Item**: Delimiter 8 `id 25015`
+- [ ] **Item**: Keyword 1 `id 25018`
+- [ ] **Item**: Keyword 2 `id 25019`
+- [ ] **Item**: Keyword 3 `id 25020`
+- [ ] **Item**: Keyword 4 `id 25021`
+- [ ] **Item**: Keyword 5 `id 25022`
+- [ ] **Item**: Keyword 6 `id 25023`
+- [ ] **Item**: Keyword 7 `id 25024`
+- [ ] **Item**: Keyword 8 `id 25025`
+- [ ] **Item**: Comment `id 25016`
+- [ ] **Item**: Comment line `id 25017`
+- [ ] **Item**: Operator 1 `id 25026`
+- [ ] **Item**: Operator 2 `id 25027`
+- [ ] **Item**: Numbers `id 25028`
+- [ ] **Item**: Transparent `id 25033`
+- [ ] **Folder**: Folder Default
+- [ ] **Item**: Default style `id 21101`
+- [ ] **Item**: Styler `id 21102`
+- [ ] **Item**: User Defined Languages online help `id 21103`
+- [ ] **Item**: Documentation `id 21105`
+- [ ] **Item**: Fold compact (fold empty lines too) `id 21106`
+- [ ] **Item**: Folding in code 1 style `id 21220`
+- [ ] **Item**: Open: `id 21224`
+- [ ] **Item**: Middle: `id 21225`
+- [ ] **Item**: Close: `id 21226`
+- [ ] **Item**: Folding in code 2 style (separators needed) `id 21320`
+- [ ] **Item**: Folding in comment style `id 21420`
+- [ ] **Keywords**: Keywords Lists
+- [ ] **Item**: 1st Group `id 22101`
+- [ ] **Item**: 2nd Group `id 22201`
+- [ ] **Item**: 3rd Group `id 22301`
+- [ ] **Item**: 4th Group `id 22401`
+- [ ] **Item**: 5th Group `id 22451`
+- [ ] **Item**: 6th Group `id 22501`
+- [ ] **Item**: 7th Group `id 22551`
+- [ ] **Item**: 8th Group `id 22601`
+- [ ] **Item**: Prefix mode `id 22121`
+- [ ] **Comment**: Comment Number
+- [ ] **Item**: Line comment position `id 23003`
+- [ ] **Item**: Allow anywhere `id 23004`
+- [ ] **Item**: Force at beginning of line `id 23005`
+- [ ] **Item**: Allow preceding whitespace `id 23006`
+- [ ] **Item**: Allow folding of comments `id 23001`
+- [ ] **Item**: Open `id 23323`
+- [ ] **Item**: Continue character `id 23324`
+- [ ] **Item**: Comment line style `id 23301`
+- [ ] **Item**: Comment style `id 23101`
+- [ ] **Item**: Number style `id 23201`
+- [ ] **Item**: Prefix 1 `id 23230`
+- [ ] **Item**: Prefix 2 `id 23232`
+- [ ] **Item**: Extras 1 `id 23234`
+- [ ] **Item**: Extras 2 `id 23236`
+- [ ] **Item**: Suffix 1 `id 23238`
+- [ ] **Item**: Suffix 2 `id 23240`
+- [ ] **Item**: Range: `id 23242`
+- [ ] **Item**: Decimal separator `id 23244`
+- [ ] **Item**: Dot `id 23245`
+- [ ] **Item**: Comma `id 23246`
+- [ ] **Item**: Both `id 23247`
+- [ ] **Operator**: Operators Delimiter
+- [ ] **Item**: Operators style `id 24101`
+- [ ] **Item**: Operators 1 `id 24116`
+- [ ] **Item**: Operators 2 (separators required) `id 24117`
+- [ ] **Item**: Delimiter 1 style `id 24201`
+- [ ] **Item**: Escape: `id 24221`
+- [ ] **Item**: Delimiter 2 style `id 24301`
+- [ ] **Item**: Delimiter 3 style `id 24401`
+- [ ] **Item**: Delimiter 4 style `id 24451`
+- [ ] **Item**: Delimiter 5 style `id 24501`
+- [ ] **Item**: Delimiter 6 style `id 24551`
+- [ ] **Item**: Delimiter 7 style `id 24601`
+- [ ] **Item**: Delimiter 8 style `id 24651`
+- [ ] **Preference**: Preferences
+- [ ] **Global**: General
+- [ ] **Item**: Localization `id 6123`
+- [ ] **Item**: Menu `id 6131`
+- [ ] **Item**: Hide (use Alt or F10 key to toggle) `id 6122`
+- [ ] **Item**: Hide right shortcuts ＋ ▼ ✕ `id 6132`
+- [ ] **Item**: Status Bar `id 6133`
+- [ ] **Item**: Hide `id 6134`
+- [ ] **Item**: Dialog Font (Need to restart Notepad++) `id 7165`
+- [ ] **Toolbar**: Toolbar
+- [ ] **Item**: Fluent UI: small `id 6103`
+- [ ] **Item**: Fluent UI: large `id 6104`
+- [ ] **Item**: Filled Fluent UI: small `id 6129`
+- [ ] **Item**: Filled Fluent UI: large `id 6130`
+- [ ] **Item**: Standard icons: small `id 6105`
+- [ ] **Item**: Colorization `id 6011`
+- [ ] **Item**: Complete `id 6012`
+- [ ] **Item**: Partial `id 6013`
+- [ ] **Item**: Color choice `id 6014`
+- [ ] **Item**: Default `id 6015`
+- [ ] **Item**: Red `id 6016`
+- [ ] **Item**: Green `id 6017`
+- [ ] **Item**: Blue `id 6018`
+- [ ] **Item**: Purple `id 6019`
+- [ ] **Item**: Cyan `id 6020`
+- [ ] **Item**: Olive `id 6021`
+- [ ] **Item**: Yellow `id 6022`
+- [ ] **Item**: System Accent `id 6023`
+- [ ] **Item**: Custom `id 6024`
+- [ ] **Tabbar**: Tab Bar
+- [ ] **Item**: Reduce `id 6107`
+- [ ] **Item**: Lock (no drag and drop) `id 6108`
+- [ ] **Item**: Change inactive tab color `id 6109`
+- [ ] **Item**: Draw a colored bar on active tab `id 6110`
+- [ ] **Item**: Show buttons on inactive tabs `id 6111`
+- [ ] **Item**: Show close button `id 6112`
+- [ ] **Item**: Double click to close document `id 6113`
+- [ ] **Item**: Enable pin tab feature `id 6115`
+- [ ] **Item**: Show only pinned button `id 6135`
+- [ ] **Item**: Multi-line `id 6119`
+- [ ] **Item**: Vertical `id 6120`
+- [ ] **Item**: Exit on close the last tab `id 6121`
+- [ ] **Item**: Alternate icons `id 6128`
+- [ ] **Item**: Behavior `id 6125`
+- [ ] **Item**: Look feel `id 6126`
+- [ ] **Item**: Max. tab label length: `id 6136`
+- [ ] **Scintillas**: Editing 1
+- [ ] **Item**: Caret Settings `id 6216`
+- [ ] **Item**: Width: `id 6217`
+- [ ] **Item**: Blink rate: `id 6219`
+- [ ] **Item**: F `id 6221`
+- [ ] **Item**: S `id 6222`
+- [ ] **Item**: Make current level folding/unfolding commands toggleable `id 6246`
+- [ ] **Item**: Line Wrap `id 6227`
+- [ ] **Item**: Aligned `id 6229`
+- [ ] **Item**: Indent `id 6230`
+- [ ] **Item**: Disable advanced scrolling feature due to touchpad issue `id 6234`
+- [ ] **Item**: Enable smooth font `id 6215`
+- [ ] **Item**: Enable scrolling beyond last line `id 6236`
+- [ ] **Item**: Keep selection when right-click outside of selection `id 6239`
+- [ ] **Item**: Enable virtual space `id 6245`
+- [ ] **Item**: Enable Copy/Cut Line without selection `id 6214`
+- [ ] **Item**: Disable selected text drag-and-drop `id 6266`
+- [ ] **Item**: Enable word wrap by default for each document `id 6280`
+- [ ] **Item**: Apply custom color to selected text foreground `id 6225`
+- [ ] **Item**: Current Line Indicator `id 6651`
+- [ ] **Item**: None `id 6652`
+- [ ] **Item**: Highlight Background `id 6653`
+- [ ] **Item**: Frame `id 6654`
+- [ ] **Scintillas2**: Editing 2
+- [ ] **Item**: Multi-Editing `id 6521`
+- [ ] **Item**: Enable Multi-Editing (Ctrl+Mouse click/selection) `id 6522`
+- [ ] **Item**: Enable Column Selection to Multi-Editing `id 6523`
+- [ ] **Item**: EOL (CRLF) `id 6247`
+- [ ] **Item**: Plain Text `id 6249`
+- [ ] **Item**: Custom Color `id 6250`
+- [ ] **Item**: Non-Printing Characters `id 6252`
+- [ ] **Item**: Appearance `id 6260`
+- [ ] **Item**: Abbreviation `id 6254`
+- [ ] **Item**: Codepoint `id 6255`
+- [ ] **Item**: Apply Appearance settings to C0, C1 Unicode EOL `id 6258`
+- [ ] **Item**: Prevent control character (C0 code) typing into document `id 6259`
+- [ ] **DarkMode**: Dark Mode
+- [ ] **Item**: Light mode `id 7131`
+- [ ] **Item**: Dark mode `id 7132`
+- [ ] **Item**: Follow Windows `id 7133`
+- [ ] **Item**: Black `id 7102`
+- [ ] **Item**: Customized `id 7115`
+- [ ] **Item**: Content background `id 7116`
+- [ ] **Item**: Hot track item `id 7117`
+- [ ] **Item**: Control background `id 7118`
+- [ ] **Item**: Dialog background `id 7119`
+- [ ] **Item**: Error `id 7120`
+- [ ] **Item**: Text `id 7121`
+- [ ] **Item**: Darker text `id 7122`
+- [ ] **Item**: Disabled text `id 7123`
+- [ ] **Item**: Edge `id 7124`
+- [ ] **Item**: Link `id 7125`
+- [ ] **Item**: Edge highlight `id 7126`
+- [ ] **Item**: Edge disabled `id 7127`
+- [ ] **Item**: Reset `id 7130`
+- [ ] **Item**: Tones `id 7135`
+- [ ] **MarginsBorderEdge**: Margins/Border/Edge
+- [ ] **Item**: Fold Margin Style `id 6201`
+- [ ] **Item**: Simple `id 6202`
+- [ ] **Item**: Arrow `id 6203`
+- [ ] **Item**: Circle tree `id 6204`
+- [ ] **Item**: Box tree `id 6205`
+- [ ] **Item**: Line Number `id 6291`
+- [ ] **Item**: Display `id 6206`
+- [ ] **Item**: Dynamic width `id 6292`
+- [ ] **Item**: Constant width `id 6293`
+- [ ] **Item**: Display bookmark `id 6207`
+- [ ] **Item**: Change History `id 6295`
+- [ ] **Item**: Show in the margin `id 6223`
+- [ ] **Item**: Show in the text `id 6296`
+- [ ] **Item**: Vertical Edge Settings `id 6211`
+- [ ] **Item**: Background mode `id 6213`
+- [ ] **Item**: Border Width `id 6231`
+- [ ] **Item**: No edge `id 6235`
+- [ ] **Item**: Padding `id 6208`
+- [ ] **Item**: Left `id 6209`
+- [ ] **Item**: Right `id 6210`
+- [ ] **Item**: Distraction Free `id 6212`
+- [ ] **NewDoc**: New Document
+- [ ] **Item**: Format (Line ending) `id 6401`
+- [ ] **Item**: Windows (CR LF) `id 6402`
+- [ ] **Item**: Unix (LF) `id 6403`
+- [ ] **Item**: Macintosh (CR) `id 6404`
+- [ ] **Item**: Encoding `id 6405`
+- [ ] **Item**: ANSI `id 6406`
+- [ ] **Item**: UTF-8 `id 6407`
+- [ ] **Item**: UTF-8 with BOM `id 6408`
+- [ ] **Item**: UTF-16 Big Endian with BOM `id 6409`
+- [ ] **Item**: UTF-16 Little Endian with BOM `id 6410`
+- [ ] **Item**: Default language: `id 6411`
+- [ ] **Item**: New Document `id 6419`
+- [ ] **Item**: Apply to opened ANSI files `id 6420`
+- [ ] **Item**: Always open a new document in addition at startup `id 6432`
+- [ ] **Item**: Use the first line of document as untitled tab name `id 6433`
+- [ ] **DefaultDir**: Default Directory
+- [ ] **Item**: Default Open/Save file Directory `id 6413`
+- [ ] **Item**: Follow current document `id 6414`
+- [ ] **Item**: Remember last used directory `id 6415`
+- [ ] **Item**: Open all files of folder instead of launching Folder as Workspace on folder dropping `id 6431`
+- [ ] **FileAssoc**: File Association
+- [ ] **Item**: Please exit Notepad++ and relaunch Notepad++ in Administrator mode to use this feature. `id 4008`
+- [ ] **Item**: Supported extensions: `id 4009`
+- [ ] **Item**: Registered extensions: `id 4010`
+- [ ] **Language**: Language
+- [ ] **Item**: Available items `id 6505`
+- [ ] **Item**: Disabled items `id 6506`
+- [ ] **Item**: Make language menu compact `id 6507`
+- [ ] **Item**: Language Menu `id 6508`
+- [ ] **Item**: Treat backslash as escape character for SQL `id 6335`
+- [ ] **Indentation**: Indentation
+- [ ] **Item**: Auto-indent `id 7161`
+- [ ] **Item**: Basic `id 7163`
+- [ ] **Item**: Advanced `id 7164`
+- [ ] **Item**: Indent Settings `id 6301`
+- [ ] **Item**: Space character(s) `id 6302`
+- [ ] **Item**: Indent size: `id 6303`
+- [ ] **Item**: Indent using: `id 6310`
+- [ ] **Item**: Tab character `id 6311`
+- [ ] **Item**: Use default value `id 6510`
+- [ ] **Item**: Backspace key unindents instead of removing single space `id 6512`
+- [ ] **Highlighting**: Highlighting
+- [ ] **Item**: Style All Occurrences of Token `id 6351`
+- [ ] **Item**: Smart Highlighting `id 6333`
+- [ ] **Item**: Enable `id 6326`
+- [ ] **Item**: Matching `id 6354`
+- [ ] **Item**: Use Find dialog settings `id 6339`
+- [ ] **Item**: Highlight another view `id 6340`
+- [ ] **Item**: Highlight Matching Tags `id 6329`
+- [ ] **Item**: Highlight tag attributes `id 6328`
+- [ ] **Item**: Highlight comment/php/asp zone `id 6330`
+- [ ] **Print**: Print
+- [ ] **Item**: Print line number `id 6601`
+- [ ] **Item**: Print formfeed as page break `id 6616`
+- [ ] **Item**: Color Options `id 6602`
+- [ ] **Item**: WYSIWYG `id 6603`
+- [ ] **Item**: Invert `id 6604`
+- [ ] **Item**: Black on white `id 6605`
+- [ ] **Item**: No background color `id 6606`
+- [ ] **Item**: Margin Settings (Unit:mm) `id 6607`
+- [ ] **Item**: Top `id 6613`
+- [ ] **Item**: Bottom `id 6615`
+- [ ] **Item**: Header `id 6708`
+- [ ] **Item**: Left part `id 6709`
+- [ ] **Item**: Middle part `id 6710`
+- [ ] **Item**: Right part `id 6711`
+- [ ] **Item**: Footer `id 6719`
+- [ ] **Element**: Full file name path
+- [ ] **Element**: File name
+- [ ] **Element**: File directory
+- [ ] **Element**: Page
+- [ ] **Element**: Short date format
+- [ ] **Element**: Long date format
+- [ ] **Element**: Time
+- [ ] **Item**: Variable: `id 6725`
+- [ ] **Item**: Here display your variable settings `id 6727`
+- [ ] **Item**: Header and Footer `id 6728`
+- [ ] **Searching**: Searching
+- [ ] **Item**: Use monospaced font in Find dialog (Need to restart Notepad++) `id 6902`
+- [ ] **Item**: Find dialog remains open after search that outputs to results window `id 6903`
+- [ ] **Item**: Search Result window: show only one entry per found line if possible `id 6906`
+- [ ] **Item**: When Find Dialog is Invoked `id 6907`
+- [ ] **Item**: Fill Find Field with Selected Text `id 6908`
+- [ ] **Item**: Select Word Under Caret when Nothing Selected `id 6909`
+- [ ] **Item**: Minimum Size for Auto-Checking "In selection": `id 6910`
+- [ ] **Item**: Fill Find in Files Directory Field Based On Active Document `id 6913`
+- [ ] **Item**: : Max Characters to Auto-Fill Find Field from Selection `id 6916`
+- [ ] **Item**: Find in Files: Prefer on‑disk file content over open buffers `id 6917`
+- [ ] **RecentFilesHistory**: Recent Files History
+- [ ] **Item**: Recent Files History `id 6304`
+- [ ] **Item**: Max. number of entries: `id 6306`
+- [ ] **Item**: Don't check at launch time `id 6305`
+- [ ] **Item**: In Submenu `id 6424`
+- [ ] **Item**: Only File Name `id 6425`
+- [ ] **Item**: Full File Name Path `id 6426`
+- [ ] **Item**: Customize Maximum Length: `id 6427`
+- [ ] **Backup**: Backup
+- [ ] **Item**: Session snapshot and periodic backup `id 6817`
+- [ ] **Item**: Enable session snapshot and periodic backup `id 6818`
+- [ ] **Item**: Trigger backup on modification in every `id 6819`
+- [ ] **Item**: seconds `id 6821`
+- [ ] **Item**: Backup path: `id 6822`
+- [ ] **Item**: Remember current session for next launch `id 6309`
+- [ ] **Item**: Remember inaccessible files from past session `id 6825`
+- [ ] **Item**: Backup on save `id 6801`
+- [ ] **Item**: Simple backup `id 6316`
+- [ ] **Item**: Verbose backup `id 6317`
+- [ ] **Item**: Custom Backup Directory `id 6804`
+- [ ] **AutoCompletion**: Auto-Completion
+- [ ] **Item**: Auto-Completion `id 6807`
+- [ ] **Item**: Enable auto-completion on each input `id 6808`
+- [ ] **Item**: Function completion `id 6809`
+- [ ] **Item**: Word completion `id 6810`
+- [ ] **Item**: Function and word completion `id 6816`
+- [ ] **Item**: Insert Selection `id 6869`
+- [ ] **Item**: TAB `id 6870`
+- [ ] **Item**: ENTER `id 6871`
+- [ ] **Item**: Ignore numbers `id 6824`
+- [ ] **Item**: From `id 6811`
+- [ ] **Item**: th character `id 6813`
+- [ ] **Item**: Make auto-completion list brief `id 6872`
+- [ ] **Item**: Function parameters hint on input `id 6815`
+- [ ] **Item**: Auto-Insert `id 6851`
+- [ ] **Item**: html/xml close tag `id 6857`
+- [ ] **Item**: Matched pair 1: `id 6860`
+- [ ] **Item**: Matched pair 2: `id 6863`
+- [ ] **Item**: Matched pair 3: `id 6866`
+- [ ] **MultiInstance**: Multi-Instance Date
+- [ ] **Item**: Multi-instance settings * `id 6151`
+- [ ] **Item**: Open session in a new instance (and save session automatically on exit) `id 6152`
+- [ ] **Item**: Always in multi-instance mode `id 6153`
+- [ ] **Item**: Default (mono-instance) `id 6154`
+- [ ] **Item**: * The modification of this setting needs to restart Notepad++ `id 6155`
+- [ ] **Item**: Customize insert Date Time `id 6171`
+- [ ] **Item**: Reverse default date time order (short long formats) `id 6175`
+- [ ] **Item**: Custom format: `id 6172`
+- [ ] **Item**: Panel State and [-nosession] * `id 6181`
+- [ ] **Item**: Remember panel state (panel is open) in other instances (multi-instance mode) or when using command line parameter [-nosession] `id 6182`
+- [ ] **Item**: Clipboard History `id 6183`
+- [ ] **Item**: Document List `id 6184`
+- [ ] **Item**: Character Panel `id 6185`
+- [ ] **Item**: Folder as Workspace `id 6186`
+- [ ] **Item**: Project Panels `id 6187`
+- [ ] **Item**: Document Map `id 6188`
+- [ ] **Item**: Function List `id 6189`
+- [ ] **Item**: Plugin Panels `id 6190`
+- [ ] **Delimiter**: Delimiter
+- [ ] **Item**: Delimiter selection settings (Ctrl + Mouse double click) `id 6251`
+- [ ] **Item**: Allow on several lines `id 6256`
+- [ ] **Item**: Word character list `id 6161`
+- [ ] **Item**: Use default Word character list as it is `id 6162`
+- [ ] **Item**: Add your character as part of word (don't choose it unless you know what you're doing) `id 6163`
+- [ ] **Performance**: Performance
+- [ ] **Item**: Large File Restriction `id 7141`
+- [ ] **Item**: Enable Large File Restriction (no syntax highlighting) `id 7143`
+- [ ] **Item**: Define Large File Size: `id 7144`
+- [ ] **Item**: MB (1 - 2046) `id 7146`
+- [ ] **Item**: Allow Brace Match `id 7147`
+- [ ] **Item**: Allow Auto-Completion `id 7148`
+- [ ] **Item**: Allow Smart Highlighting `id 7149`
+- [ ] **Item**: Deactivate Word Wrap globally `id 7150`
+- [ ] **Item**: Allow URL Clickable Link `id 7151`
+- [ ] **Item**: Suppress warning when opening ≥2GB files `id 7152`
+- [ ] **Cloud**: Cloud Link
+- [ ] **Item**: Settings on cloud `id 6262`
+- [ ] **Item**: No Cloud `id 6263`
+- [ ] **Item**: Set your cloud location path here: `id 6267`
+- [ ] **Item**: Clickable Link Settings `id 6318`
+- [ ] **Item**: No underline `id 6320`
+- [ ] **Item**: Enable fullbox mode `id 6350`
+- [ ] **Item**: URI customized schemes: `id 6264`
+- [ ] **SearchEngine**: Search Engine
+- [ ] **Item**: Search Engine (for command "Search on Internet") `id 6271`
+- [ ] **Item**: DuckDuckGo `id 6272`
+- [ ] **Item**: Google `id 6273`
+- [ ] **Item**: Bing `id 6274`
+- [ ] **Item**: Yahoo! `id 6275`
+- [ ] **Item**: Set your search engine here: `id 6276`
+- [ ] **Item**: Example: https://www.google.com/search?q=$(CURRENT_WORD) `id 6278`
+- [ ] **MISC**: MISC.
+- [ ] **Element**: Enable for current file(s)
+- [ ] **Element**: Enable for all opened files
+- [ ] **Element**: Disable
+- [ ] **Element**: No action on
+- [ ] **Element**: Minimize to
+- [ ] **Element**: Close to
+- [ ] **Element**: Minimize / Close to
+- [ ] **Element**: GDI (most compatible)
+- [ ] **Element**: DirectWrite (default)
+- [ ] **Element**: DirectWrite (retain frames)
+- [ ] **Element**: DirectWrite (draw to GDI DC)
+- [ ] **Element**: DirectWrite (DirectX 11)
+- [ ] **Element**: Enable on Notepad++ startup
+- [ ] **Element**: Enable on Notepad++ exit
+- [ ] **Item**: system tray `id 6308`
+- [ ] **Item**: rendering mode `id 6363`
+- [ ] **Item**: Auto-updater: `id 6365`
+- [ ] **Item**: File Status Auto-Detection `id 6312`
+- [ ] **Item**: Update silently `id 6313`
+- [ ] **Item**: Scroll to the last line after update `id 6325`
+- [ ] **Item**: Session file ext.: `id 6322`
+- [ ] **Item**: Document Switcher (Ctrl+TAB) `id 6324`
+- [ ] **Item**: Show only filename in title bar `id 6331`
+- [ ] **Item**: Autodetect character encoding `id 6334`
+- [ ] **Item**: Workspace file ext.: `id 6337`
+- [ ] **Item**: Enable MRU behaviour `id 6117`
+- [ ] **Item**: Document Peeker `id 6344`
+- [ ] **Item**: Peek on tab `id 6345`
+- [ ] **Item**: Peek on document map `id 6346`
+- [ ] **Item**: Mute all sounds `id 6360`
+- [ ] **Item**: Enable Save All confirm dialog `id 6361`
+- [ ] **Item**: Allow loading symlinks in Folder as Workspace panel `id 6366`
+- [ ] **MultiMacro**: Run a Macro Multiple Times
+- [ ] **Item**: Macro to run `id 8006`
+- [ ] **Item**: times `id 8005`
+- [ ] **Item**: Run until the end of file `id 8002`
+- [ ] **Window**: Windows
+- [ ] **Item**: Save `id 7002`
+- [ ] **Item**: Close window(s) `id 7003`
+- [ ] **Item**: Sort tabs `id 7004`
+- [ ] **ColumnEditor**: Column Editor
+- [ ] **Item**: Text to Insert `id 2023`
+- [ ] **Item**: Number to Insert `id 2033`
+- [ ] **Item**: Initial number: `id 2030`
+- [ ] **Item**: Increase by: `id 2031`
+- [ ] **Item**: Leading: `id 2038`
+- [ ] **Element**: None
+- [ ] **Element**: Zeros
+- [ ] **Element**: Spaces
+- [ ] **Item**: Repeat: `id 2036`
+- [ ] **Item**: Format `id 2032`
+- [ ] **Item**: Dec `id 2024`
+- [ ] **Item**: Oct `id 2025`
+- [ ] **Item**: Hex `id 2026`
+- [ ] **Item**: Bin `id 2027`
+- [ ] **FindInFinder**: Find in search results
+- [ ] **Item**: Search only in found lines `id 1713`
+- [ ] **Item**: Search Mode `id 1716`
+- [ ] **DoSaveOrNot**: Save
+- [ ] **Item**: Save file "$STR_REPLACE$" ? `id 1761`
+- [ ] **Item**: Yes `id 6`
+- [ ] **Item**: No `id 7`
+- [ ] **Item**: Yes to all `id 4`
+- [ ] **Item**: No to all `id 5`
+- [ ] **DoSaveAll**: Save All Confirmation
+- [ ] **Item**: Are you sure you want to save all modified documents? Choose "Always yes" if you don't want to see this dialog again. You can re-activate this dialog in Preferences later. `id 1766`
+- [ ] **Item**: Always yes `id 4`
+- [ ] **NetworkPathWarning**: Notepad++ session loading
+- [ ] **Item**: Network Path Warning: $STR_REPLACE$ Loading this file will cause Windows to automatically authenticate to its server, potentially exposing your Windows login information. Load anyway? `id 1771`
+- [ ] **Item**: Skip `id 2`
+- [ ] **Item**: Always load from this server `id 6`
+- [ ] **Item**: Always skip network path `id 7`
+- [ ] **Item**: Always load network path `id 4`
+- [ ] **DebugInfo**: Debug Info
+- [ ] **Item**: Copy debug info to clipboard `id 1752`
+
+## MessageBox (171)
+
+- [ ] **ContextMenuXmlEditWarning**: Editing contextMenu.xml allows you to modify your Notepad++ popup context menu. You have to restart your Notepad++ to take effect after modifying contextMenu.xml.
+- [ ] **ContextMenuXmlEditWarning**: Editing contextMenu
+- [ ] **SaveCurrentModifWarning**: You should save the current modification. All the saved modifications cannot be undone. Continue?
+- [ ] **SaveCurrentModifWarning**: Save Current Modification
+- [ ] **LoseUndoAbilityWarning**: You should save the current modification. All the saved modifications cannot be undone. Continue?
+- [ ] **LoseUndoAbilityWarning**: Lose Undo Ability Warning
+- [ ] **CannotMoveDoc**: Document is modified, save it then try again.
+- [ ] **CannotMoveDoc**: Move to new Notepad++ Instance
+- [ ] **DocReloadWarning**: Are you sure you want to reload the current file and lose the changes made in Notepad++?
+- [ ] **DocReloadWarning**: Reload
+- [ ] **FileLockedWarning**: Please check whether if this file is opened in another program
+- [ ] **FileLockedWarning**: Save failed
+- [ ] **FileAlreadyOpenedInNpp**: The file is already opened in Notepad++.
+- [ ] **RenameTabTemporaryNameAlreadyInUse**: The specified name is already in use on another tab.
+- [ ] **RenameTabTemporaryNameAlreadyInUse**: Rename failed
+- [ ] **RenameTabTemporaryNameIsEmpty**: The specified name cannot be empty, or it cannot contain only space(s) or TAB(s).
+- [ ] **RenameTabTemporaryNameIsEmpty**: Rename failed
+- [ ] **DeleteFileFailed**: Delete File failed
+- [ ] **DeleteFileFailed**: Delete File
+- [ ] **NbFileToOpenImportantWarning**: $INT_REPLACE$ files are about to be opened. Are you sure you want to open them?
+- [ ] **NbFileToOpenImportantWarning**: Amount of files to open is too large
+- [ ] **SettingsOnCloudError**: It seems the path of settings on cloud is set on a read only drive, or on a folder needed privilege right for writing access. Your settings on cloud will be canceled. Please reset a coherent value via Preference dialog.
+- [ ] **SettingsOnCloudError**: Settings on Cloud
+- [ ] **FilePathNotFoundWarning**: The path you're trying to open doesn't exist.
+- [ ] **FilePathNotFoundWarning**: Open Path
+- [ ] **SessionFileInvalidError**: Session file is either corrupted or not valid.
+- [ ] **SessionFileInvalidError**: Could not Load Session
+- [ ] **DroppingFolderAsProjectModeWarning**: You can only drop files or folders but not both, because you're in dropping Folder as Project mode. You have to enable "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" section of Preferences dialog to make this operation work.
+- [ ] **DroppingFolderAsProjectModeWarning**: Invalid action
+- [ ] **SortingError**: Unable to perform numeric sorting due to line $INT_REPLACE$.
+- [ ] **SortingError**: Sorting Error
+- [ ] **SortLocaleMultiple**: Sorting multiple selections is not supported.
+- [ ] **SortLocaleMultiple**: Sort not performed
+- [ ] **SortLocaleUnknown**: The reason the sort failed cannot be determined.
+- [ ] **SortLocaleUnknown**: Sort Failed
+- [ ] **SortLocaleExcept**: $STR_REPLACE$
+- [ ] **SortLocaleExcept**: Sort Failed
+- [ ] **ColumnModeTip**: There are 3 ways to switch to column-select mode: 1. (Keyboard and Mouse) Hold Alt while left-click dragging 2. (Keyboard only) Hold Alt+Shift while using arrow keys 3. (Keyboard or Mouse) Put caret at desired start of column block position, then execute "Begin/End Select in Column Mode" command; Move caret to desired end of column block position, then execute "Begin/End Select in Column Mode" command again
+- [ ] **ColumnModeTip**: Column Mode Tip
+- [ ] **BufferInvalidWarning**: Cannot save: Buffer is invalid.
+- [ ] **BufferInvalidWarning**: Save failed
+- [ ] **DoCloseOrNot**: The file "$STR_REPLACE$" doesn't exist anymore. Keep this file in editor?
+- [ ] **DoCloseOrNot**: Keep non existing file
+- [ ] **DoDeleteOrNot**: The file "$STR_REPLACE$" will be moved to your Recycle Bin and this document will be closed. Continue?
+- [ ] **DoDeleteOrNot**: Delete file
+- [ ] **NoBackupDoSaveFile**: Your backup file cannot be found (deleted from outside). Save it otherwise your data will be lost Do you want to save file "$STR_REPLACE$" ?
+- [ ] **NoBackupDoSaveFile**: Save
+- [ ] **DoReloadOrNot**: "$STR_REPLACE$" This file has been modified by another program. Do you want to reload it?
+- [ ] **DoReloadOrNot**: Reload
+- [ ] **DoReloadOrNotAndLooseChange**: "$STR_REPLACE$" This file has been modified by another program. Do you want to reload it and lose the changes made in Notepad++?
+- [ ] **DoReloadOrNotAndLooseChange**: Reload
+- [ ] **PrehistoricSystemDetected**: It seems you still use a prehistoric system. This feature works only on a modern system, sorry.
+- [ ] **PrehistoricSystemDetected**: Prehistoric system detected
+- [ ] **XpUpdaterProblem**: Notepad++ updater is not compatible with XP due to the obsolete security layer under XP. Do you want to go to Notepad++ page to download the latest version?
+- [ ] **XpUpdaterProblem**: Notepad++ Updater
+- [ ] **DocTooDirtyToMonitor**: The document is dirty. Please save the modification before monitoring it.
+- [ ] **DocTooDirtyToMonitor**: Monitoring problem
+- [ ] **DocNoExistToMonitor**: The file should exist to be monitored.
+- [ ] **DocNoExistToMonitor**: Monitoring problem
+- [ ] **FileTooBigToOpen**: File is too big to be opened by Notepad++
+- [ ] **FileTooBigToOpen**: File size problem
+- [ ] **FileLoadingException**: An error occurred while loading the file!
+- [ ] **FileLoadingException**: Exception code: $STR_REPLACE$
+- [ ] **WantToOpenHugeFile**: Opening a huge file of 2GB+ could take several minutes. Do you want to open it?
+- [ ] **WantToOpenHugeFile**: Opening huge file warning
+- [ ] **CreateNewFileOrNot**: "$STR_REPLACE$" doesn't exist. Create it?
+- [ ] **CreateNewFileOrNot**: Create new file
+- [ ] **CreateNewFileError**: Cannot create the file "$STR_REPLACE$".
+- [ ] **CreateNewFileError**: Create new file
+- [ ] **OpenFileError**: Cannot open file "$STR_REPLACE$".
+- [ ] **OpenFileError**: ERROR
+- [ ] **OpenFileNoFolderError**: "$STR_REPLACE1$" cannot be opened: Folder "$STR_REPLACE2$" doesn't exist.
+- [ ] **OpenFileNoFolderError**: Cannot open file
+- [ ] **FileBackupFailed**: The previous version of the file could not be saved into the backup directory at "$STR_REPLACE$". Do you want to save the current file anyway?
+- [ ] **FileBackupFailed**: File Backup Failed
+- [ ] **LoadStylersFailed**: Load "$STR_REPLACE$" failed!
+- [ ] **LoadStylersFailed**: Load stylers.xml failed
+- [ ] **LoadLangsFailed**: Load langs.xml failed! Do you want to recover your langs.xml?
+- [ ] **LoadLangsFailed**: Configurator
+- [ ] **LoadLangsFailedFinal**: Load langs.xml failed!
+- [ ] **LoadLangsFailedFinal**: Configurator
+- [ ] **FolderAsWorspaceSubfolderExists**: A sub-folder of the folder you want to add exists. Please remove its root from the panel before you add folder "$STR_REPLACE$".
+- [ ] **FolderAsWorspaceSubfolderExists**: Folder as Workspace adding folder problem
+- [ ] **ProjectPanelChanged**: The workspace was modified. Do you want to save it?
+- [ ] **ProjectPanelChanged**: $STR_REPLACE$
+- [ ] **ProjectPanelSaveError**: An error occurred while writing your workspace file. Your workspace has not been saved.
+- [ ] **ProjectPanelSaveError**: $STR_REPLACE$
+- [ ] **ProjectPanelOpenDoSaveDirtyWsOrNot**: The current workspace was modified. Do you want to save the current project?
+- [ ] **ProjectPanelOpenDoSaveDirtyWsOrNot**: Open Workspace
+- [ ] **ProjectPanelNewDoSaveDirtyWsOrNot**: The current workspace was modified. Do you want to save the current project?
+- [ ] **ProjectPanelNewDoSaveDirtyWsOrNot**: New Workspace
+- [ ] **ProjectPanelOpenFailed**: The workspace could not be opened. It seems the file to open is not a valid project file.
+- [ ] **ProjectPanelOpenFailed**: Open Workspace
+- [ ] **ProjectPanelRemoveFolderFromProject**: All the sub-items will be removed. Are you sure you want to remove this folder from the project?
+- [ ] **ProjectPanelRemoveFolderFromProject**: Remove folder from project
+- [ ] **ProjectPanelRemoveFileFromProject**: Are you sure you want to remove this file from the project?
+- [ ] **ProjectPanelRemoveFileFromProject**: Remove file from project
+- [ ] **ProjectPanelReloadError**: Cannot find the file to reload.
+- [ ] **ProjectPanelReloadError**: Reload Workspace
+- [ ] **ProjectPanelReloadDirty**: The current workspace was modified. Reloading will discard all modifications. Do you want to continue?
+- [ ] **ProjectPanelReloadDirty**: Reload Workspace
+- [ ] **UDLNewNameError**: This name is used by another language, please give another one.
+- [ ] **UDLNewNameError**: UDL Error
+- [ ] **UDLRemoveCurrentLang**: Are you sure?
+- [ ] **UDLRemoveCurrentLang**: Remove the current language
+- [ ] **UDL_importSuccessful**: Import successful.
+- [ ] **UDL_importSuccessful**: User Defined Language
+- [ ] **UDL_importFails**: Failed to import.
+- [ ] **UDL_importFails**: User Defined Language
+- [ ] **UDL_saveBeforeImport**: Before exporting, save your language definition by clicking "Save As..." button.
+- [ ] **UDL_saveBeforeImport**: User Defined Language
+- [ ] **UDL_exportSuccessful**: Export successful.
+- [ ] **UDL_exportSuccessful**: User Defined Language
+- [ ] **UDL_exportFails**: Failed to export.
+- [ ] **UDL_exportFails**: User Defined Language
+- [ ] **SCMapperDoDeleteOrNot**: Are you sure you want to delete this shortcut?
+- [ ] **SCMapperDoDeleteOrNot**: Are you sure?
+- [ ] **FindCharRangeValueError**: You should type between 0 and 255.
+- [ ] **FindCharRangeValueError**: Range Value problem
+- [ ] **OpenInAdminMode**: The file cannot be saved and it may be protected. Do you want to launch Notepad++ in Administrator mode?
+- [ ] **OpenInAdminMode**: Save failed
+- [ ] **OpenInAdminModeWithoutCloseCurrent**: The file cannot be saved and it may be protected. Do you want to launch Notepad++ in Administrator mode?
+- [ ] **OpenInAdminModeWithoutCloseCurrent**: Save failed
+- [ ] **OpenInAdminModeFailed**: Notepad++ cannot be opened in Administrator mode.
+- [ ] **OpenInAdminModeFailed**: Open in Administrator mode failed
+- [ ] **ViewInBrowser**: Application cannot be found in your system.
+- [ ] **ViewInBrowser**: View Current File in Browser
+- [ ] **ExitToUpdatePlugins**: If you click YES, you will quit Notepad++ to continue the operations. Notepad++ will be restarted after all the operations are terminated. Continue?
+- [ ] **ExitToUpdatePlugins**: Notepad++ is about to exit
+- [ ] **NeedToRestartToLoadPlugins**: You have to restart Notepad++ to load plugins you installed.
+- [ ] **NeedToRestartToLoadPlugins**: Notepad++ needs to be relaunched
+- [ ] **ChangeHistoryEnabledWarning**: You have to restart Notepad++ to enable Change History.
+- [ ] **ChangeHistoryEnabledWarning**: Notepad++ needs to be relaunched
+- [ ] **WindowsSessionExit**: Windows session is about to be terminated but you have some data unsaved. Do you want to exit Notepad++ now?
+- [ ] **WindowsSessionExit**: Notepad++ - Windows session exit
+- [ ] **LanguageMenuCompactWarning**: This option will be changed on the next launch.
+- [ ] **LanguageMenuCompactWarning**: Compact Language Menu
+- [ ] **SwitchUnsavedThemeWarning**: Unsaved changes are about to be discarded! Do you want to save your changes before switching themes?
+- [ ] **SwitchUnsavedThemeWarning**: $STR_REPLACE$
+- [ ] **FullReadOnlySavingForbidden**: Cannot save file. The Notepad++ full read-only saving forbidden mode prevented the file from being saved.
+- [ ] **FullReadOnlySavingForbidden**: Save failed
+- [ ] **NotEnoughRoom4Saving**: Failed to save file. It seems there's not enough space on disk to save file. Your file is not saved.
+- [ ] **NotEnoughRoom4Saving**: Save failed
+- [ ] **FileInaccessibleUserSession**: Some files from your manually-saved session "$STR_REPLACE$" are inaccessible. They can be opened as empty and read-only documents as placeholders. Would you like to create those placeholders? NOTE: Choosing not to create the placeholders or closing them later, your manually-saved session will NOT be modified on exit.
+- [ ] **FileInaccessibleUserSession**: File inaccessible
+- [ ] **FileInaccessibleDefaultSessionXml**: Some files from your past session are inaccessible. They can be opened as empty and read-only documents as placeholders. Would you like to create those placeholders? NOTE: Choosing not to create the placeholders or closing them later, your session WILL BE MODIFIED ON EXIT! We suggest you backup your "session.xml" now.
+- [ ] **FileInaccessibleDefaultSessionXml**: File inaccessible
+- [ ] **RTLvsDirectWrite**: RTL is not compatible with DirectWrite mode. Please disable DirectWrite mode in MISC. section of Preferences dialog, and restart Notepad++.
+- [ ] **RTLvsDirectWrite**: Cannot run RTL
+- [ ] **FileMemoryAllocationFailed**: There is probably not enough contiguous free memory for the file being loaded by Notepad++.
+- [ ] **FileMemoryAllocationFailed**: Exception: File memory allocation failed
+- [ ] **FindRegexBackwardDisabled**: By default, backward regex searching is disabled due to potentially unexpected results. To perform a backward search, open the Find dialog and select either normal or extended search mode instead of regular expression. Press the OK button to open the Find dialog or set focus on it. If you require the backward regex searching feature, consult the user manual for instructions on enabling it.
+- [ ] **FindRegexBackwardDisabled**: Regex backward search disabled
+- [ ] **PrintError**: Cannot start printer document.
+- [ ] **PrintError**: 0
+- [ ] **FindAutoChangeOfInSelectionWarning**: The "In selection" checkbox state has been automatically modified. Please verify the search condition before performing the action.
+- [ ] **FindAutoChangeOfInSelectionWarning**: Search warning
+- [ ] **Need2Restart2ShowMenuShortcuts**: Notepad++ needs to be restarted to show right menu shortcuts.
+- [ ] **Need2Restart2ShowMenuShortcuts**: Notepad++ needs to be restarted
+- [ ] **NoAdminRight2ChangeReadOnlyFileAttribute**: Please run Notepad++ as administrator to change the file attributes.
+- [ ] **NoAdminRight2ChangeReadOnlyFileAttribute**: Changing file read-only attribute failed
+- [ ] **ReadOnlyFileCannotBeSaved**: "$STR_REPLACE$" The file is read-only and cannot be saved. Please remove read-only then save your file.
+- [ ] **ReadOnlyFileCannotBeSaved**: Save failed - File is Read-Only
+- [ ] **ShortcutsXmlHMACMissing**: The security information for shortcuts.xml is missing in config.xml. For security reasons, the integrity of shortcuts.xml will be checked. To run your customized command, please review the opened shortcuts.xml. If the file content is OK, use "Validate shortcuts.xml" from the "Run" menu to confirm it.
+- [ ] **ShortcutsXmlHMACMissing**: Security Warning
+- [ ] **ShortcutsXmlTampered**: The shortcuts.xml file appears to have been modified manually. For security reasons, please review the opened shortcuts.xml. If the file content is OK, use "Validate shortcuts.xml" from the "Run" menu to confirm it.
+- [ ] **ShortcutsXmlTampered**: Security Warning
+- [ ] **SymlinkLoadingWarning**: Enabling symlink loading in Folder as Workspace may cause Notepad++ to enter an infinite loop and freeze. This can happen when directory symlinks resolve to parent folders or form circular references. Proceed only if you understand the risks.
+- [ ] **SymlinkLoadingWarning**: Warning: Symlink Loading May Cause Freeze
+- [ ] **UnPin2Sort**: Cannot sort pinned files. Unpin all pinned files firstly?
+- [ ] **UnPin2Sort**: Sort tabs question
+
+## ClipboardHistory (1)
+
+- [ ] **PanelTitle**: Clipboard History
+
+## DocList (5)
+
+- [ ] **PanelTitle**: Document List
+- [ ] **ColumnName**: Name
+- [ ] **ColumnExt**: Ext.
+- [ ] **ColumnPath**: Path
+- [ ] **ListGroups**: Group by View
+
+## WindowsDlg (8)
+
+- [ ] **ColumnName**: Name
+- [ ] **ColumnPath**: Path
+- [ ] **ColumnType**: Type
+- [ ] **ColumnSize**: Size
+- [ ] **ColumnDateTime**: Modified time
+- [ ] **NbDocsTotal**: total documents:
+- [ ] **MenuCopyName**: Copy Name(s)
+- [ ] **MenuCopyPath**: Copy Pathname(s)
+
+## AsciiInsertion (7)
+
+- [ ] **PanelTitle**: ASCII Codes Insertion Panel
+- [ ] **ColumnVal**: Value
+- [ ] **ColumnHex**: Hex
+- [ ] **ColumnChar**: Character
+- [ ] **ColumnHtmlName**: HTML Name
+- [ ] **ColumnHtmlNumber**: HTML Decimal
+- [ ] **ColumnHtmlHexNb**: HTML Hexadecimal
+
+## DocumentMap (1)
+
+- [ ] **PanelTitle**: Document Map
+
+## FunctionList (5)
+
+- [ ] **PanelTitle**: Function List
+- [ ] **SortTip**: Sort
+- [ ] **ReloadTip**: Reload
+- [ ] **PreferencesTip**: Preferences
+- [ ] **PreferencesInitialSort**: Sort functions (A to Z) by default
+
+## FolderAsWorkspace (16)
+
+- [ ] **PanelTitle**: Folder as Workspace
+- [ ] **SelectFolderFromBrowserString**: Select a folder to add in Folder as Workspace panel
+- [ ] **ExpandAllFoldersTip**: Unfold all
+- [ ] **CollapseAllFoldersTip**: Fold all
+- [ ] **LocateCurrentFileTip**: Locate current file
+- [ ] **Item**: Remove `id 3511`
+- [ ] **Item**: Remove All `id 3512`
+- [ ] **Item**: Add `id 3513`
+- [ ] **Item**: Run by system `id 3514`
+- [ ] **Item**: Open `id 3515`
+- [ ] **Item**: Copy path `id 3516`
+- [ ] **Item**: Find in Files... `id 3517`
+- [ ] **Item**: Explorer here `id 3518`
+- [ ] **Item**: CMD here `id 3519`
+- [ ] **Item**: Copy file name `id 3520`
+- [ ] **Item**: PowerShell here `id 3521`
+
+## ProjectManager (22)
+
+- [ ] **PanelTitle**: Project
+- [ ] **WorkspaceRootName**: Workspace
+- [ ] **NewProjectName**: Project Name
+- [ ] **NewFolderName**: Folder Name
+- [ ] **Item**: Workspace `id 0`
+- [ ] **Item**: Edit `id 1`
+- [ ] **Item**: New Workspace `id 3122`
+- [ ] **Item**: Open Workspace `id 3123`
+- [ ] **Item**: Reload Workspace `id 3124`
+- [ ] **Item**: Save `id 3125`
+- [ ] **Item**: Save As... `id 3126`
+- [ ] **Item**: Save a Copy As... `id 3127`
+- [ ] **Item**: Add New Project `id 3121`
+- [ ] **Item**: Find in Projects... `id 3128`
+- [ ] **Item**: Rename `id 3111`
+- [ ] **Item**: Add Folder `id 3112`
+- [ ] **Item**: Add Files... `id 3113`
+- [ ] **Item**: Add Files from Directory... `id 3117`
+- [ ] **Item**: Remove `id 3114`
+- [ ] **Item**: Move Up `id 3118`
+- [ ] **Item**: Move Down `id 3119`
+- [ ] **Item**: Modify File Path `id 3116`
+
+## MiscStrings (145)
+
+- [ ] **word-chars-list-tip**: This allows you to include additional character into current word characters while double clicking for selection or searching with "Match whole word only" option checked.
+- [ ] **eol-custom-color-tip**: Go to Style Configurator to change the default EOL custom color ("EOL custom color")..
+- [ ] **word-chars-list-warning-begin**: Be aware:
+- [ ] **word-chars-list-space-warning**: $INT_REPLACE$ space(s)
+- [ ] **word-chars-list-tab-warning**: $INT_REPLACE$ TAB(s)
+- [ ] **word-chars-list-warning-end**: in your character list.
+- [ ] **backup-select-folder**: Select a folder as backup directory
+- [ ] **cloud-invalid-warning**: Invalid path.
+- [ ] **cloud-restart-warning**: Please restart Notepad++ to take effect.
+- [ ] **cloud-select-folder**: Select a folder from/to where Notepad++ reads/writes its settings
+- [ ] **default-open-save-select-folder**: Select a folder as default directory
+- [ ] **shift-change-direction-tip**: Use Shift+Enter to search in the opposite direction
+- [ ] **two-find-buttons-tip**: 2 find buttons mode
+- [ ] **confirm-replace-in-all-open-docs-tip**: Confirm "Replace All in All Opened Documents" action
+- [ ] **replace-and-stop-tip**: After replacing, don't move to the following occurrence
+- [ ] **find-in-files-filter-tip**: Find in cpp, cxx, h, hxx hpp: *.cpp *.cxx *.h *.hxx *.hpp Find in all files except exe, obj log: *.* !*.exe !*.obj !*.log Find in all files but exclude folders tests, bin bin64: *.* !\tests !\bin* Find in all files but exclude all folders log or logs recursively: *.* !+\log*
+- [ ] **find-in-files-select-folder**: Select a folder to search from
+- [ ] **find-in-files-dir-from-active-doc-tip**: Fill Directory field based on active document
+- [ ] **find-highlight-mode-tip**: Highlight all matches of the current search in the active document while typing
+- [ ] **find-status-top-reached**: Find: Reached document beginning, first occurrence from the bottom found.
+- [ ] **find-status-end-reached**: Find: Reached document end, first occurrence from the top found.
+- [ ] **find-status-replaceinfiles-1-replaced**: Replace in Files: 1 occurrence was replaced
+- [ ] **find-status-replaceinfiles-nb-replaced**: Replace in Files: $INT_REPLACE$ occurrences were replaced
+- [ ] **find-status-replaceinopenedfiles-1-replaced**: Replace in Opened Files: 1 occurrence was replaced
+- [ ] **find-status-replaceinopenedfiles-nb-replaced**: Replace in Opened Files: $INT_REPLACE$ occurrences were replaced
+- [ ] **find-status-invalid-re**: Find: Invalid regular expression
+- [ ] **find-status-search-failed**: Find: Search failed
+- [ ] **find-status-mark-1-match**: Mark: 1 match
+- [ ] **find-status-mark-nb-matches**: Mark: $INT_REPLACE$ matches
+- [ ] **find-status-count-1-match**: Count: 1 match
+- [ ] **find-status-count-nb-matches**: Count: $INT_REPLACE$ matches
+- [ ] **find-status-replaceall-1-replaced**: Replace All: 1 occurrence was replaced
+- [ ] **find-status-replaceall-nb-replaced**: Replace All: $INT_REPLACE$ occurrences were replaced
+- [ ] **find-status-replaceall-readonly**: Replace All: Cannot replace text. The current document is read only
+- [ ] **find-status-replace-end-reached**: Replace: Reached document end, started from top.
+- [ ] **find-status-replace-top-reached**: Replace: Reached document beginning, started from bottom.
+- [ ] **find-status-replaced-next-found**: Replace: 1 occurrence was replaced. The next occurrence found.
+- [ ] **find-status-replaced-without-continuing**: Replace: 1 occurrence was replaced.
+- [ ] **find-status-replaced-next-not-found**: Replace: 1 occurrence was replaced. No more occurrences were found.
+- [ ] **find-status-replace-not-found**: Replace: no occurrence was found
+- [ ] **find-status-replace-readonly**: Replace: Cannot replace text. The current document is read only
+- [ ] **find-status-cannot-find**: Find: Can't find the text "$STR_REPLACE$"
+- [ ] **find-status-cannot-find-pebkac-maybe**: The given occurrence cannot be found. You may have forgotten to check "Wrap around" (to ON), "Match case" (to OFF), or "Match whole word only" (to OFF).
+- [ ] **find-status-regex-find-empty-string**: The given regular expression matches empty strings.
+- [ ] **find-status-scope-selection**: in selected text
+- [ ] **find-status-scope-all**: in entire file
+- [ ] **find-status-scope-backward**: from start-of-file to caret
+- [ ] **find-status-scope-forward**: from caret to end-of-file
+- [ ] **find-status-replace-invalid-replace-chars**: Replace: can't replace with non-ANSI text in ANSI document
+- [ ] **find-status-invisible-chars-findWhat**: Invisible characters in pasted "Find what" or "Replace with" content
+- [ ] **find-status-invisible-chars-findWhat-tip**: Warning: Invisible characters in search (or replace) field. The text pasted into this field includes invisible (maybe line-ending) characters. If you proceed without deleting them, they will be included in the search (or replace) text.
+- [ ] **finder-find-in-finder**: Find in these search results...
+- [ ] **finder-close-this**: Close these search results
+- [ ] **finder-collapse-all**: Fold all
+- [ ] **finder-uncollapse-all**: Unfold all
+- [ ] **finder-copy**: Copy Selected Line(s)
+- [ ] **finder-copy-selected-paths**: Copy Selected Pathname(s)
+- [ ] **finder-clear-all**: Clear all
+- [ ] **finder-open-selected-paths**: Open Selected Pathname(s)
+- [ ] **finder-purge-for-every-search**: Purge for every search
+- [ ] **finder-wrap-long-lines**: Word wrap long lines
+- [ ] **common-ok**: OK
+- [ ] **common-cancel**: Cancel
+- [ ] **common-name**: Name
+- [ ] **common-error**: Error
+- [ ] **tabrename-title**: Rename Current Tab
+- [ ] **tabrename-newname**: New name
+- [ ] **splitter-rotate-left**: Rotate to left
+- [ ] **splitter-rotate-right**: Rotate to right
+- [ ] **userdefined-title-new**: Create New Language...
+- [ ] **userdefined-title-save**: Save Current Language Name As...
+- [ ] **userdefined-title-rename**: Rename Current Language Name
+- [ ] **summary**: Summary
+- [ ] **summary-filepath**: Full file path:
+- [ ] **summary-filecreatetime**: Created:
+- [ ] **summary-filemodifytime**: Modified:
+- [ ] **summary-nbchar**: Characters (without line endings):
+- [ ] **summary-nbword**: Words:
+- [ ] **summary-nbline**: Lines:
+- [ ] **summary-nbbyte**: Document length:
+- [ ] **summary-nbsel1**: selected characters (
+- [ ] **summary-nbsel2**: bytes) in
+- [ ] **summary-nbrange**: ranges
+- [ ] **progress-hits-title**: Hits:
+- [ ] **progress-cancel-info**: Cancelling operation, please wait...
+- [ ] **find-in-files-progress-title**: Find In Files progress...
+- [ ] **discover-file-candidates-title**: Discovering file candidates...
+- [ ] **replace-in-files-confirm-title**: Are you sure?
+- [ ] **replace-in-files-confirm-directory**: Are you sure you want to replace all occurrences in:
+- [ ] **replace-in-files-confirm-filetype**: For file type:
+- [ ] **replace-in-files-progress-title**: Replace In Files progress...
+- [ ] **replace-in-projects-confirm-title**: Are you sure?
+- [ ] **replace-in-projects-confirm-message**: Do you want to replace all occurrences in all documents in the selected Project Panel(s)?
+- [ ] **replace-in-open-docs-confirm-title**: Are you sure?
+- [ ] **replace-in-open-docs-confirm-message**: Are you sure you want to replace all occurrences in all open documents?
+- [ ] **find-result-caption**: Search results
+- [ ] **find-result-title**: Search
+- [ ] **find-result-title-info**: ($INT_REPLACE1$ hits in $INT_REPLACE2$ files of $INT_REPLACE3$ searched)
+- [ ] **find-result-title-info-selections**: ($INT_REPLACE1$ hits in $INT_REPLACE2$ selections of $INT_REPLACE3$ searched)
+- [ ] **find-result-title-info-options-searchmode-normal**: Normal
+- [ ] **find-result-title-info-options-searchmode-extended**: Extended
+- [ ] **find-result-title-info-options-searchmode-regexp**: RegEx
+- [ ] **find-result-title-info-options-case**: Case
+- [ ] **find-result-title-info-options-word**: Word
+- [ ] **find-result-title-info-extra**: - Line Filter Mode: only display the filtered results
+- [ ] **find-result-hits**: ($INT_REPLACE$ hits)
+- [ ] **find-result-line-prefix**: Line
+- [ ] **find-regex-zero-length-match**: zero length match
+- [ ] **session-save-folder-as-workspace**: Save Folder as Workspace
+- [ ] **tab-untitled-string**: new
+- [ ] **file-save-assign-type**: Append extension
+- [ ] **close-panel-tip**: Close
+- [ ] **IncrementalFind-FSNotFound**: Phrase not found
+- [ ] **IncrementalFind-FSTopReached**: Reached top of page, continued from bottom
+- [ ] **IncrementalFind-FSEndReached**: Reached end of page, continued from top
+- [ ] **contextMenu-styleAlloccurrencesOfToken**: Style all occurrences of token
+- [ ] **contextMenu-styleOneToken**: Style one token
+- [ ] **contextMenu-clearStyle**: Clear style
+- [ ] **contextMenu-PluginCommands**: Plugin commands
+- [ ] **largeFileRestriction-tip**: Some features may slow performance in large files. These features can be auto-disabled on opening a large file. You can customize them here. NOTE: 1. Modifying options here requires re-open currently opened large files to get proper behavior. 2. If "Deactivate Word Wrap globally" is checked and you open a large file, "Word Wrap" will be disabled for all files. You can re-enable it via menu "View->Word Wrap".
+- [ ] **npcNote-tip**: Representation of selected "non-ASCII" whitespace and non-printing (control) characters. NOTE: Using representation will disable character effects on text. For the full list of selected whitespace and non-printing characters check User Manual. Click on this button to open website with User Manual.
+- [ ] **npcAbbreviation-tip**: Abbreviation : name NBSP : no-break space ZWSP : zero-width space ZWNBSP : zero-width no-break space For the full list check User Manual. Click on "?" button on right to open website with User Manual.
+- [ ] **npcCodepoint-tip**: Codepoint : name U+00A0 : no-break space U+200B : zero-width space U+FEFF : zero-width no-break space For the full list check User Manual. Click on "?" button on right to open website with User Manual.
+- [ ] **npcCustomColor-tip**: Go to Style Configurator to change the default custom color for selected whitespace and non-printing characters ("Non-printing characters custom color").
+- [ ] **npcIncludeCcUniEol-tip**: Apply non-printing characters appearance settings to C0, C1 control and Unicode EOL (next line, line separator and paragraph separator) characters.
+- [ ] **searchingInSelThresh-tip**: Minimum number of selected characters in edit zone to automatically check the "In selection" checkbox when the Find dialog is activated. The maximum value is $INT_REPLACE$. Set the value to 0 to disable auto-checking.
+- [ ] **searchingFillFindWhat-tip**: Maximum number of selected characters in edit zone to fill automatically the "Find what" field when the Ctrl-F is triggered. The maximum value is $INT_REPLACE$, which is the maximum size of "Find what" field, limited by the system.
+- [ ] **verticalEdge-tip**: Add your column marker by indicating its position with a decimal number. You can define several column markers by using white space to separate the different numbers.
+- [ ] **fileSaveAsCopySaveButton-tip**: Hold Shift while pressing Save to open the copy after saving.
+- [ ] **autoIndentBasic-tip**: Ensure that the indentation of the current line (i.e. the new line created by pressing the ENTER key) matches the indentation of the previous line.
+- [ ] **autoIndentAdvanced-tip**: Enable smart indentation for "C-like" languages and Python. The "C-like" languages include: C, C++, Java, C#, Objective-C, PHP, JavaScript, JSP, CSS, Perl, Rust, PowerShell and JSON. If you select advanced mode but do not edit files in the aforementioned languages, the indentation will remain in basic mode.
+- [ ] **global-override-tip**: Enabling "Global override" here will override that parameter in all language styles. What you probably really want is to use the "Default Style" settings instead
+- [ ] **scintillaRenderingTechnology-tip**: May improve rendering of special characters or resolve some graphics issues, restart Notepad++ to apply the changes.
+- [ ] **statusbar-length-lines**: length: $STR_REPLACE1$ lines: $STR_REPLACE2$
+- [ ] **statusbar-Ln-Col**: Ln: $STR_REPLACE1$ Col: $STR_REPLACE2$
+- [ ] **statusbar-Pos**: Pos:
+- [ ] **statusbar-Sel**: Sel:
+- [ ] **statusbar-Sel-number**: Sel
+- [ ] **toolbar-accent-tip**: This option makes your toolbar icons follow Windows system accent color. Accent color is the highlight color used in buttons, borders, and Start menu tiles in Windows. To change it, go to Settings > Personalization > Colors, then select your preferred accent color.
+- [ ] **len-limit-exceeded-tip**: Length limit exceeded: Your input may exceed the limit allowed and could have been truncated, and it won't be saved for the next session.
+- [ ] **max-len-on-search-tip**: Your input may exceed the limit allowed and could have been truncated, and it won't be saved for the next session.
+- [ ] **max-len-on-save-tip**: The length of your input is very long and may not be saved for your next session.
+- [ ] **goto-setting-tip**: Find your setting here
+- [ ] **tabbar-tabcompactlabellen-tip**: Limits the visible length of long tab names. Enter to apply the given value. Value range: 1-257 characters (0 disables the truncation).
+- [ ] **networkpathwarning-serverwhitelist-tip**: Puts the server of the current file into Notepad++ serverWhiteList.xml. For more info, click on this button to open website with relevant User Manual section.
+
