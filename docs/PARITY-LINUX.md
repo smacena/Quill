@@ -2,7 +2,7 @@
 
 Referência: [`notepad-plus-plus/notepad-plus-plus`](https://github.com/notepad-plus-plus/notepad-plus-plus) no commit `d0bf05c` (clone raso, 24/11/2026).
 
-Objetivo: uma versão Linux própria do Quill, com o mesmo nome e o mesmo ícone, com **todos os recursos do Notepad++**. Não é paridade com a versão Mac. Por isso esta lista não depende de `docs/PARITY.md`.
+Objetivo: uma versão Linux própria, com o mesmo nome (Quill) e o mesmo ícone, com **todos os recursos do Notepad++**. A versão Mac não é referência: esta lista não usa `docs/PARITY.md` nem o código do Mac. Do projeto Quill, o único item aproveitado é o ícone.
 
 Como ler:
 
@@ -11,7 +11,7 @@ Como ler:
 - `[A]` existe no Notepad++, mas no Linux exige um equivalente diferente
 - `[?]` não confirmado no repositório. Veio do conhecimento geral sobre o produto e precisa ser checado no Notepad++ antes de implementar
 
-Todos os itens estão `[ ]`, exceto os que o próprio repositório do Quill já cobre em `core/`. Esses aparecem como `[~]`.
+Todos os itens estão `[ ]`. Nada foi tirado do código existente.
 
 Seções 2, 4, 10, 10a, 11, 12, 13 e 15 são geradas a partir do código do Notepad++. As demais foram escritas à mão.
 
@@ -19,7 +19,7 @@ Seções 2, 4, 10, 10a, 11, 12, 13 e 15 são geradas a partir do código do Note
 
 ## 0. Identidade e distribuição
 
-- [ ] Nome **Quill** e ícone do Quill (origem: `app/resources`) em PNG nos tamanhos padrão e em SVG, se houver
+- [ ] Nome **Quill** e ícone do Quill (copiar o arquivo do ícone atual) em PNG nos tamanhos padrão e em SVG, se houver
 - [ ] Arquivo `.desktop` com nome, ícone, categoria `TextEditor` e tipos MIME
 - [ ] Associação dos tipos de texto e código (`text/plain`, `text/x-*`, `application/xml`, `application/json`, `text/markdown`) [A]
 - [ ] Comando `quill` no `PATH`
@@ -34,11 +34,8 @@ Seções 2, 4, 10, 10a, 11, 12, 13 e 15 são geradas a partir do código do Note
 
 ## 1. Base técnica e dependências
 
-- [ ] **Scintilla**, backend GTK ou Qt. O clone do Notepad++ tem `scintilla/gtk` e `scintilla/qt` (versão 569). O Quill hoje tem Scintilla 552 em `third_party/scintilla`, só com `cocoa/` [A]
-- [ ] Alinhar Scintilla e Lexilla do Quill às versões do Notepad++ (569 / 555), ou documentar a diferença
-- [ ] **Lexilla**: 128 lexers em `lexilla/lexers`. O Quill já tem a biblioteca em `third_party/lexilla` (versão 540)
-- [~] **md4c**: já em `third_party/md4c` (usado pelo visualizador de Markdown)
-- [~] **Diff, Encoding, Json, TextTools**: já em `core/src` (comparação, codificação, JSON e texto)
+- [ ] **Scintilla**, backend GTK ou Qt, na versão 569 do Notepad++ (`scintilla/gtk` e `scintilla/qt`) [A]
+- [ ] **Lexilla**, na versão 555 do Notepad++ (128 lexers em `lexilla/lexers`)
 - [ ] **uchardet**: detecção automática de codificação (`PowerEditor/src/uchardet`)
 - [ ] **pugixml**: leitura e escrita dos XML de configuração (`PowerEditor/src/pugixml`)
 - [ ] **Expressões regulares**: o Notepad++ usa Boost.Regex (`boostregex/`). Decidir entre Boost.Regex, PCRE2 ou `std::regex`, validando com `PowerEditor/installer/filesForTesting/regexGlobalTest.xml`
@@ -1004,8 +1001,6 @@ Cada página tem a tela própria e as opções gravadas em `config.xml`.
 - [ ] Plugin **NppExec** (referenciado em `PowerEditor/src`): port ou equivalente [A]
 - [ ] Plugin **Explorer** (referenciado em `PowerEditor/src`): port ou equivalente [A]
 
-Nota: o Quill para Mac já tem versões próprias de Compare, JSON Viewer, XML Tools, Exec, Explorer, Markdown Viewer, Spell Check, Hex Editor e FTP (README). Elas servem de referência, mas o Linux precisa de build próprio.
-
 
 ## 12a. Mensagens da API de plugins (`NPPM_`, 123)
 
@@ -1364,7 +1359,7 @@ Compatibilidade com os arquivos do Notepad++ é um objetivo, para o usuário tra
 ## 19. Testes e qualidade
 
 - [ ] Usar `PowerEditor/installer/filesForTesting` (`overrideMap.xml`, `regexGlobalTest.xml`) como dados de teste
-- [ ] Autoteste no Linux com CTest, espelhando `app/src/SelfTest.mm` do Mac
+- [ ] Autoteste no Linux com CTest
 - [ ] Teste de codificação para cada uma das 46 codificações da seção 11
 - [ ] Teste de expressões regulares com o arquivo de casos
 - [ ] Teste de arquivos grandes (100 MB ou mais) e de linhas muito longas
@@ -1390,12 +1385,6 @@ Ordem sugerida. Cada fase termina com commit, CI verde e esta lista atualizada.
 - [ ] **F9, localização e testes**: seções 15 e 19
 - [ ] **F10, release Linux**: tag `linux-vX.Y.Z`, AppImage e `.tar.gz`
 
-Pontos de partida no repositório do Quill:
-
-- `core/` já compila no Linux (o `CMakeLists.txt` diz isso) e serve de base para a lógica de texto, codificação e JSON
-- `sdk/include/` tem a mesma `menuCmdID.h` do Notepad++ (idêntica, 568 `IDM_`) e um `Notepad_plus_msgs.h` que difere do original. Antes de compilar plugins, conferir a diferença
-- `sdk/include/QuillWin32.h` é uma camada de compatibilidade criada no Quill. Verificar se ela serve para o Linux ou se é só para macOS
-
 
 ## 21. Para discussão: o que pode não funcionar no Linux
 
@@ -1417,6 +1406,6 @@ Não são itens de implementação. Precisam de escolha antes da fase F0.
 
 - [ ] **Toolkit de interface**: Qt 6 (recomendado: painéis, diálogos, tabelas e árvores já existem) ou GTK 4
 - [ ] **Motor de regex**: Boost.Regex (mesma sintaxe do Notepad++), PCRE2 ou `std::regex`
-- [ ] **Versões de Scintilla e Lexilla**: atualizar as do Quill para as do Notepad++ (569 / 555), ou manter as atuais
-- [ ] **Compatibilidade de plugins**: a API `NPPM_`/`NPPN_` é a mesma em Windows e Linux, mas as DLLs não rodam. Escolha: recompilar plugins como `.so` com o SDK do Quill (proposta atual), ou não oferecer compatibilidade
+- [ ] **Versões de Scintilla e Lexilla**: usar as do Notepad++ (569 / 555), ou fixar outra versão e justificar
+- [ ] **Compatibilidade de plugins**: a API `NPPM_`/`NPPN_` é a mesma em Windows e Linux, mas as DLLs não rodam. Escolha: recompilar plugins como `.so` com um SDK próprio deste projeto, ou não oferecer compatibilidade
 - [ ] **Fonte do manual**: `npp-user-manual.org` não resolveu no ambiente (`ENOTFOUND`). Esta lista se baseou no repositório e no código. Checar o manual antes de fechar os itens marcados com `[?]`
