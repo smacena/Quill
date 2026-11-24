@@ -77,10 +77,10 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Vietnamese
 - [ ] [IMPL] **Item**: User Defined Language
 - [ ] [IMPL] **Item**: Import
-- [ ] [IMPL] **Item**: MD5
-- [ ] [IMPL] **Item**: SHA-1
-- [ ] [IMPL] **Item**: SHA-256
-- [ ] [IMPL] **Item**: SHA-512
+- [x] [IMPL] **Item**: MD5
+- [x] [IMPL] **Item**: SHA-1
+- [x] [IMPL] **Item**: SHA-256
+- [x] [IMPL] **Item**: SHA-512
 - [ ] [IMPL] **Item**: Sort By
 - [ ] [IMPL] **Item**: New `id 41001`
 - [ ] [IMPL] **Item**: Open... `id 41002`
@@ -486,20 +486,20 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Run `id 1`
 - [ ] [IMPL] **Item**: Cancel `id 2`
 - [ ] [IMPL] **Item**: Save... `id 1904`
-- [ ] [IMPL] **MD5FromFilesDlg**: Generate MD5 digest from files
-- [ ] [IMPL] **Item**: Choose files to generate MD5... `id 1922`
+- [x] [IMPL] **MD5FromFilesDlg**: Generate MD5 digest from files
+- [x] [IMPL] **Item**: Choose files to generate MD5... `id 1922`
 - [ ] [IMPL] **Item**: Copy to Clipboard `id 1924`
-- [ ] [IMPL] **MD5FromTextDlg**: Generate MD5 digest
+- [x] [IMPL] **MD5FromTextDlg**: Generate MD5 digest
 - [ ] [IMPL] **Item**: Treat each line as a separate string `id 1932`
-- [ ] [IMPL] **SHA256FromFilesDlg**: Generate SHA-256 digest from files
-- [ ] [IMPL] **Item**: Choose files to generate SHA-256... `id 1922`
-- [ ] [IMPL] **SHA256FromTextDlg**: Generate SHA-256 digest
-- [ ] [IMPL] **SHA1FromFilesDlg**: Generate SHA-1 digest from files
-- [ ] [IMPL] **Item**: Choose files to generate SHA-1... `id 1922`
-- [ ] [IMPL] **SHA1FromTextDlg**: Generate SHA-1 digest
-- [ ] [IMPL] **SHA512FromFilesDlg**: Generate SHA-512 digest from files
-- [ ] [IMPL] **Item**: Choose files to generate SHA-512... `id 1922`
-- [ ] [IMPL] **SHA512FromTextDlg**: Generate SHA-512 digest
+- [x] [IMPL] **SHA256FromFilesDlg**: Generate SHA-256 digest from files
+- [x] [IMPL] **Item**: Choose files to generate SHA-256... `id 1922`
+- [x] [IMPL] **SHA256FromTextDlg**: Generate SHA-256 digest
+- [x] [IMPL] **SHA1FromFilesDlg**: Generate SHA-1 digest from files
+- [x] [IMPL] **Item**: Choose files to generate SHA-1... `id 1922`
+- [x] [IMPL] **SHA1FromTextDlg**: Generate SHA-1 digest
+- [x] [IMPL] **SHA512FromFilesDlg**: Generate SHA-512 digest from files
+- [x] [IMPL] **Item**: Choose files to generate SHA-512... `id 1922`
+- [x] [IMPL] **SHA512FromTextDlg**: Generate SHA-512 digest
 - [ ] [IMPL] **PluginsAdminDlg**: Plugins Admin
 - [ ] [IMPL] **ColumnPlugin**: Plugin
 - [ ] [IMPL] **ColumnVersion**: Version

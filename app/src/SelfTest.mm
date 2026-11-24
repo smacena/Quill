@@ -3,6 +3,7 @@
 #import "Languages.h"
 #import "MainWindowController+Private.h"
 #import "PluginManager.h"
+#import "HashTools.h"
 #import "Preferences.h"
 
 #import "ScintillaView.h"
@@ -384,6 +385,27 @@ static NSOutlineView *findOutline(NSView *v) {
 			@"dir" : @"/",
 		} mutableCopy];
 		return [ws ftpTest:io];
+	}];
+	[self step:@"hash digests (MD5, SHA-1, SHA-256, SHA-512)" wait:0.1 block:^BOOL {
+		NSData *abc = [NSData dataWithBytes:"abc" length:3];
+		NSArray *expected = @[
+			@"900150983cd24fb0d6963f7d28e17f72",
+			@"a9993e364706816aba3e25717850c26c9cd0d89d",
+			@"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+			@"ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a2192992a274fc1a836ba3c23a3feebbd454d4423643ce80e2a9ac94fa54ca49f",
+		];
+		for (NSInteger a = 0; a < 4; a++) {
+			NSString *got = [QHashTools digestOfData:abc algorithm:(QHashAlgorithm)a];
+			[ws logLine:[NSString stringWithFormat:@"    %@ %@", [QHashTools nameOfAlgorithm:(QHashAlgorithm)a], got]];
+			if (![got isEqualToString:expected[(NSUInteger)a]]) return NO;
+		}
+		return [[ws ctl] window].isVisible || YES;
+	}];
+	[self step:@"Tools menu has hash generators" wait:0.1 block:^BOOL {
+		NSMenu *main = NSApp.mainMenu;
+		NSMenuItem *tools = nil;
+		for (NSMenuItem *mi in main.itemArray) if ([mi.title isEqualToString:@"Tools"] || [mi.title isEqualToString:@"Ferramentas"]) tools = mi;
+		return tools.submenu.itemArray.count == 4;
 	}];
 	[self step:@"dark theme" wait:0.3 block:^BOOL {
 		[[ws ctl] openPath:cpp];

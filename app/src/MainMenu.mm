@@ -3,6 +3,7 @@
 #import "Document.h"
 #import "Languages.h"
 #import "Localization.h"
+#import "HashTools.h"
 
 static NSMenuItem *item(NSMenu *menu, NSString *title, SEL action, NSString *key, NSEventModifierFlags mods) {
 	NSMenuItem *i = [menu addItemWithTitle:title action:action keyEquivalent:key ?: @""];
@@ -229,6 +230,20 @@ static NSString *fkey(unichar c) {
 		}
 		NSMenuItem *mi = cmd(m, l.displayName, @selector(setDocumentLanguage:), nil);
 		mi.representedObject = l.name;
+	}
+
+	// ---- Tools
+	NSMenu *tools = submenu(bar, T(@"Tools", @"Ferramentas"));
+	for (NSNumber *alg in @[ @(QHashMD5), @(QHashSHA1), @(QHashSHA256), @(QHashSHA512) ]) {
+		NSString *name = [QHashTools nameOfAlgorithm:(QHashAlgorithm)alg.integerValue];
+		NSMenu *hashMenu = submenu(tools, name);
+		NSMenuItem *t = [hashMenu addItemWithTitle:T(@"Generate from Text (selection or document)", @"Gerar a partir do texto (seleção ou documento)") action:@selector(fromText:) keyEquivalent:@""];
+		NSMenuItem *f = [hashMenu addItemWithTitle:T(@"Generate from Files…", @"Gerar a partir de arquivos…") action:@selector(fromFiles:) keyEquivalent:@""];
+		NSMenuItem *c = [hashMenu addItemWithTitle:T(@"Generate into Clipboard", @"Gerar para a área de transferência") action:@selector(intoClipboard:) keyEquivalent:@""];
+		for (NSMenuItem *mi in @[ t, f, c ]) {
+			mi.target = [QHashTools shared];
+			mi.tag = alg.integerValue;
+		}
 	}
 
 	// ---- Plugins
