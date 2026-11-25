@@ -11,6 +11,8 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 - Não faça perguntas de rotina. Use o padrão já definido no repositório. Pergunte só se houver bloqueio real que eu precise resolver (diga exatamente qual), por exemplo credencial que não existe, acesso negado ou decisão que mude o escopo.
 - Dúvidas que dependam de decisão minha devem ser tratadas no início, na lista de pendências, e não no meio do trabalho.
 - Ao terminar tudo, entregue um resumo único: o que ficou igual, o que é diferente, o que é impossível (com motivo) e onde está o resultado.
+- Se houverem objeções devido as regras desse documento que sejam apresentadas no início para serem tratadas.
+- Se o limite semanal chegar a 90% durante o trabalho, finalize a sessão, bloco, implementação que esteja fazendo e pare em seguida e me pergunte se deve continuar o trabalho.
 
 ## Regras técnicas
 
