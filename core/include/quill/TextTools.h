@@ -71,3 +71,35 @@ std::string removeEmptyLines(const std::string &text);
 std::string markdownToHtml(const std::string &markdown);
 
 } // namespace quill
+
+namespace quill {
+
+// ---- Line operations added for Notepad++ parity -------------------------------
+
+std::string trimLeadingWhitespace(const std::string &text);
+std::string trimBothWhitespace(const std::string &text);
+// Replaces every end of line by a single space (the text becomes one line).
+std::string eolToSpace(const std::string &text);
+// Trim both sides of each line, then join all lines with spaces.
+std::string trimBothAndEolToSpace(const std::string &text);
+// Removes lines that are empty or contain only blank characters.
+std::string removeBlankLines(const std::string &text);
+
+enum class NumericSort { Integer, DecimalComma, DecimalDot };
+// Sorts by numeric value. Lines that are not numbers keep their order at the end.
+std::string sortLinesNumeric(const std::string &text, NumericSort kind, bool descending);
+std::string sortLinesByLength(const std::string &text, bool descending);
+std::string reverseLines(const std::string &text);
+// Deterministic shuffle (seed fixed by the caller, for tests).
+std::string shuffleLines(const std::string &text, unsigned seed);
+std::string removeConsecutiveDuplicateLines(const std::string &text);
+
+// ---- Case -------------------------------------------------------------------
+
+// Proper Case: capitalise the first letter of every word. blend=true keeps the rest.
+std::string properCase(const std::string &text, bool blend);
+// Sentence case: capitalise the first letter after . ! ? and at the start.
+std::string sentenceCase(const std::string &text, bool blend);
+std::string randomCase(const std::string &text, unsigned seed);
+
+}  // namespace quill

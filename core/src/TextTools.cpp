@@ -2,6 +2,8 @@
 #include "quill/TextTools.h"
 
 #include <algorithm>
+#include <random>
+#include <cstdlib>
 #include <cstdint>
 #include <cctype>
 #include <cstdio>
@@ -380,6 +382,191 @@ std::string markdownToHtml(const std::string &markdown) {
 	unsigned parserFlags = MD_DIALECT_GITHUB;
 	md_html(markdown.data(), static_cast<MD_SIZE>(markdown.size()), mdOutput, &html, parserFlags, 0);
 	return html;
+}
+
+} // namespace quill
+
+namespace quill {
+
+namespace {
+bool isBlank(char c) {
+	return c == ' ' || c == '\t' || c == '\r' || c == '\n' || c == '\v' || c == '\f';
+}
+std::string ltrim(const std::string &s) {
+	size_t b = s.find_first_not_of(" \t");
+	return b == std::string::npos ? std::string() : s.substr(b);
+}
+std::string rtrim(const std::string &s) {
+	size_t e = s.find_last_not_of(" \t");
+	return e == std::string::npos ? std::string() : s.substr(0, e + 1);
+}
+// Parses a number following the chosen decimal convention. Returns false if not a number.
+bool parseNumber(const std::string &line, NumericSort kind, double &out) {
+	std::string s = ltrim(rtrim(line));
+	if (s.empty()) return false;
+	if (kind == NumericSort::DecimalComma) {
+		for (auto &c : s)
+			if (c == ',') c = '.';
+	}
+	char *end = nullptr;
+	if (kind == NumericSort::Integer) {
+		long long v = std::strtoll(s.c_str(), &end, 10);
+		if (end == s.c_str() || *end != '\0') return false;
+		out = static_cast<double>(v);
+		return true;
+	}
+	out = std::strtod(s.c_str(), &end);
+	return end != s.c_str() && *end == '\0';
+}
+bool isWordChar(char c) {
+	return std::isalnum(static_cast<unsigned char>(c)) || c == '_' || (static_cast<unsigned char>(c) & 0x80);
+}
+} // namespace
+
+std::string trimLeadingWhitespace(const std::string &text) {
+	SplitText st = split(text);
+	for (auto &line : st.lines) line = ltrim(line);
+	return join(st);
+}
+
+std::string trimBothWhitespace(const std::string &text) {
+	SplitText st = split(text);
+	for (auto &line : st.lines) line = ltrim(rtrim(line));
+	return join(st);
+}
+
+std::string eolToSpace(const std::string &text) {
+	std::string out;
+	out.reserve(text.size());
+	for (size_t i = 0; i < text.size(); i++) {
+		if (text[i] == '\r' || text[i] == '\n') {
+			if (text[i] == '\r' && i + 1 < text.size() && text[i + 1] == '\n') i++;
+			out.push_back(' ');
+		} else {
+			out.push_back(text[i]);
+		}
+	}
+	return out;
+}
+
+std::string trimBothAndEolToSpace(const std::string &text) {
+	SplitText st = split(text);
+	std::string out;
+	for (auto &line : st.lines) {
+		std::string t = ltrim(rtrim(line));
+		if (t.empty()) continue;
+		if (!out.empty()) out += ' ';
+		out += t;
+	}
+	return out;
+}
+
+std::string removeBlankLines(const std::string &text) {
+	SplitText st = split(text);
+	std::vector<std::string> kept;
+	for (auto &line : st.lines) {
+		bool blank = std::all_of(line.begin(), line.end(), isBlank);
+		if (!blank) kept.push_back(line);
+	}
+	st.lines = kept;
+	return join(st);
+}
+
+std::string sortLinesNumeric(const std::string &text, NumericSort kind, bool descending) {
+	SplitText st = split(text);
+	std::vector<std::pair<double, std::string>> numbered;
+	std::vector<std::string> others;
+	for (auto &line : st.lines) {
+		double v;
+		if (parseNumber(line, kind, v)) numbered.emplace_back(v, line);
+		else others.push_back(line);
+	}
+	std::stable_sort(numbered.begin(), numbered.end(), [&](const auto &a, const auto &b) {
+		return descending ? a.first > b.first : a.first < b.first;
+	});
+	st.lines.clear();
+	for (auto &p : numbered) st.lines.push_back(p.second);
+	for (auto &l : others) st.lines.push_back(l);
+	return join(st);
+}
+
+std::string sortLinesByLength(const std::string &text, bool descending) {
+	SplitText st = split(text);
+	std::stable_sort(st.lines.begin(), st.lines.end(), [&](const std::string &a, const std::string &b) {
+		return descending ? a.size() > b.size() : a.size() < b.size();
+	});
+	return join(st);
+}
+
+std::string reverseLines(const std::string &text) {
+	SplitText st = split(text);
+	std::reverse(st.lines.begin(), st.lines.end());
+	return join(st);
+}
+
+std::string shuffleLines(const std::string &text, unsigned seed) {
+	SplitText st = split(text);
+	std::mt19937 rng(seed);
+	std::shuffle(st.lines.begin(), st.lines.end(), rng);
+	return join(st);
+}
+
+std::string removeConsecutiveDuplicateLines(const std::string &text) {
+	SplitText st = split(text);
+	std::vector<std::string> kept;
+	for (auto &line : st.lines)
+		if (kept.empty() || kept.back() != line) kept.push_back(line);
+	st.lines = kept;
+	return join(st);
+}
+
+std::string properCase(const std::string &text, bool blend) {
+	std::string out = text;
+	bool start = true;
+	for (size_t i = 0; i < out.size(); i++) {
+		unsigned char c = static_cast<unsigned char>(out[i]);
+		if (isWordChar(out[i])) {
+			if (start) {
+				out[i] = static_cast<char>(std::toupper(c));
+				start = false;
+			} else if (!blend) {
+				out[i] = static_cast<char>(std::tolower(c));
+			}
+		} else {
+			start = true;
+		}
+	}
+	return out;
+}
+
+std::string sentenceCase(const std::string &text, bool blend) {
+	std::string out = text;
+	bool start = true;
+	for (size_t i = 0; i < out.size(); i++) {
+		unsigned char c = static_cast<unsigned char>(out[i]);
+		if (std::isalpha(c)) {
+			if (start) {
+				out[i] = static_cast<char>(std::toupper(c));
+				start = false;
+			} else if (!blend) {
+				out[i] = static_cast<char>(std::tolower(c));
+			}
+		} else if (out[i] == '.' || out[i] == '!' || out[i] == '?') {
+			start = true;
+		}
+	}
+	return out;
+}
+
+std::string randomCase(const std::string &text, unsigned seed) {
+	std::mt19937 rng(seed);
+	std::string out = text;
+	for (auto &c : out) {
+		if (!std::isalpha(static_cast<unsigned char>(c))) continue;
+		bool up = rng() & 1;
+		c = static_cast<char>(up ? std::toupper(static_cast<unsigned char>(c)) : std::tolower(static_cast<unsigned char>(c)));
+	}
+	return out;
 }
 
 } // namespace quill

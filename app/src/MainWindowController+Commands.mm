@@ -12,6 +12,7 @@
 #include "QuillPluginKit.h"
 #include "quill/TextTools.h"
 #include <functional>
+#include <ctime>
 #include <string>
 
 @implementation QMainWindowController (Commands)
@@ -819,6 +820,47 @@ static void replaceRange(ScintillaView *v, sptr_t start, sptr_t end, const std::
 
 - (BOOL)validateToolbarItem:(NSToolbarItem *)item {
 	return YES;
+}
+
+
+// ---- Notepad++ parity: line and case operations (core/ transforms) ---------------
+
+- (void)trimLeadingSpace:(id)sender { [self transformLines:[](const std::string &s) { return quill::trimLeadingWhitespace(s); }]; }
+- (void)trimLeadingAndTrailingSpace:(id)sender { [self transformLines:[](const std::string &s) { return quill::trimBothWhitespace(s); }]; }
+- (void)eolToSpace:(id)sender { [self transformLines:[](const std::string &s) { return quill::eolToSpace(s); }]; }
+- (void)trimBothAndEolToSpace:(id)sender { [self transformLines:[](const std::string &s) { return quill::trimBothAndEolToSpace(s); }]; }
+- (void)removeBlankLines:(id)sender { [self transformLines:[](const std::string &s) { return quill::removeBlankLines(s); }]; }
+- (void)removeConsecutiveDuplicateLines:(id)sender { [self transformLines:[](const std::string &s) { return quill::removeConsecutiveDuplicateLines(s); }]; }
+- (void)sortLinesAsIntegersAscending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesNumeric(s, quill::NumericSort::Integer, false); }]; }
+- (void)sortLinesAsIntegersDescending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesNumeric(s, quill::NumericSort::Integer, true); }]; }
+- (void)sortLinesAsDecimalsCommaAscending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesNumeric(s, quill::NumericSort::DecimalComma, false); }]; }
+- (void)sortLinesAsDecimalsCommaDescending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesNumeric(s, quill::NumericSort::DecimalComma, true); }]; }
+- (void)sortLinesAsDecimalsDotAscending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesNumeric(s, quill::NumericSort::DecimalDot, false); }]; }
+- (void)sortLinesAsDecimalsDotDescending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesNumeric(s, quill::NumericSort::DecimalDot, true); }]; }
+- (void)sortLinesByLengthAscending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesByLength(s, false); }]; }
+- (void)sortLinesByLengthDescending:(id)sender { [self transformLines:[](const std::string &s) { return quill::sortLinesByLength(s, true); }]; }
+- (void)reverseLineOrder:(id)sender { [self transformLines:[](const std::string &s) { return quill::reverseLines(s); }]; }
+- (void)randomizeLineOrder:(id)sender { [self transformLines:[](const std::string &s) { return quill::shuffleLines(s, (unsigned)time(NULL)); }]; }
+- (void)properCase:(id)sender { [self transformWords:[](const std::string &s) { return quill::properCase(s, false); }]; }
+- (void)properCaseBlend:(id)sender { [self transformWords:[](const std::string &s) { return quill::properCase(s, true); }]; }
+- (void)sentenceCase:(id)sender { [self transformWords:[](const std::string &s) { return quill::sentenceCase(s, false); }]; }
+- (void)sentenceCaseBlend:(id)sender { [self transformWords:[](const std::string &s) { return quill::sentenceCase(s, true); }]; }
+- (void)randomCase:(id)sender { [self transformWords:[](const std::string &s) { return quill::randomCase(s, (unsigned)time(NULL)); }]; }
+
+// Same as transformLines, but applies to the selection or the word under the caret.
+- (void)transformWords:(std::function<std::string(const std::string &)>)f {
+	ScintillaView *v = [self ed];
+	if (!v || [v message:SCI_GETREADONLY]) return;
+	sptr_t s = [v message:SCI_GETSELECTIONSTART];
+	sptr_t e = [v message:SCI_GETSELECTIONEND];
+	if (s == e) {
+		s = [v message:SCI_WORDSTARTPOSITION wParam:(uptr_t)s lParam:1];
+		e = [v message:SCI_WORDENDPOSITION wParam:(uptr_t)e lParam:1];
+	}
+	if (e <= s) return;
+	std::string in = textRange(v, s, e);
+	std::string out = f(in);
+	if (out != in) replaceRange(v, s, e, out);
 }
 
 @end

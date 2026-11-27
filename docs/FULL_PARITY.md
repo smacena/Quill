@@ -124,37 +124,37 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Date Time (customized) `id 42086`
 - [ ] [IMPL] **Item**: Increase Line Indent `id 42008`
 - [ ] [IMPL] **Item**: Decrease Line Indent `id 42009`
-- [ ] [IMPL] **Item**: Duplicate Current Line `id 42010`
-- [ ] [IMPL] **Item**: Remove Duplicate Lines `id 42079`
-- [ ] [IMPL] **Item**: Remove Consecutive Duplicate Lines `id 42077`
+- [x] [IMPL] **Item**: Duplicate Current Line `id 42010`
+- [x] [IMPL] **Item**: Remove Duplicate Lines `id 42079`
+- [x] [IMPL] **Item**: Remove Consecutive Duplicate Lines `id 42077`
 - [ ] [IMPL] **Item**: Split Lines `id 42012`
 - [ ] [IMPL] **Item**: Join Lines `id 42013`
 - [ ] [IMPL] **Item**: Move Up Current Line `id 42014`
 - [ ] [IMPL] **Item**: Move Down Current Line `id 42015`
-- [ ] [IMPL] **Item**: Sort Lines Lexicographically Ascending `id 42059`
-- [ ] [IMPL] **Item**: Sort Lines Lexicographically Descending `id 42060`
-- [ ] [IMPL] **Item**: Sort Lines Lex. Ascending Ignoring Case `id 42080`
-- [ ] [IMPL] **Item**: Sort Lines Lex. Descending Ignoring Case `id 42081`
+- [x] [IMPL] **Item**: Sort Lines Lexicographically Ascending `id 42059`
+- [x] [IMPL] **Item**: Sort Lines Lexicographically Descending `id 42060`
+- [x] [IMPL] **Item**: Sort Lines Lex. Ascending Ignoring Case `id 42080`
+- [x] [IMPL] **Item**: Sort Lines Lex. Descending Ignoring Case `id 42081`
 - [ ] [IMPL] **Item**: Sort Lines In Locale Order Ascending `id 42100`
 - [ ] [IMPL] **Item**: Sort Lines In Locale Order Descending `id 42101`
-- [ ] [IMPL] **Item**: Sort Lines By Length Ascending `id 42104`
-- [ ] [IMPL] **Item**: Sort Lines By Length Descending `id 42105`
-- [ ] [IMPL] **Item**: Sort Lines As Integers Ascending `id 42061`
-- [ ] [IMPL] **Item**: Sort Lines As Integers Descending `id 42062`
-- [ ] [IMPL] **Item**: Sort Lines As Decimals (Comma) Ascending `id 42063`
-- [ ] [IMPL] **Item**: Sort Lines As Decimals (Comma) Descending `id 42064`
-- [ ] [IMPL] **Item**: Sort Lines As Decimals (Dot) Ascending `id 42065`
-- [ ] [IMPL] **Item**: Sort Lines As Decimals (Dot) Descending `id 42066`
-- [ ] [IMPL] **Item**: Reverse Line Order `id 42083`
-- [ ] [IMPL] **Item**: Randomize Line Order `id 42078`
-- [ ] [IMPL] **Item**: UPPERCASE `id 42016`
-- [ ] [IMPL] **Item**: lowercase `id 42017`
-- [ ] [IMPL] **Item**: Proper Case `id 42067`
-- [ ] [IMPL] **Item**: Proper Case (blend) `id 42068`
-- [ ] [IMPL] **Item**: Sentence case `id 42069`
-- [ ] [IMPL] **Item**: Sentence case (blend) `id 42070`
-- [ ] [IMPL] **Item**: iNVERT cASE `id 42071`
-- [ ] [IMPL] **Item**: ranDOm CasE `id 42072`
+- [x] [IMPL] **Item**: Sort Lines By Length Ascending `id 42104`
+- [x] [IMPL] **Item**: Sort Lines By Length Descending `id 42105`
+- [x] [IMPL] **Item**: Sort Lines As Integers Ascending `id 42061`
+- [x] [IMPL] **Item**: Sort Lines As Integers Descending `id 42062`
+- [x] [IMPL] **Item**: Sort Lines As Decimals (Comma) Ascending `id 42063`
+- [x] [IMPL] **Item**: Sort Lines As Decimals (Comma) Descending `id 42064`
+- [x] [IMPL] **Item**: Sort Lines As Decimals (Dot) Ascending `id 42065`
+- [x] [IMPL] **Item**: Sort Lines As Decimals (Dot) Descending `id 42066`
+- [x] [IMPL] **Item**: Reverse Line Order `id 42083`
+- [x] [IMPL] **Item**: Randomize Line Order `id 42078`
+- [x] [IMPL] **Item**: UPPERCASE `id 42016`
+- [x] [IMPL] **Item**: lowercase `id 42017`
+- [x] [IMPL] **Item**: Proper Case `id 42067`
+- [x] [IMPL] **Item**: Proper Case (blend) `id 42068`
+- [x] [IMPL] **Item**: Sentence case `id 42069`
+- [x] [IMPL] **Item**: Sentence case (blend) `id 42070`
+- [x] [IMPL] **Item**: iNVERT cASE `id 42071`
+- [x] [IMPL] **Item**: ranDOm CasE `id 42072`
 - [ ] [IMPL] **Item**: Open File `id 42073`
 - [ ] [MAC] **Item**: Open Containing Folder in Explorer `id 42074` — Finder (Mostrar no Finder)
 - [ ] [IMPL] **Item**: Redact Selection █ (Shift: ●) `id 42106`
@@ -172,11 +172,11 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Toggle Single Line Comment `id 42022`
 - [ ] [IMPL] **Item**: Block Comment `id 42023`
 - [ ] [IMPL] **Item**: Block Uncomment `id 42047`
-- [ ] [IMPL] **Item**: Trim Trailing Space `id 42024`
-- [ ] [IMPL] **Item**: Trim Leading Space `id 42042`
-- [ ] [IMPL] **Item**: Trim Leading and Trailing Space `id 42043`
-- [ ] [IMPL] **Item**: EOL to Space `id 42044`
-- [ ] [IMPL] **Item**: Trim both and EOL to Space `id 42045`
+- [x] [IMPL] **Item**: Trim Trailing Space `id 42024`
+- [x] [IMPL] **Item**: Trim Leading Space `id 42042`
+- [x] [IMPL] **Item**: Trim Leading and Trailing Space `id 42043`
+- [x] [IMPL] **Item**: EOL to Space `id 42044`
+- [x] [IMPL] **Item**: Trim both and EOL to Space `id 42045`
 - [ ] [IMPL] **Item**: TAB to Space `id 42046`
 - [ ] [IMPL] **Item**: Space to TAB (All) `id 42054`
 - [ ] [IMPL] **Item**: Space to TAB (Leading) `id 42053`
@@ -205,8 +205,8 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [MAC] **Item**: Read-Only Attribute in Windows `id 42033` — Permissão de arquivo do macOS (flag uchg, travar arquivo no Finder)
 - [ ] [IMPL] **Item**: Single Line Comment `id 42035`
 - [ ] [IMPL] **Item**: Single Line Uncomment `id 42036`
-- [ ] [IMPL] **Item**: Remove Empty Lines `id 42055`
-- [ ] [IMPL] **Item**: Remove Empty Lines (Containing Blank characters) `id 42056`
+- [x] [IMPL] **Item**: Remove Empty Lines `id 42055`
+- [x] [IMPL] **Item**: Remove Empty Lines (Containing Blank characters) `id 42056`
 - [ ] [IMPL] **Item**: Insert Blank Line Above Current `id 42057`
 - [ ] [IMPL] **Item**: Insert Blank Line Below Current `id 42058`
 - [ ] [IMPL] **Item**: Find... `id 43001`

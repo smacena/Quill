@@ -270,11 +270,36 @@ static void testTextTools() {
 	CHECK(html.find("checkbox") != std::string::npos);
 }
 
+
+static void testLineAndCase() {
+	CHECK_EQ(trimLeadingWhitespace("  a\n\tb \nc"), std::string("a\nb \nc"));
+	CHECK_EQ(trimBothWhitespace("  a  \n\t b\t\n"), std::string("a\nb\n"));
+	CHECK_EQ(eolToSpace("a\r\nb\nc"), std::string("a b c"));
+	CHECK_EQ(trimBothAndEolToSpace("  a \n\n b  \n"), std::string("a b"));
+	CHECK_EQ(removeBlankLines("a\n \t\nb\n\n"), std::string("a\nb\n"));
+	CHECK_EQ(sortLinesNumeric("10\n9\nx\n100", NumericSort::Integer, false), std::string("9\n10\n100\nx"));
+	CHECK_EQ(sortLinesNumeric("10\n9\n100", NumericSort::Integer, true), std::string("100\n10\n9"));
+	CHECK_EQ(sortLinesNumeric("1,5\n1,25\n0,5", NumericSort::DecimalComma, false), std::string("0,5\n1,25\n1,5"));
+	CHECK_EQ(sortLinesNumeric("1.5\n1.25\n0.5", NumericSort::DecimalDot, true), std::string("1.5\n1.25\n0.5"));
+	CHECK_EQ(sortLinesByLength("ccc\na\nbb", false), std::string("a\nbb\nccc"));
+	CHECK_EQ(sortLinesByLength("a\nccc\nbb", true), std::string("ccc\nbb\na"));
+	CHECK_EQ(reverseLines("1\n2\n3\n"), std::string("3\n2\n1\n"));
+	CHECK_EQ(shuffleLines("a\nb\nc\nd", 7).size(), std::string("a\nb\nc\nd").size());
+	CHECK_EQ(removeConsecutiveDuplicateLines("a\na\nb\na"), std::string("a\nb\na"));
+	CHECK_EQ(properCase("hello WORLD foo-bar", false), std::string("Hello World Foo-Bar"));
+	CHECK_EQ(properCase("hello WORLD", true), std::string("Hello WORLD"));
+	CHECK_EQ(sentenceCase("hello WORLD. this is it! ok?", false), std::string("Hello world. This is it! Ok?"));
+	CHECK_EQ(sentenceCase("hello WORLD. this", true), std::string("Hello WORLD. This"));
+	CHECK(randomCase("abc", 1) != "" && randomCase("abc", 1).size() == 3);
+	CHECK_EQ(randomCase("ab 1", 3).substr(2, 2), std::string(" 1"));
+}
+
 int main() {
 	testDiff();
 	testJson();
 	testEncoding();
 	testTextTools();
+	testLineAndCase();
 	std::printf("%d checks, %d failures\n", checks, failures);
 	return failures == 0 ? 0 : 1;
 }
