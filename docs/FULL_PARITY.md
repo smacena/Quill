@@ -13,18 +13,18 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 
 ## Menu (399)
 
-- [x] [IMPL] **Item**: File
-- [x] [IMPL] **Item**: Edit
-- [x] [IMPL] **Item**: Search
-- [x] [IMPL] **Item**: View
+- [ ] [IMPL] **Item**: File
+- [ ] [IMPL] **Item**: Edit
+- [ ] [IMPL] **Item**: Search
+- [ ] [IMPL] **Item**: View
 - [x] [IMPL] **Item**: Encoding
-- [x] [IMPL] **Item**: Language
+- [ ] [IMPL] **Item**: Language
 - [x] [IMPL] **Item**: Settings
-- [x] [IMPL] **Item**: Tools
+- [ ] [IMPL] **Item**: Tools
 - [ ] [IMPL] **Item**: Macro
-- [x] [IMPL] **Item**: Run
-- [x] [IMPL] **Item**: Plugins
-- [x] [IMPL] **Item**: Window
+- [ ] [IMPL] **Item**: Run
+- [ ] [IMPL] **Item**: Plugins
+- [ ] [IMPL] **Item**: Window
 - [ ] [MAC] **Item**: Open Containing Folder — Finder (Mostrar no Finder)
 - [ ] [IMPL] **Item**: Close Multiple Documents
 - [x] [IMPL] **Item**: Recent Files
@@ -32,7 +32,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Copy to Clipboard
 - [x] [IMPL] **Item**: Indent
 - [ ] [IMPL] **Item**: Convert Case to
-- [x] [IMPL] **Item**: Line Operations
+- [ ] [IMPL] **Item**: Line Operations
 - [ ] [IMPL] **Item**: Comment/Uncomment
 - [ ] [IMPL] **Item**: Auto-Completion
 - [ ] [IMPL] **Item**: EOL Conversion
@@ -52,7 +52,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Bookmark
 - [ ] [IMPL] **Item**: View Current File in
 - [ ] [IMPL] **Item**: Show Symbol
-- [x] [IMPL] **Item**: Zoom
+- [ ] [IMPL] **Item**: Zoom
 - [ ] [IMPL] **Item**: Move/Clone Current Document
 - [ ] [IMPL] **Item**: Tab
 - [ ] [IMPL] **Item**: Fold Level
@@ -95,7 +95,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Close All to the Left `id 41009`
 - [ ] [IMPL] **Item**: Close All to the Right `id 41018`
 - [ ] [IMPL] **Item**: Close All Unchanged `id 41024`
-- [ ] [IMPL] **Item**: Save `id 41006`
+- [x] [IMPL] **Item**: Save `id 41006`
 - [x] [IMPL] **Item**: Save All `id 41007`
 - [x] [IMPL] **Item**: Save As... `id 41008`
 - [x] [IMPL] **Item**: Print... `id 41010`
@@ -110,13 +110,13 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Restore Recent Closed File `id 41021`
 - [ ] [IMPL] **Item**: Open Folder as Workspace... `id 41022`
 - [ ] [MAC] **Item**: Open in Default Viewer `id 41023` — App padrão do macOS
-- [x] [IMPL] **Item**: Cut `id 42001`
-- [x] [IMPL] **Item**: Copy `id 42002`
-- [x] [IMPL] **Item**: Undo `id 42003`
-- [x] [IMPL] **Item**: Redo `id 42004`
-- [x] [IMPL] **Item**: Paste `id 42005`
+- [ ] [IMPL] **Item**: Cut `id 42001`
+- [ ] [IMPL] **Item**: Copy `id 42002`
+- [ ] [IMPL] **Item**: Undo `id 42003`
+- [ ] [IMPL] **Item**: Redo `id 42004`
+- [ ] [IMPL] **Item**: Paste `id 42005`
 - [ ] [IMPL] **Item**: Delete `id 42006`
-- [x] [IMPL] **Item**: Select All `id 42007`
+- [ ] [IMPL] **Item**: Select All `id 42007`
 - [ ] [IMPL] **Item**: Begin/End Select `id 42020`
 - [ ] [IMPL] **Item**: Begin/End Select in Column Mode `id 42089`
 - [ ] [IMPL] **Item**: Date Time (short) `id 42084`
@@ -125,16 +125,16 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Increase Line Indent `id 42008`
 - [ ] [IMPL] **Item**: Decrease Line Indent `id 42009`
 - [x] [IMPL] **Item**: Duplicate Current Line `id 42010`
-- [x] [IMPL] **Item**: Remove Duplicate Lines `id 42079`
+- [ ] [IMPL] **Item**: Remove Duplicate Lines `id 42079`
 - [x] [IMPL] **Item**: Remove Consecutive Duplicate Lines `id 42077`
 - [ ] [IMPL] **Item**: Split Lines `id 42012`
 - [x] [IMPL] **Item**: Join Lines `id 42013`
 - [ ] [IMPL] **Item**: Move Up Current Line `id 42014`
 - [ ] [IMPL] **Item**: Move Down Current Line `id 42015`
-- [x] [IMPL] **Item**: Sort Lines Lexicographically Ascending `id 42059`
-- [x] [IMPL] **Item**: Sort Lines Lexicographically Descending `id 42060`
-- [x] [IMPL] **Item**: Sort Lines Lex. Ascending Ignoring Case `id 42080`
-- [x] [IMPL] **Item**: Sort Lines Lex. Descending Ignoring Case `id 42081`
+- [ ] [IMPL] **Item**: Sort Lines Lexicographically Ascending `id 42059`
+- [ ] [IMPL] **Item**: Sort Lines Lexicographically Descending `id 42060`
+- [ ] [IMPL] **Item**: Sort Lines Lex. Ascending Ignoring Case `id 42080`
+- [ ] [IMPL] **Item**: Sort Lines Lex. Descending Ignoring Case `id 42081`
 - [ ] [IMPL] **Item**: Sort Lines In Locale Order Ascending `id 42100`
 - [ ] [IMPL] **Item**: Sort Lines In Locale Order Descending `id 42101`
 - [x] [IMPL] **Item**: Sort Lines By Length Ascending `id 42104`
@@ -169,7 +169,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Start Recording `id 42018`
 - [ ] [IMPL] **Item**: Stop Recording `id 42019`
 - [ ] [IMPL] **Item**: Playback `id 42021`
-- [x] [IMPL] **Item**: Toggle Single Line Comment `id 42022`
+- [ ] [IMPL] **Item**: Toggle Single Line Comment `id 42022`
 - [x] [IMPL] **Item**: Block Comment `id 42023`
 - [ ] [IMPL] **Item**: Block Uncomment `id 42047`
 - [x] [IMPL] **Item**: Trim Trailing Space `id 42024`
@@ -205,7 +205,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [MAC] **Item**: Read-Only Attribute in Windows `id 42033` — Permissão de arquivo do macOS (flag uchg, travar arquivo no Finder)
 - [ ] [IMPL] **Item**: Single Line Comment `id 42035`
 - [ ] [IMPL] **Item**: Single Line Uncomment `id 42036`
-- [x] [IMPL] **Item**: Remove Empty Lines `id 42055`
+- [ ] [IMPL] **Item**: Remove Empty Lines `id 42055`
 - [x] [IMPL] **Item**: Remove Empty Lines (Containing Blank characters) `id 42056`
 - [ ] [IMPL] **Item**: Insert Blank Line Above Current `id 42057`
 - [ ] [IMPL] **Item**: Insert Blank Line Below Current `id 42058`
@@ -273,8 +273,8 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [x] [IMPL] **Item**: Show All Characters `id 44019`
 - [x] [IMPL] **Item**: Show Indent Guide `id 44020`
 - [x] [IMPL] **Item**: Word wrap `id 44022`
-- [x] [MAC] **Item**: Zoom In (Ctrl+Mouse Wheel Up) `id 44023` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
-- [x] [MAC] **Item**: Zoom Out (Ctrl+Mouse Wheel Down) `id 44024` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
+- [ ] [MAC] **Item**: Zoom In (Ctrl+Mouse Wheel Up) `id 44023` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
+- [ ] [MAC] **Item**: Zoom Out (Ctrl+Mouse Wheel Down) `id 44024` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
 - [ ] [IMPL] **Item**: Show Space and Tab `id 44025`
 - [ ] [IMPL] **Item**: Show End of Line `id 44026`
 - [ ] [IMPL] **Item**: Synchronize Across Views `id 44027`
@@ -309,7 +309,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Apply Color 5 `id 44115`
 - [ ] [IMPL] **Item**: Show Non-Printing Characters `id 44130`
 - [ ] [IMPL] **Item**: Show Control Characters Unicode EOL `id 44131`
-- [x] [IMPL] **Item**: Toggle Full Screen Mode `id 44032`
+- [ ] [IMPL] **Item**: Toggle Full Screen Mode `id 44032`
 - [x] [IMPL] **Item**: Restore Default Zoom `id 44033`
 - [ ] [IMPL] **Item**: Always on Top `id 44034`
 - [ ] [IMPL] **Item**: Synchronise Vertical Scrolling `id 44035`
@@ -366,7 +366,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Shortcut Mapper... `id 48009`
 - [ ] [IMPL] **Item**: Preferences... `id 48011`
 - [ ] [IMPL] **Item**: Open Plugins Folder... `id 48014`
-- [x] [IMPL] **Item**: Plugins Admin... `id 48015`
+- [ ] [IMPL] **Item**: Plugins Admin... `id 48015`
 - [ ] [IMPL] **Item**: Generate... `id 48501`
 - [ ] [IMPL] **Item**: Generate from files... `id 48502`
 - [ ] [IMPL] **Item**: Generate from selection into clipboard `id 48503`
@@ -410,7 +410,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Apply Color to Tab `id 4`
 - [ ] [IMPL] **Item**: Activate `id 43101`
 - [ ] [IMPL] **Item**: New and Paste `id 43103`
-- [ ] [IMPL] **Item**: Find in Files... `id 43013`
+- [x] [IMPL] **Item**: Find in Files... `id 43013`
 - [ ] [MAC] **Item**: Close Tray Icon `id 43105` — Ocultar o ícone da barra de menus
 
 ## Dialog (719)
@@ -420,9 +420,9 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [x] [IMPL] **Find**: Find in Files
 - [ ] [IMPL] **Find**: Find in Projects
 - [ ] [IMPL] **Find**: Mark
-- [ ] [IMPL] **Item**: Find Next `id 1`
+- [x] [IMPL] **Item**: Find Next `id 1`
 - [ ] [IMPL] **Item**: Backward direction `id 1722`
-- [ ] [IMPL] **Item**: Close `id 2`
+- [x] [IMPL] **Item**: Close `id 2`
 - [ ] [IMPL] **Item**: Find what: `id 1620`
 - [ ] [IMPL] **Item**: Match whole word only `id 1603`
 - [ ] [IMPL] **Item**: Match case `id 1604`
@@ -433,7 +433,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Bookmark line `id 1616`
 - [ ] [IMPL] **Item**: Purge for each search `id 1618`
 - [ ] [IMPL] **Item**: Replace with: `id 1611`
-- [ ] [IMPL] **Item**: Replace `id 1608`
+- [x] [IMPL] **Item**: Replace `id 1608`
 - [ ] [IMPL] **Item**: Replace All `id 1609`
 - [ ] [IMPL] **Item**: On losing focus `id 1687`
 - [ ] [IMPL] **Item**: Always `id 1688`
@@ -463,7 +463,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: ⇅ Swap Find with Replace `id 1726`
 - [ ] [IMPL] **Item**: ⤵ Copy from Find to Replace `id 1727`
 - [ ] [IMPL] **Item**: ⤴ Copy from Replace to Find `id 1728`
-- [ ] [IMPL] **Item**: Find: `id 1681`
+- [x] [IMPL] **Item**: Find: `id 1681`
 - [ ] [IMPL] **Item**: Highlight all `id 1690`
 - [ ] [IMPL] **FindCharsInRange**: Find Characters in Range...
 - [ ] [IMPL] **Item**: Non-ASCII characters (128–255) `id 2901`
@@ -472,7 +472,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Up `id 2906`
 - [ ] [IMPL] **Item**: Down `id 2907`
 - [ ] [IMPL] **Item**: Direction `id 2908`
-- [ ] [IMPL] **Item**: Find `id 2910`
+- [x] [IMPL] **Item**: Find `id 2910`
 - [ ] [IMPL] **GoToLine**: Go to...
 - [ ] [IMPL] **Item**: Line `id 2007`
 - [ ] [IMPL] **Item**: Offset `id 2008`
@@ -481,25 +481,25 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: You are here: `id 2004`
 - [ ] [IMPL] **Item**: You want to go to: `id 2005`
 - [ ] [IMPL] **Item**: You can't go further than: `id 2006`
-- [x] [IMPL] **Run**: Run...
+- [ ] [IMPL] **Run**: Run...
 - [ ] [IMPL] **Item**: The Program to Run `id 1903`
 - [ ] [IMPL] **Item**: Run `id 1`
 - [ ] [IMPL] **Item**: Cancel `id 2`
-- [ ] [IMPL] **Item**: Save... `id 1904`
-- [x] [IMPL] **MD5FromFilesDlg**: Generate MD5 digest from files
-- [x] [IMPL] **Item**: Choose files to generate MD5... `id 1922`
+- [x] [IMPL] **Item**: Save... `id 1904`
+- [ ] [IMPL] **MD5FromFilesDlg**: Generate MD5 digest from files
+- [ ] [IMPL] **Item**: Choose files to generate MD5... `id 1922`
 - [ ] [IMPL] **Item**: Copy to Clipboard `id 1924`
-- [x] [IMPL] **MD5FromTextDlg**: Generate MD5 digest
+- [ ] [IMPL] **MD5FromTextDlg**: Generate MD5 digest
 - [ ] [IMPL] **Item**: Treat each line as a separate string `id 1932`
-- [x] [IMPL] **SHA256FromFilesDlg**: Generate SHA-256 digest from files
-- [x] [IMPL] **Item**: Choose files to generate SHA-256... `id 1922`
-- [x] [IMPL] **SHA256FromTextDlg**: Generate SHA-256 digest
-- [x] [IMPL] **SHA1FromFilesDlg**: Generate SHA-1 digest from files
-- [x] [IMPL] **Item**: Choose files to generate SHA-1... `id 1922`
-- [x] [IMPL] **SHA1FromTextDlg**: Generate SHA-1 digest
-- [x] [IMPL] **SHA512FromFilesDlg**: Generate SHA-512 digest from files
-- [x] [IMPL] **Item**: Choose files to generate SHA-512... `id 1922`
-- [x] [IMPL] **SHA512FromTextDlg**: Generate SHA-512 digest
+- [ ] [IMPL] **SHA256FromFilesDlg**: Generate SHA-256 digest from files
+- [ ] [IMPL] **Item**: Choose files to generate SHA-256... `id 1922`
+- [ ] [IMPL] **SHA256FromTextDlg**: Generate SHA-256 digest
+- [ ] [IMPL] **SHA1FromFilesDlg**: Generate SHA-1 digest from files
+- [ ] [IMPL] **Item**: Choose files to generate SHA-1... `id 1922`
+- [ ] [IMPL] **SHA1FromTextDlg**: Generate SHA-1 digest
+- [ ] [IMPL] **SHA512FromFilesDlg**: Generate SHA-512 digest from files
+- [ ] [IMPL] **Item**: Choose files to generate SHA-512... `id 1922`
+- [ ] [IMPL] **SHA512FromTextDlg**: Generate SHA-512 digest
 - [ ] [IMPL] **PluginsAdminDlg**: Plugins Admin
 - [ ] [IMPL] **ColumnPlugin**: Plugin
 - [ ] [IMPL] **ColumnVersion**: Version
@@ -545,7 +545,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Delete `id 2603`
 - [ ] [IMPL] **Item**: Clear `id 2606`
 - [ ] [IMPL] **Item**: Filter: `id 2607`
-- [x] [IMPL] **ColumnName**: Name
+- [ ] [IMPL] **ColumnName**: Name
 - [ ] [IMPL] **ColumnShortcut**: Shortcut
 - [ ] [IMPL] **ColumnCategory**: Category
 - [ ] [IMPL] **MainMenuTab**: Main menu
@@ -557,8 +557,8 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **ConflictInfoEditing**: No conflicts . . .
 - [ ] [IMPL] **AboutCategory**: About
 - [ ] [IMPL] **ModifyContextMenu**: Modify
-- [x] [IMPL] **DeleteContextMenu**: Delete
-- [x] [IMPL] **ClearContextMenu**: Clear
+- [ ] [IMPL] **DeleteContextMenu**: Delete
+- [ ] [IMPL] **ClearContextMenu**: Clear
 - [ ] [MAC] **Item**: Open containing folder in Explorer `id 41019` — Finder (Mostrar no Finder)
 - [ ] [MAC] **Item**: Open containing folder in Command Prompt `id 41020` — Terminal do macOS (substitui cmd e PowerShell)
 - [ ] [MAC] **Item**: Open containing folder in PowerShell `id 41027` — Terminal do macOS (substitui cmd e PowerShell)
@@ -661,9 +661,9 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: CONFLICT FOUND! `id 5012`
 - [ ] [IMPL] **UserDefine**: User-Defined
 - [ ] [IMPL] **Item**: Dock `id 20001`
-- [ ] [IMPL] **Item**: Rename `id 20002`
+- [x] [IMPL] **Item**: Rename `id 20002`
 - [ ] [IMPL] **Item**: Create new... `id 20003`
-- [ ] [IMPL] **Item**: Save As... `id 20005`
+- [x] [IMPL] **Item**: Save As... `id 20005`
 - [ ] [IMPL] **Item**: User language `id 20007`
 - [ ] [IMPL] **Item**: Ext.: `id 20009`
 - [ ] [IMPL] **Item**: Ignore case `id 20012`
@@ -706,7 +706,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Folding in code 1 style `id 21220`
 - [ ] [IMPL] **Item**: Open: `id 21224`
 - [ ] [IMPL] **Item**: Middle: `id 21225`
-- [ ] [IMPL] **Item**: Close: `id 21226`
+- [x] [IMPL] **Item**: Close: `id 21226`
 - [ ] [IMPL] **Item**: Folding in code 2 style (separators needed) `id 21320`
 - [ ] [IMPL] **Item**: Folding in comment style `id 21420`
 - [ ] [IMPL] **Keywords**: Keywords Lists
@@ -838,7 +838,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Prevent control character (C0 code) typing into document `id 6259`
 - [x] [IMPL] **DarkMode**: Dark Mode
 - [ ] [IMPL] **Item**: Light mode `id 7131`
-- [ ] [IMPL] **Item**: Dark mode `id 7132`
+- [x] [IMPL] **Item**: Dark mode `id 7132`
 - [ ] [IMPL] **Item**: Follow Windows `id 7133`
 - [ ] [IMPL] **Item**: Black `id 7102`
 - [ ] [IMPL] **Item**: Customized `id 7115`
@@ -879,7 +879,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Right `id 6210`
 - [ ] [IMPL] **Item**: Distraction Free `id 6212`
 - [ ] [IMPL] **NewDoc**: New Document
-- [x] [IMPL] **Item**: Format (Line ending) `id 6401`
+- [ ] [IMPL] **Item**: Format (Line ending) `id 6401`
 - [ ] [IMPL] **Item**: Windows (CR LF) `id 6402`
 - [ ] [IMPL] **Item**: Unix (LF) `id 6403`
 - [ ] [IMPL] **Item**: Macintosh (CR) `id 6404`
@@ -903,13 +903,13 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [NA] **Item**: Please exit Notepad++ and relaunch Notepad++ in Administrator mode to use this feature. `id 4008` — Modo administrador do Windows (UAC)
 - [ ] [IMPL] **Item**: Supported extensions: `id 4009`
 - [ ] [IMPL] **Item**: Registered extensions: `id 4010`
-- [x] [IMPL] **Language**: Language
+- [ ] [IMPL] **Language**: Language
 - [ ] [IMPL] **Item**: Available items `id 6505`
 - [ ] [IMPL] **Item**: Disabled items `id 6506`
 - [ ] [IMPL] **Item**: Make language menu compact `id 6507`
 - [ ] [IMPL] **Item**: Language Menu `id 6508`
 - [ ] [IMPL] **Item**: Treat backslash as escape character for SQL `id 6335`
-- [x] [IMPL] **Indentation**: Indentation
+- [ ] [IMPL] **Indentation**: Indentation
 - [ ] [IMPL] **Item**: Auto-indent `id 7161`
 - [ ] [IMPL] **Item**: Basic `id 7163`
 - [ ] [IMPL] **Item**: Advanced `id 7164`
@@ -930,7 +930,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Highlight Matching Tags `id 6329`
 - [ ] [IMPL] **Item**: Highlight tag attributes `id 6328`
 - [ ] [IMPL] **Item**: Highlight comment/php/asp zone `id 6330`
-- [ ] [IMPL] **Print**: Print
+- [x] [IMPL] **Print**: Print
 - [ ] [IMPL] **Item**: Print line number `id 6601`
 - [ ] [IMPL] **Item**: Print formfeed as page break `id 6616`
 - [ ] [IMPL] **Item**: Color Options `id 6602`
@@ -968,7 +968,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: : Max Characters to Auto-Fill Find Field from Selection `id 6916`
 - [ ] [IMPL] **Item**: Find in Files: Prefer on‑disk file content over open buffers `id 6917`
 - [ ] [IMPL] **RecentFilesHistory**: Recent Files History
-- [x] [IMPL] **Item**: Recent Files History `id 6304`
+- [ ] [IMPL] **Item**: Recent Files History `id 6304`
 - [ ] [IMPL] **Item**: Max. number of entries: `id 6306`
 - [ ] [IMPL] **Item**: Don't check at launch time `id 6305`
 - [ ] [IMPL] **Item**: In Submenu `id 6424`
@@ -1096,7 +1096,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: times `id 8005`
 - [ ] [IMPL] **Item**: Run until the end of file `id 8002`
 - [ ] [IMPL] **Window**: Windows
-- [ ] [IMPL] **Item**: Save `id 7002`
+- [x] [IMPL] **Item**: Save `id 7002`
 - [ ] [IMPL] **Item**: Close window(s) `id 7003`
 - [ ] [IMPL] **Item**: Sort tabs `id 7004`
 - [ ] [IMPL] **ColumnEditor**: Column Editor
@@ -1146,7 +1146,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **CannotMoveDoc**: Document is modified, save it then try again.
 - [ ] [IMPL] **CannotMoveDoc**: Move to new Notepad++ Instance
 - [ ] [IMPL] **DocReloadWarning**: Are you sure you want to reload the current file and lose the changes made in Notepad++?
-- [x] [IMPL] **DocReloadWarning**: Reload
+- [ ] [IMPL] **DocReloadWarning**: Reload
 - [ ] [IMPL] **FileLockedWarning**: Please check whether if this file is opened in another program
 - [ ] [IMPL] **FileLockedWarning**: Save failed
 - [ ] [IMPL] **FileAlreadyOpenedInNpp**: The file is already opened in Notepad++.
@@ -1185,9 +1185,9 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **NoBackupDoSaveFile**: Your backup file cannot be found (deleted from outside). Save it otherwise your data will be lost Do you want to save file "$STR_REPLACE$" ?
 - [x] [IMPL] **NoBackupDoSaveFile**: Save
 - [ ] [IMPL] **DoReloadOrNot**: "$STR_REPLACE$" This file has been modified by another program. Do you want to reload it?
-- [x] [IMPL] **DoReloadOrNot**: Reload
+- [ ] [IMPL] **DoReloadOrNot**: Reload
 - [ ] [IMPL] **DoReloadOrNotAndLooseChange**: "$STR_REPLACE$" This file has been modified by another program. Do you want to reload it and lose the changes made in Notepad++?
-- [x] [IMPL] **DoReloadOrNotAndLooseChange**: Reload
+- [ ] [IMPL] **DoReloadOrNotAndLooseChange**: Reload
 - [ ] [IMPL] **PrehistoricSystemDetected**: It seems you still use a prehistoric system. This feature works only on a modern system, sorry.
 - [ ] [IMPL] **PrehistoricSystemDetected**: Prehistoric system detected
 - [ ] [MAC] **XpUpdaterProblem**: Notepad++ updater is not compatible with XP due to the obsolete security layer under XP. Do you want to go to Notepad++ page to download the latest version? — Não se aplica (Windows XP)
@@ -1367,7 +1367,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Run by system `id 3514`
 - [ ] [IMPL] **Item**: Open `id 3515`
 - [ ] [IMPL] **Item**: Copy path `id 3516`
-- [ ] [IMPL] **Item**: Find in Files... `id 3517`
+- [x] [IMPL] **Item**: Find in Files... `id 3517`
 - [ ] [MAC] **Item**: Explorer here `id 3518` — Finder (Mostrar no Finder)
 - [ ] [IMPL] **Item**: CMD here `id 3519`
 - [ ] [IMPL] **Item**: Copy file name `id 3520`
@@ -1384,12 +1384,12 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: New Workspace `id 3122`
 - [ ] [IMPL] **Item**: Open Workspace `id 3123`
 - [ ] [IMPL] **Item**: Reload Workspace `id 3124`
-- [ ] [IMPL] **Item**: Save `id 3125`
-- [ ] [IMPL] **Item**: Save As... `id 3126`
-- [ ] [IMPL] **Item**: Save a Copy As... `id 3127`
+- [x] [IMPL] **Item**: Save `id 3125`
+- [x] [IMPL] **Item**: Save As... `id 3126`
+- [x] [IMPL] **Item**: Save a Copy As... `id 3127`
 - [ ] [IMPL] **Item**: Add New Project `id 3121`
 - [ ] [IMPL] **Item**: Find in Projects... `id 3128`
-- [ ] [IMPL] **Item**: Rename `id 3111`
+- [x] [IMPL] **Item**: Rename `id 3111`
 - [ ] [IMPL] **Item**: Add Folder `id 3112`
 - [ ] [IMPL] **Item**: Add Files... `id 3113`
 - [ ] [IMPL] **Item**: Add Files from Directory... `id 3117`
@@ -1511,7 +1511,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **session-save-folder-as-workspace**: Save Folder as Workspace
 - [ ] [IMPL] **tab-untitled-string**: new
 - [ ] [IMPL] **file-save-assign-type**: Append extension
-- [ ] [IMPL] **close-panel-tip**: Close
+- [x] [IMPL] **close-panel-tip**: Close
 - [ ] [IMPL] **IncrementalFind-FSNotFound**: Phrase not found
 - [ ] [IMPL] **IncrementalFind-FSTopReached**: Reached top of page, continued from bottom
 - [ ] [IMPL] **IncrementalFind-FSEndReached**: Reached end of page, continued from top
@@ -2200,7 +2200,7 @@ Decisão do dono do projeto: o programa inteiro, não só os textos. Formatos de
 - [ ] [IMPL] **czech**
 - [ ] [IMPL] **danish**
 - [ ] [IMPL] **dutch**
-- [x] [IMPL] **english**
+- [ ] [IMPL] **english**
 - [ ] [IMPL] **english_customizable**
 - [ ] [IMPL] **esperanto**
 - [ ] [IMPL] **estonian**
