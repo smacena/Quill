@@ -13,26 +13,26 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 
 ## Menu (399)
 
-- [ ] [IMPL] **Item**: File
-- [ ] [IMPL] **Item**: Edit
-- [ ] [IMPL] **Item**: Search
-- [ ] [IMPL] **Item**: View
-- [ ] [IMPL] **Item**: Encoding
-- [ ] [IMPL] **Item**: Language
-- [ ] [IMPL] **Item**: Settings
-- [ ] [IMPL] **Item**: Tools
+- [x] [IMPL] **Item**: File
+- [x] [IMPL] **Item**: Edit
+- [x] [IMPL] **Item**: Search
+- [x] [IMPL] **Item**: View
+- [x] [IMPL] **Item**: Encoding
+- [x] [IMPL] **Item**: Language
+- [x] [IMPL] **Item**: Settings
+- [x] [IMPL] **Item**: Tools
 - [ ] [IMPL] **Item**: Macro
-- [ ] [IMPL] **Item**: Run
-- [ ] [IMPL] **Item**: Plugins
-- [ ] [IMPL] **Item**: Window
+- [x] [IMPL] **Item**: Run
+- [x] [IMPL] **Item**: Plugins
+- [x] [IMPL] **Item**: Window
 - [ ] [MAC] **Item**: Open Containing Folder — Finder (Mostrar no Finder)
 - [ ] [IMPL] **Item**: Close Multiple Documents
 - [ ] [IMPL] **Item**: Recent Files
 - [ ] [IMPL] **Item**: Insert
 - [ ] [IMPL] **Item**: Copy to Clipboard
-- [ ] [IMPL] **Item**: Indent
+- [x] [IMPL] **Item**: Indent
 - [ ] [IMPL] **Item**: Convert Case to
-- [ ] [IMPL] **Item**: Line Operations
+- [x] [IMPL] **Item**: Line Operations
 - [ ] [IMPL] **Item**: Comment/Uncomment
 - [ ] [IMPL] **Item**: Auto-Completion
 - [ ] [IMPL] **Item**: EOL Conversion
@@ -52,7 +52,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Bookmark
 - [ ] [IMPL] **Item**: View Current File in
 - [ ] [IMPL] **Item**: Show Symbol
-- [ ] [IMPL] **Item**: Zoom
+- [x] [IMPL] **Item**: Zoom
 - [ ] [IMPL] **Item**: Move/Clone Current Document
 - [ ] [IMPL] **Item**: Tab
 - [ ] [IMPL] **Item**: Fold Level
@@ -415,9 +415,9 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 
 ## Dialog (719)
 
-- [ ] [IMPL] **Find**: Find
-- [ ] [IMPL] **Find**: Replace
-- [ ] [IMPL] **Find**: Find in Files
+- [x] [IMPL] **Find**: Find
+- [x] [IMPL] **Find**: Replace
+- [x] [IMPL] **Find**: Find in Files
 - [ ] [IMPL] **Find**: Find in Projects
 - [ ] [IMPL] **Find**: Mark
 - [ ] [IMPL] **Item**: Find Next `id 1`
@@ -481,7 +481,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: You are here: `id 2004`
 - [ ] [IMPL] **Item**: You want to go to: `id 2005`
 - [ ] [IMPL] **Item**: You can't go further than: `id 2006`
-- [ ] [IMPL] **Run**: Run...
+- [x] [IMPL] **Run**: Run...
 - [ ] [IMPL] **Item**: The Program to Run `id 1903`
 - [ ] [IMPL] **Item**: Run `id 1`
 - [ ] [IMPL] **Item**: Cancel `id 2`
@@ -545,7 +545,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Delete `id 2603`
 - [ ] [IMPL] **Item**: Clear `id 2606`
 - [ ] [IMPL] **Item**: Filter: `id 2607`
-- [ ] [IMPL] **ColumnName**: Name
+- [x] [IMPL] **ColumnName**: Name
 - [ ] [IMPL] **ColumnShortcut**: Shortcut
 - [ ] [IMPL] **ColumnCategory**: Category
 - [ ] [IMPL] **MainMenuTab**: Main menu
@@ -557,8 +557,8 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **ConflictInfoEditing**: No conflicts . . .
 - [ ] [IMPL] **AboutCategory**: About
 - [ ] [IMPL] **ModifyContextMenu**: Modify
-- [ ] [IMPL] **DeleteContextMenu**: Delete
-- [ ] [IMPL] **ClearContextMenu**: Clear
+- [x] [IMPL] **DeleteContextMenu**: Delete
+- [x] [IMPL] **ClearContextMenu**: Clear
 - [ ] [MAC] **Item**: Open containing folder in Explorer `id 41019` — Finder (Mostrar no Finder)
 - [ ] [MAC] **Item**: Open containing folder in Command Prompt `id 41020` — Terminal do macOS (substitui cmd e PowerShell)
 - [ ] [MAC] **Item**: Open containing folder in PowerShell `id 41027` — Terminal do macOS (substitui cmd e PowerShell)
@@ -903,13 +903,13 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [NA] **Item**: Please exit Notepad++ and relaunch Notepad++ in Administrator mode to use this feature. `id 4008` — Modo administrador do Windows (UAC)
 - [ ] [IMPL] **Item**: Supported extensions: `id 4009`
 - [ ] [IMPL] **Item**: Registered extensions: `id 4010`
-- [ ] [IMPL] **Language**: Language
+- [x] [IMPL] **Language**: Language
 - [ ] [IMPL] **Item**: Available items `id 6505`
 - [ ] [IMPL] **Item**: Disabled items `id 6506`
 - [ ] [IMPL] **Item**: Make language menu compact `id 6507`
 - [ ] [IMPL] **Item**: Language Menu `id 6508`
 - [ ] [IMPL] **Item**: Treat backslash as escape character for SQL `id 6335`
-- [ ] [IMPL] **Indentation**: Indentation
+- [x] [IMPL] **Indentation**: Indentation
 - [ ] [IMPL] **Item**: Auto-indent `id 7161`
 - [ ] [IMPL] **Item**: Basic `id 7163`
 - [ ] [IMPL] **Item**: Advanced `id 7164`
@@ -1117,7 +1117,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **FindInFinder**: Find in search results
 - [ ] [IMPL] **Item**: Search only in found lines `id 1713`
 - [ ] [IMPL] **Item**: Search Mode `id 1716`
-- [ ] [IMPL] **DoSaveOrNot**: Save
+- [x] [IMPL] **DoSaveOrNot**: Save
 - [ ] [IMPL] **Item**: Save file "$STR_REPLACE$" ? `id 1761`
 - [ ] [IMPL] **Item**: Yes `id 6`
 - [ ] [IMPL] **Item**: No `id 7`
@@ -1146,7 +1146,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **CannotMoveDoc**: Document is modified, save it then try again.
 - [ ] [IMPL] **CannotMoveDoc**: Move to new Notepad++ Instance
 - [ ] [IMPL] **DocReloadWarning**: Are you sure you want to reload the current file and lose the changes made in Notepad++?
-- [ ] [IMPL] **DocReloadWarning**: Reload
+- [x] [IMPL] **DocReloadWarning**: Reload
 - [ ] [IMPL] **FileLockedWarning**: Please check whether if this file is opened in another program
 - [ ] [IMPL] **FileLockedWarning**: Save failed
 - [ ] [IMPL] **FileAlreadyOpenedInNpp**: The file is already opened in Notepad++.
@@ -1183,11 +1183,11 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **DoDeleteOrNot**: The file "$STR_REPLACE$" will be moved to your Recycle Bin and this document will be closed. Continue?
 - [ ] [IMPL] **DoDeleteOrNot**: Delete file
 - [ ] [IMPL] **NoBackupDoSaveFile**: Your backup file cannot be found (deleted from outside). Save it otherwise your data will be lost Do you want to save file "$STR_REPLACE$" ?
-- [ ] [IMPL] **NoBackupDoSaveFile**: Save
+- [x] [IMPL] **NoBackupDoSaveFile**: Save
 - [ ] [IMPL] **DoReloadOrNot**: "$STR_REPLACE$" This file has been modified by another program. Do you want to reload it?
-- [ ] [IMPL] **DoReloadOrNot**: Reload
+- [x] [IMPL] **DoReloadOrNot**: Reload
 - [ ] [IMPL] **DoReloadOrNotAndLooseChange**: "$STR_REPLACE$" This file has been modified by another program. Do you want to reload it and lose the changes made in Notepad++?
-- [ ] [IMPL] **DoReloadOrNotAndLooseChange**: Reload
+- [x] [IMPL] **DoReloadOrNotAndLooseChange**: Reload
 - [ ] [IMPL] **PrehistoricSystemDetected**: It seems you still use a prehistoric system. This feature works only on a modern system, sorry.
 - [ ] [IMPL] **PrehistoricSystemDetected**: Prehistoric system detected
 - [ ] [MAC] **XpUpdaterProblem**: Notepad++ updater is not compatible with XP due to the obsolete security layer under XP. Do you want to go to Notepad++ page to download the latest version? — Não se aplica (Windows XP)
