@@ -1586,3 +1586,835 @@ Decisão do dono do projeto: o programa inteiro, não só os textos. Formatos de
 - [ ] [IMPL] **NppExec**: linguagem de script completa (variáveis, `if`, `goto`, `npp_*`, `sci_*`, `env_*`)
 - [ ] [IMPL] **Plugins Admin**: catálogo com a lista oficial, instalação e remoção
 - [ ] [NA] **Plugins DLL**: DLLs de Windows não rodam no Mac, aparecem como indisponíveis
+
+# Inventário completo do repositório oficial (atualizado)
+
+## Comandos de menu (menuCmdID.h do repositório oficial) (558)
+
+- [x] [IMPL] **IDM_FILE_NEW**
+- [x] [IMPL] **IDM_FILE_OPEN**
+- [x] [IMPL] **IDM_FILE_CLOSE**
+- [x] [IMPL] **IDM_FILE_CLOSEALL**
+- [x] [IMPL] **IDM_FILE_CLOSEALL_BUT_CURRENT**
+- [x] [IMPL] **IDM_FILE_SAVE**
+- [x] [IMPL] **IDM_FILE_SAVEALL**
+- [x] [IMPL] **IDM_FILE_SAVEAS**
+- [ ] [IMPL] **IDM_FILE_CLOSEALL_TOLEFT**
+- [x] [IMPL] **IDM_FILE_PRINT**
+- [x] [IMPL] **IDM_FILE_PRINTNOW**
+- [x] [IMPL] **IDM_FILE_EXIT**
+- [ ] [IMPL] **IDM_FILE_LOADSESSION**
+- [ ] [IMPL] **IDM_FILE_SAVESESSION**
+- [x] [IMPL] **IDM_FILE_RELOAD**
+- [x] [IMPL] **IDM_FILE_SAVECOPYAS**
+- [ ] [IMPL] **IDM_FILE_DELETE**
+- [x] [IMPL] **IDM_FILE_RENAME**
+- [ ] [IMPL] **IDM_FILE_CLOSEALL_TORIGHT**
+- [ ] [IMPL] **IDM_FILE_OPEN_FOLDER**
+- [ ] [IMPL] **IDM_FILE_OPEN_CMD**
+- [x] [IMPL] **IDM_FILE_RESTORELASTCLOSEDFILE**
+- [ ] [IMPL] **IDM_FILE_OPENFOLDERASWORKSPACE**
+- [ ] [IMPL] **IDM_FILE_OPEN_DEFAULT_VIEWER**
+- [ ] [IMPL] **IDM_FILE_CLOSEALL_UNCHANGED**
+- [ ] [IMPL] **IDM_FILE_CONTAININGFOLDERASWORKSPACE**
+- [ ] [IMPL] **IDM_FILE_CLOSEALL_BUT_PINNED**
+- [ ] [IMPL] **IDM_FILE_OPEN_POWERSHELL**
+- [ ] [IMPL] **IDM_FILEMENU_LASTONE**
+- [ ] [IMPL] **IDM_FILEMENU_EXISTCMDPOSITION**
+- [x] [IMPL] **IDM_EDIT_CUT**
+- [x] [IMPL] **IDM_EDIT_COPY**
+- [x] [IMPL] **IDM_EDIT_UNDO**
+- [x] [IMPL] **IDM_EDIT_REDO**
+- [x] [IMPL] **IDM_EDIT_PASTE**
+- [x] [IMPL] **IDM_EDIT_DELETE**
+- [x] [IMPL] **IDM_EDIT_SELECTALL**
+- [ ] [IMPL] **IDM_EDIT_INS_TAB**
+- [ ] [IMPL] **IDM_EDIT_RMV_TAB**
+- [x] [IMPL] **IDM_EDIT_DUP_LINE**
+- [ ] [IMPL] **IDM_EDIT_TRANSPOSE_LINE**
+- [ ] [IMPL] **IDM_EDIT_SPLIT_LINES**
+- [x] [IMPL] **IDM_EDIT_JOIN_LINES**
+- [x] [IMPL] **IDM_EDIT_LINE_UP**
+- [x] [IMPL] **IDM_EDIT_LINE_DOWN**
+- [x] [IMPL] **IDM_EDIT_UPPERCASE**
+- [x] [IMPL] **IDM_EDIT_LOWERCASE**
+- [ ] [IMPL] **IDM_MACRO_STARTRECORDINGMACRO**
+- [ ] [IMPL] **IDM_MACRO_STOPRECORDINGMACRO**
+- [ ] [IMPL] **IDM_EDIT_BEGINENDSELECT**
+- [ ] [IMPL] **IDM_MACRO_PLAYBACKRECORDEDMACRO**
+- [x] [IMPL] **IDM_EDIT_BLOCK_COMMENT**
+- [x] [IMPL] **IDM_EDIT_STREAM_COMMENT**
+- [x] [IMPL] **IDM_EDIT_TRIMTRAILING**
+- [ ] [IMPL] **IDM_MACRO_SAVECURRENTMACRO**
+- [ ] [IMPL] **IDM_EDIT_RTL**
+- [ ] [IMPL] **IDM_EDIT_LTR**
+- [x] [IMPL] **IDM_EDIT_TOGGLEREADONLY**
+- [x] [IMPL] **IDM_EDIT_FULLPATHTOCLIP**
+- [x] [IMPL] **IDM_EDIT_FILENAMETOCLIP**
+- [ ] [IMPL] **IDM_EDIT_CURRENTDIRTOCLIP**
+- [ ] [IMPL] **IDM_MACRO_RUNMULTIMACRODLG**
+- [ ] [IMPL] **IDM_EDIT_TOGGLESYSTEMREADONLY**
+- [ ] [IMPL] **IDM_EDIT_COLUMNMODE**
+- [ ] [IMPL] **IDM_EDIT_BLOCK_COMMENT_SET**
+- [ ] [IMPL] **IDM_EDIT_BLOCK_UNCOMMENT**
+- [ ] [IMPL] **IDM_EDIT_COLUMNMODETIP**
+- [ ] [IMPL] **IDM_EDIT_PASTE_AS_HTML**
+- [ ] [IMPL] **IDM_EDIT_PASTE_AS_RTF**
+- [ ] [IMPL] **IDM_OPEN_ALL_RECENT_FILE**
+- [ ] [IMPL] **IDM_CLEAN_RECENT_FILE_LIST**
+- [ ] [IMPL] **IDM_EDIT_TRIMLINEHEAD**
+- [ ] [IMPL] **IDM_EDIT_TRIM_BOTH**
+- [ ] [IMPL] **IDM_EDIT_EOL2WS**
+- [ ] [IMPL] **IDM_EDIT_TRIMALL**
+- [x] [IMPL] **IDM_EDIT_TAB2SW**
+- [ ] [IMPL] **IDM_EDIT_STREAM_UNCOMMENT**
+- [ ] [IMPL] **IDM_EDIT_COPY_BINARY**
+- [ ] [IMPL] **IDM_EDIT_CUT_BINARY**
+- [ ] [IMPL] **IDM_EDIT_PASTE_BINARY**
+- [ ] [IMPL] **IDM_EDIT_CHAR_PANEL**
+- [ ] [IMPL] **IDM_EDIT_CLIPBOARDHISTORY_PANEL**
+- [x] [IMPL] **IDM_EDIT_SW2TAB_LEADING**
+- [ ] [IMPL] **IDM_EDIT_SW2TAB_ALL**
+- [x] [IMPL] **IDM_EDIT_REMOVEEMPTYLINES**
+- [ ] [IMPL] **IDM_EDIT_REMOVEEMPTYLINESWITHBLANK**
+- [ ] [IMPL] **IDM_EDIT_BLANKLINEABOVECURRENT**
+- [ ] [IMPL] **IDM_EDIT_BLANKLINEBELOWCURRENT**
+- [x] [IMPL] **IDM_EDIT_SORTLINES_LEXICOGRAPHIC_ASCENDING**
+- [x] [IMPL] **IDM_EDIT_SORTLINES_LEXICOGRAPHIC_DESCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_INTEGER_ASCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_INTEGER_DESCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_DECIMALCOMMA_ASCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_DECIMALCOMMA_DESCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_DECIMALDOT_ASCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_DECIMALDOT_DESCENDING**
+- [ ] [IMPL] **IDM_EDIT_PROPERCASE_FORCE**
+- [ ] [IMPL] **IDM_EDIT_PROPERCASE_BLEND**
+- [ ] [IMPL] **IDM_EDIT_SENTENCECASE_FORCE**
+- [ ] [IMPL] **IDM_EDIT_SENTENCECASE_BLEND**
+- [ ] [IMPL] **IDM_EDIT_INVERTCASE**
+- [ ] [IMPL] **IDM_EDIT_RANDOMCASE**
+- [ ] [IMPL] **IDM_EDIT_OPENSELECTEDFILETOEDIT**
+- [ ] [IMPL] **IDM_EDIT_OPENSELECTEDFILEFOLDERINEXPLORER**
+- [ ] [IMPL] **IDM_EDIT_SEARCHONINTERNET**
+- [ ] [IMPL] **IDM_EDIT_CHANGESEARCHENGINE**
+- [x] [IMPL] **IDM_EDIT_REMOVE_CONSECUTIVE_DUP_LINES**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_RANDOMLY**
+- [ ] [IMPL] **IDM_EDIT_REMOVE_ANY_DUP_LINES**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_ASCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_DESCENDING**
+- [ ] [IMPL] **IDM_EDIT_COPY_LINK**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_REVERSE_ORDER**
+- [ ] [IMPL] **IDM_EDIT_INSERT_DATETIME_SHORT**
+- [ ] [IMPL] **IDM_EDIT_INSERT_DATETIME_LONG**
+- [ ] [IMPL] **IDM_EDIT_INSERT_DATETIME_CUSTOMIZED**
+- [ ] [IMPL] **IDM_EDIT_COPY_ALL_NAMES**
+- [ ] [IMPL] **IDM_EDIT_COPY_ALL_PATHS**
+- [ ] [IMPL] **IDM_EDIT_BEGINENDSELECT_COLUMNMODE**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTALL**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTALLMATCHCASE**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTALLWHOLEWORD**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTALLMATCHCASEWHOLEWORD**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTNEXT**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTNEXTMATCHCASE**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTNEXTWHOLEWORD**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTNEXTMATCHCASEWHOLEWORD**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTUNDO**
+- [ ] [IMPL] **IDM_EDIT_MULTISELECTSSKIP**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_LOCALE_ASCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_LOCALE_DESCENDING**
+- [ ] [IMPL] **IDM_EDIT_SETREADONLYFORALLDOCS**
+- [ ] [IMPL] **IDM_EDIT_CLEARREADONLYFORALLDOCS**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_LENGTH_ASCENDING**
+- [ ] [IMPL] **IDM_EDIT_SORTLINES_LENGTH_DESCENDING**
+- [ ] [IMPL] **IDM_EDIT_REDACT_SELECTION**
+- [ ] [IMPL] **IDM_EDIT_AUTOCOMPLETE**
+- [ ] [IMPL] **IDM_EDIT_AUTOCOMPLETE_CURRENTFILE**
+- [ ] [IMPL] **IDM_EDIT_FUNCCALLTIP**
+- [ ] [IMPL] **IDM_EDIT_AUTOCOMPLETE_PATH**
+- [ ] [IMPL] **IDM_EDIT_FUNCCALLTIP_PREVIOUS**
+- [ ] [IMPL] **IDM_EDIT_FUNCCALLTIP_NEXT**
+- [x] [IMPL] **IDM_SEARCH_FIND**
+- [x] [IMPL] **IDM_SEARCH_FINDNEXT**
+- [x] [IMPL] **IDM_SEARCH_REPLACE**
+- [x] [IMPL] **IDM_SEARCH_GOTOLINE**
+- [x] [IMPL] **IDM_SEARCH_TOGGLE_BOOKMARK**
+- [x] [IMPL] **IDM_SEARCH_NEXT_BOOKMARK**
+- [x] [IMPL] **IDM_SEARCH_PREV_BOOKMARK**
+- [x] [IMPL] **IDM_SEARCH_CLEAR_BOOKMARKS**
+- [x] [IMPL] **IDM_SEARCH_GOTOMATCHINGBRACE**
+- [x] [IMPL] **IDM_SEARCH_FINDPREV**
+- [ ] [IMPL] **IDM_SEARCH_FINDINCREMENT**
+- [x] [IMPL] **IDM_SEARCH_FINDINFILES**
+- [ ] [IMPL] **IDM_SEARCH_VOLATILE_FINDNEXT**
+- [ ] [IMPL] **IDM_SEARCH_VOLATILE_FINDPREV**
+- [ ] [IMPL] **IDM_SEARCH_CUTMARKEDLINES**
+- [ ] [IMPL] **IDM_SEARCH_COPYMARKEDLINES**
+- [ ] [IMPL] **IDM_SEARCH_PASTEMARKEDLINES**
+- [ ] [IMPL] **IDM_SEARCH_DELETEMARKEDLINES**
+- [ ] [IMPL] **IDM_SEARCH_MARKALLEXT1**
+- [ ] [IMPL] **IDM_SEARCH_UNMARKALLEXT1**
+- [ ] [IMPL] **IDM_SEARCH_MARKALLEXT2**
+- [ ] [IMPL] **IDM_SEARCH_UNMARKALLEXT2**
+- [ ] [IMPL] **IDM_SEARCH_MARKALLEXT3**
+- [ ] [IMPL] **IDM_SEARCH_UNMARKALLEXT3**
+- [ ] [IMPL] **IDM_SEARCH_MARKALLEXT4**
+- [ ] [IMPL] **IDM_SEARCH_UNMARKALLEXT4**
+- [ ] [IMPL] **IDM_SEARCH_MARKALLEXT5**
+- [ ] [IMPL] **IDM_SEARCH_UNMARKALLEXT5**
+- [ ] [IMPL] **IDM_SEARCH_CLEARALLMARKS**
+- [ ] [IMPL] **IDM_SEARCH_GOPREVMARKER1**
+- [ ] [IMPL] **IDM_SEARCH_GOPREVMARKER2**
+- [ ] [IMPL] **IDM_SEARCH_GOPREVMARKER3**
+- [ ] [IMPL] **IDM_SEARCH_GOPREVMARKER4**
+- [ ] [IMPL] **IDM_SEARCH_GOPREVMARKER5**
+- [ ] [IMPL] **IDM_SEARCH_GOPREVMARKER_DEF**
+- [ ] [IMPL] **IDM_SEARCH_GONEXTMARKER1**
+- [ ] [IMPL] **IDM_SEARCH_GONEXTMARKER2**
+- [ ] [IMPL] **IDM_SEARCH_GONEXTMARKER3**
+- [ ] [IMPL] **IDM_SEARCH_GONEXTMARKER4**
+- [ ] [IMPL] **IDM_SEARCH_GONEXTMARKER5**
+- [ ] [IMPL] **IDM_SEARCH_GONEXTMARKER_DEF**
+- [ ] [IMPL] **IDM_FOCUS_ON_FOUND_RESULTS**
+- [ ] [IMPL] **IDM_SEARCH_GOTONEXTFOUND**
+- [ ] [IMPL] **IDM_SEARCH_GOTOPREVFOUND**
+- [ ] [IMPL] **IDM_SEARCH_SETANDFINDNEXT**
+- [ ] [IMPL] **IDM_SEARCH_SETANDFINDPREV**
+- [ ] [IMPL] **IDM_SEARCH_INVERSEMARKS**
+- [ ] [IMPL] **IDM_SEARCH_DELETEUNMARKEDLINES**
+- [ ] [IMPL] **IDM_SEARCH_FINDCHARINRANGE**
+- [ ] [IMPL] **IDM_SEARCH_SELECTMATCHINGBRACES**
+- [ ] [IMPL] **IDM_SEARCH_MARK**
+- [ ] [IMPL] **IDM_SEARCH_STYLE1TOCLIP**
+- [ ] [IMPL] **IDM_SEARCH_STYLE2TOCLIP**
+- [ ] [IMPL] **IDM_SEARCH_STYLE3TOCLIP**
+- [ ] [IMPL] **IDM_SEARCH_STYLE4TOCLIP**
+- [ ] [IMPL] **IDM_SEARCH_STYLE5TOCLIP**
+- [ ] [IMPL] **IDM_SEARCH_ALLSTYLESTOCLIP**
+- [ ] [IMPL] **IDM_SEARCH_MARKEDTOCLIP**
+- [ ] [IMPL] **IDM_SEARCH_MARKONEEXT1**
+- [ ] [IMPL] **IDM_SEARCH_MARKONEEXT2**
+- [ ] [IMPL] **IDM_SEARCH_MARKONEEXT3**
+- [ ] [IMPL] **IDM_SEARCH_MARKONEEXT4**
+- [ ] [IMPL] **IDM_SEARCH_MARKONEEXT5**
+- [ ] [IMPL] **IDM_SEARCH_CHANGED_NEXT**
+- [ ] [IMPL] **IDM_SEARCH_CHANGED_PREV**
+- [ ] [IMPL] **IDM_SEARCH_CLEAR_CHANGE_HISTORY**
+- [ ] [IMPL] **IDM_MISC**
+- [ ] [IMPL] **IDM_DOCLIST_FILESCLOSE**
+- [ ] [IMPL] **IDM_DOCLIST_FILESCLOSEOTHERS**
+- [ ] [IMPL] **IDM_DOCLIST_COPYNAMES**
+- [ ] [IMPL] **IDM_DOCLIST_COPYPATHS**
+- [ ] [IMPL] **IDM_VIEW_TOOLBAR_HIDE**
+- [ ] [IMPL] **IDM_VIEW_TOOLBAR_REDUCE**
+- [ ] [IMPL] **IDM_VIEW_TOOLBAR_ENLARGE**
+- [ ] [IMPL] **IDM_VIEW_TOOLBAR_STANDARD**
+- [ ] [IMPL] **IDM_VIEW_REDUCETABBAR**
+- [ ] [IMPL] **IDM_VIEW_LOCKTABBAR**
+- [ ] [IMPL] **IDM_VIEW_DRAWTABBAR_TOPBAR**
+- [ ] [IMPL] **IDM_VIEW_DRAWTABBAR_INACTIVETAB**
+- [ ] [IMPL] **IDM_VIEW_POSTIT**
+- [x] [IMPL] **IDM_VIEW_FOLDALL**
+- [ ] [IMPL] **IDM_VIEW_DISTRACTIONFREE**
+- [ ] [IMPL] **IDM_VIEW_LINENUMBER**
+- [ ] [IMPL] **IDM_VIEW_SYMBOLMARGIN**
+- [ ] [IMPL] **IDM_VIEW_FOLDERMARGIN**
+- [ ] [IMPL] **IDM_VIEW_FOLDERMARGIN_SIMPLE**
+- [ ] [IMPL] **IDM_VIEW_FOLDERMARGIN_ARROW**
+- [ ] [IMPL] **IDM_VIEW_FOLDERMARGIN_CIRCLE**
+- [ ] [IMPL] **IDM_VIEW_FOLDERMARGIN_BOX**
+- [x] [IMPL] **IDM_VIEW_ALL_CHARACTERS**
+- [x] [IMPL] **IDM_VIEW_INDENT_GUIDE**
+- [ ] [IMPL] **IDM_VIEW_CURLINE_HILITING**
+- [x] [IMPL] **IDM_VIEW_WRAP**
+- [x] [IMPL] **IDM_VIEW_ZOOMIN**
+- [x] [IMPL] **IDM_VIEW_ZOOMOUT**
+- [ ] [IMPL] **IDM_VIEW_TAB_SPACE**
+- [x] [IMPL] **IDM_VIEW_EOL**
+- [ ] [IMPL] **IDM_VIEW_ZOOM_SYNC**
+- [ ] [IMPL] **IDM_VIEW_TOOLBAR_ENLARGE_SET2**
+- [x] [IMPL] **IDM_VIEW_UNFOLDALL**
+- [ ] [IMPL] **IDM_VIEW_FOLD_CURRENT**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_CURRENT**
+- [ ] [IMPL] **IDM_VIEW_FULLSCREENTOGGLE**
+- [x] [IMPL] **IDM_VIEW_ZOOMRESTORE**
+- [ ] [IMPL] **IDM_VIEW_ALWAYSONTOP**
+- [ ] [IMPL] **IDM_VIEW_SYNSCROLLV**
+- [ ] [IMPL] **IDM_VIEW_SYNSCROLLH**
+- [ ] [IMPL] **IDM_VIEW_EDGENONE**
+- [ ] [IMPL] **IDM_VIEW_DRAWTABBAR_CLOSEBOTTUN**
+- [ ] [IMPL] **IDM_VIEW_DRAWTABBAR_DBCLK2CLOSE**
+- [ ] [IMPL] **IDM_VIEW_REFRESHTABAR**
+- [ ] [IMPL] **IDM_VIEW_WRAP_SYMBOL**
+- [ ] [IMPL] **IDM_VIEW_HIDELINES**
+- [ ] [IMPL] **IDM_VIEW_DRAWTABBAR_VERTICAL**
+- [ ] [IMPL] **IDM_VIEW_DRAWTABBAR_MULTILINE**
+- [ ] [IMPL] **IDM_VIEW_DOCCHANGEMARGIN**
+- [ ] [IMPL] **IDM_VIEW_LWDEF**
+- [ ] [IMPL] **IDM_VIEW_LWALIGN**
+- [ ] [IMPL] **IDM_PINTAB**
+- [ ] [IMPL] **IDM_VIEW_SUMMARY**
+- [ ] [IMPL] **IDM_VIEW_FOLD**
+- [ ] [IMPL] **IDM_VIEW_FOLD_1**
+- [ ] [IMPL] **IDM_VIEW_FOLD_2**
+- [ ] [IMPL] **IDM_VIEW_FOLD_3**
+- [ ] [IMPL] **IDM_VIEW_FOLD_4**
+- [ ] [IMPL] **IDM_VIEW_FOLD_5**
+- [ ] [IMPL] **IDM_VIEW_FOLD_6**
+- [ ] [IMPL] **IDM_VIEW_FOLD_7**
+- [ ] [IMPL] **IDM_VIEW_FOLD_8**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_1**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_2**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_3**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_4**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_5**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_6**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_7**
+- [ ] [IMPL] **IDM_VIEW_UNFOLD_8**
+- [ ] [IMPL] **IDM_VIEW_DOCLIST**
+- [ ] [IMPL] **IDM_VIEW_SWITCHTO_OTHER_VIEW**
+- [ ] [IMPL] **IDM_EXPORT_FUNC_LIST_AND_QUIT**
+- [ ] [IMPL] **IDM_VIEW_DOC_MAP**
+- [ ] [IMPL] **IDM_VIEW_PROJECT_PANEL_1**
+- [ ] [IMPL] **IDM_VIEW_PROJECT_PANEL_2**
+- [ ] [IMPL] **IDM_VIEW_PROJECT_PANEL_3**
+- [ ] [IMPL] **IDM_VIEW_FUNC_LIST**
+- [ ] [IMPL] **IDM_VIEW_FILEBROWSER**
+- [ ] [IMPL] **IDM_VIEW_TAB1**
+- [ ] [IMPL] **IDM_VIEW_TAB2**
+- [ ] [IMPL] **IDM_VIEW_TAB3**
+- [ ] [IMPL] **IDM_VIEW_TAB4**
+- [ ] [IMPL] **IDM_VIEW_TAB5**
+- [ ] [IMPL] **IDM_VIEW_TAB6**
+- [ ] [IMPL] **IDM_VIEW_TAB7**
+- [ ] [IMPL] **IDM_VIEW_TAB8**
+- [ ] [IMPL] **IDM_VIEW_TAB9**
+- [ ] [IMPL] **IDM_VIEW_TAB_NEXT**
+- [ ] [IMPL] **IDM_VIEW_TAB_PREV**
+- [ ] [IMPL] **IDM_VIEW_MONITORING**
+- [ ] [IMPL] **IDM_VIEW_TAB_MOVEFORWARD**
+- [ ] [IMPL] **IDM_VIEW_TAB_MOVEBACKWARD**
+- [ ] [IMPL] **IDM_VIEW_IN_FIREFOX**
+- [ ] [IMPL] **IDM_VIEW_IN_CHROME**
+- [ ] [IMPL] **IDM_VIEW_IN_EDGE**
+- [ ] [IMPL] **IDM_VIEW_IN_IE**
+- [ ] [IMPL] **IDM_VIEW_SWITCHTO_PROJECT_PANEL_1**
+- [ ] [IMPL] **IDM_VIEW_SWITCHTO_PROJECT_PANEL_2**
+- [ ] [IMPL] **IDM_VIEW_SWITCHTO_PROJECT_PANEL_3**
+- [ ] [IMPL] **IDM_VIEW_SWITCHTO_FILEBROWSER**
+- [ ] [IMPL] **IDM_VIEW_SWITCHTO_FUNC_LIST**
+- [ ] [IMPL] **IDM_VIEW_SWITCHTO_DOCLIST**
+- [ ] [IMPL] **IDM_VIEW_TAB_COLOUR_NONE**
+- [ ] [IMPL] **IDM_VIEW_TAB_COLOUR_1**
+- [ ] [IMPL] **IDM_VIEW_TAB_COLOUR_2**
+- [ ] [IMPL] **IDM_VIEW_TAB_COLOUR_3**
+- [ ] [IMPL] **IDM_VIEW_TAB_COLOUR_4**
+- [ ] [IMPL] **IDM_VIEW_TAB_COLOUR_5**
+- [ ] [IMPL] **IDM_VIEW_TAB_START**
+- [ ] [IMPL] **IDM_VIEW_TAB_END**
+- [ ] [IMPL] **IDM_VIEW_NPC**
+- [ ] [IMPL] **IDM_VIEW_NPC_CCUNIEOL**
+- [ ] [IMPL] **IDM_VIEW_GOTO_ANOTHER_VIEW**
+- [ ] [IMPL] **IDM_VIEW_CLONE_TO_ANOTHER_VIEW**
+- [ ] [IMPL] **IDM_VIEW_GOTO_NEW_INSTANCE**
+- [ ] [IMPL] **IDM_VIEW_LOAD_IN_NEW_INSTANCE**
+- [ ] [IMPL] **IDM_VIEW_GOTO_START**
+- [ ] [IMPL] **IDM_VIEW_GOTO_END**
+- [x] [IMPL] **IDM_FORMAT_TODOS**
+- [x] [IMPL] **IDM_FORMAT_TOUNIX**
+- [x] [IMPL] **IDM_FORMAT_TOMAC**
+- [ ] [IMPL] **IDM_FORMAT_ANSI**
+- [ ] [IMPL] **IDM_FORMAT_UTF_8**
+- [ ] [IMPL] **IDM_FORMAT_UTF_16BE**
+- [ ] [IMPL] **IDM_FORMAT_UTF_16LE**
+- [ ] [IMPL] **IDM_FORMAT_AS_UTF_8**
+- [ ] [IMPL] **IDM_FORMAT_CONV2_ANSI**
+- [ ] [IMPL] **IDM_FORMAT_CONV2_AS_UTF_8**
+- [ ] [IMPL] **IDM_FORMAT_CONV2_UTF_8**
+- [ ] [IMPL] **IDM_FORMAT_CONV2_UTF_16BE**
+- [ ] [IMPL] **IDM_FORMAT_CONV2_UTF_16LE**
+- [ ] [IMPL] **IDM_FORMAT_ENCODE**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1250**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1251**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1252**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1253**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1254**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1255**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1256**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1257**
+- [ ] [IMPL] **IDM_FORMAT_WIN_1258**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_1**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_2**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_3**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_4**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_5**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_6**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_7**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_8**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_9**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_10**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_11**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_13**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_14**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_15**
+- [ ] [IMPL] **IDM_FORMAT_ISO_8859_16**
+- [ ] [IMPL] **IDM_FORMAT_DOS_437**
+- [ ] [IMPL] **IDM_FORMAT_DOS_720**
+- [ ] [IMPL] **IDM_FORMAT_DOS_737**
+- [ ] [IMPL] **IDM_FORMAT_DOS_775**
+- [ ] [IMPL] **IDM_FORMAT_DOS_850**
+- [ ] [IMPL] **IDM_FORMAT_DOS_852**
+- [ ] [IMPL] **IDM_FORMAT_DOS_855**
+- [ ] [IMPL] **IDM_FORMAT_DOS_857**
+- [ ] [IMPL] **IDM_FORMAT_DOS_858**
+- [ ] [IMPL] **IDM_FORMAT_DOS_860**
+- [ ] [IMPL] **IDM_FORMAT_DOS_861**
+- [ ] [IMPL] **IDM_FORMAT_DOS_862**
+- [ ] [IMPL] **IDM_FORMAT_DOS_863**
+- [ ] [IMPL] **IDM_FORMAT_DOS_865**
+- [ ] [IMPL] **IDM_FORMAT_DOS_866**
+- [ ] [IMPL] **IDM_FORMAT_DOS_869**
+- [ ] [IMPL] **IDM_FORMAT_BIG5**
+- [ ] [IMPL] **IDM_FORMAT_GB2312**
+- [ ] [IMPL] **IDM_FORMAT_SHIFT_JIS**
+- [ ] [IMPL] **IDM_FORMAT_KOREAN_WIN**
+- [ ] [IMPL] **IDM_FORMAT_EUC_KR**
+- [ ] [IMPL] **IDM_FORMAT_TIS_620**
+- [ ] [IMPL] **IDM_FORMAT_MAC_CYRILLIC**
+- [ ] [IMPL] **IDM_FORMAT_KOI8U_CYRILLIC**
+- [ ] [IMPL] **IDM_FORMAT_KOI8R_CYRILLIC**
+- [ ] [IMPL] **IDM_FORMAT_ENCODE_END**
+- [ ] [IMPL] **IDM_LANGSTYLE_CONFIG_DLG**
+- [ ] [IMPL] **IDM_LANG_C**
+- [ ] [IMPL] **IDM_LANG_CPP**
+- [ ] [IMPL] **IDM_LANG_JAVA**
+- [ ] [IMPL] **IDM_LANG_HTML**
+- [ ] [IMPL] **IDM_LANG_XML**
+- [ ] [IMPL] **IDM_LANG_JS**
+- [ ] [IMPL] **IDM_LANG_PHP**
+- [ ] [IMPL] **IDM_LANG_ASP**
+- [ ] [IMPL] **IDM_LANG_CSS**
+- [ ] [IMPL] **IDM_LANG_PASCAL**
+- [ ] [IMPL] **IDM_LANG_PYTHON**
+- [ ] [IMPL] **IDM_LANG_PERL**
+- [ ] [IMPL] **IDM_LANG_OBJC**
+- [ ] [IMPL] **IDM_LANG_ASCII**
+- [ ] [IMPL] **IDM_LANG_TEXT**
+- [ ] [IMPL] **IDM_LANG_RC**
+- [ ] [IMPL] **IDM_LANG_MAKEFILE**
+- [ ] [IMPL] **IDM_LANG_INI**
+- [ ] [IMPL] **IDM_LANG_SQL**
+- [ ] [IMPL] **IDM_LANG_VB**
+- [ ] [IMPL] **IDM_LANG_BATCH**
+- [ ] [IMPL] **IDM_LANG_CS**
+- [ ] [IMPL] **IDM_LANG_LUA**
+- [ ] [IMPL] **IDM_LANG_TEX**
+- [ ] [IMPL] **IDM_LANG_FORTRAN**
+- [ ] [IMPL] **IDM_LANG_BASH**
+- [ ] [IMPL] **IDM_LANG_FLASH**
+- [ ] [IMPL] **IDM_LANG_NSIS**
+- [ ] [IMPL] **IDM_LANG_TCL**
+- [ ] [IMPL] **IDM_LANG_LISP**
+- [ ] [IMPL] **IDM_LANG_SCHEME**
+- [ ] [IMPL] **IDM_LANG_ASM**
+- [ ] [IMPL] **IDM_LANG_DIFF**
+- [ ] [IMPL] **IDM_LANG_PROPS**
+- [ ] [IMPL] **IDM_LANG_PS**
+- [ ] [IMPL] **IDM_LANG_RUBY**
+- [ ] [IMPL] **IDM_LANG_SMALLTALK**
+- [ ] [IMPL] **IDM_LANG_VHDL**
+- [ ] [IMPL] **IDM_LANG_CAML**
+- [ ] [IMPL] **IDM_LANG_KIX**
+- [ ] [IMPL] **IDM_LANG_ADA**
+- [ ] [IMPL] **IDM_LANG_VERILOG**
+- [ ] [IMPL] **IDM_LANG_AU3**
+- [ ] [IMPL] **IDM_LANG_MATLAB**
+- [ ] [IMPL] **IDM_LANG_HASKELL**
+- [ ] [IMPL] **IDM_LANG_INNO**
+- [ ] [IMPL] **IDM_LANG_CMAKE**
+- [ ] [IMPL] **IDM_LANG_YAML**
+- [ ] [IMPL] **IDM_LANG_COBOL**
+- [ ] [IMPL] **IDM_LANG_D**
+- [ ] [IMPL] **IDM_LANG_GUI4CLI**
+- [ ] [IMPL] **IDM_LANG_POWERSHELL**
+- [ ] [IMPL] **IDM_LANG_R**
+- [ ] [IMPL] **IDM_LANG_JSP**
+- [ ] [IMPL] **IDM_LANG_COFFEESCRIPT**
+- [ ] [IMPL] **IDM_LANG_JSON**
+- [ ] [IMPL] **IDM_LANG_FORTRAN_77**
+- [ ] [IMPL] **IDM_LANG_BAANC**
+- [ ] [IMPL] **IDM_LANG_SREC**
+- [ ] [IMPL] **IDM_LANG_IHEX**
+- [ ] [IMPL] **IDM_LANG_TEHEX**
+- [ ] [IMPL] **IDM_LANG_SWIFT**
+- [ ] [IMPL] **IDM_LANG_ASN1**
+- [ ] [IMPL] **IDM_LANG_AVS**
+- [ ] [IMPL] **IDM_LANG_BLITZBASIC**
+- [ ] [IMPL] **IDM_LANG_PUREBASIC**
+- [ ] [IMPL] **IDM_LANG_FREEBASIC**
+- [ ] [IMPL] **IDM_LANG_CSOUND**
+- [ ] [IMPL] **IDM_LANG_ERLANG**
+- [ ] [IMPL] **IDM_LANG_ESCRIPT**
+- [ ] [IMPL] **IDM_LANG_FORTH**
+- [ ] [IMPL] **IDM_LANG_LATEX**
+- [ ] [IMPL] **IDM_LANG_MMIXAL**
+- [ ] [IMPL] **IDM_LANG_NIM**
+- [ ] [IMPL] **IDM_LANG_NNCRONTAB**
+- [ ] [IMPL] **IDM_LANG_OSCRIPT**
+- [ ] [IMPL] **IDM_LANG_REBOL**
+- [ ] [IMPL] **IDM_LANG_REGISTRY**
+- [ ] [IMPL] **IDM_LANG_RUST**
+- [ ] [IMPL] **IDM_LANG_SPICE**
+- [ ] [IMPL] **IDM_LANG_TXT2TAGS**
+- [ ] [IMPL] **IDM_LANG_VISUALPROLOG**
+- [ ] [IMPL] **IDM_LANG_TYPESCRIPT**
+- [ ] [IMPL] **IDM_LANG_JSON5**
+- [ ] [IMPL] **IDM_LANG_MSSQL**
+- [ ] [IMPL] **IDM_LANG_GDSCRIPT**
+- [ ] [IMPL] **IDM_LANG_HOLLYWOOD**
+- [ ] [IMPL] **IDM_LANG_GOLANG**
+- [ ] [IMPL] **IDM_LANG_RAKU**
+- [ ] [IMPL] **IDM_LANG_TOML**
+- [ ] [IMPL] **IDM_LANG_SAS**
+- [ ] [IMPL] **IDM_LANG_ERRORLIST**
+- [ ] [IMPL] **IDM_LANG_ESCSEQ**
+- [ ] [IMPL] **IDM_LANG_STTXT**
+- [ ] [IMPL] **IDM_LANG_EXTERNAL**
+- [ ] [IMPL] **IDM_LANG_EXTERNAL_LIMIT**
+- [ ] [IMPL] **IDM_LANG_USER**
+- [ ] [IMPL] **IDM_LANG_USER_LIMIT**
+- [ ] [IMPL] **IDM_LANG_USER_DLG**
+- [ ] [IMPL] **IDM_LANG_OPENUDLDIR**
+- [ ] [IMPL] **IDM_LANG_UDLCOLLECTION_PROJECT_SITE**
+- [ ] [IMPL] **IDM_ABOUT**
+- [ ] [IMPL] **IDM_HOMESWEETHOME**
+- [ ] [IMPL] **IDM_PROJECTPAGE**
+- [ ] [IMPL] **IDM_ONLINEDOCUMENT**
+- [ ] [IMPL] **IDM_FORUM**
+- [ ] [IMPL] **IDM_PLUGINSHOME**
+- [ ] [IMPL] **IDM_UPDATE_NPP**
+- [ ] [IMPL] **IDM_WIKIFAQ**
+- [ ] [IMPL] **IDM_CONFUPDATERPROXY**
+- [ ] [IMPL] **IDM_CMDLINEARGUMENTS**
+- [ ] [IMPL] **IDM_ONLINESUPPORT**
+- [ ] [IMPL] **IDM_DEBUGINFO**
+- [ ] [IMPL] **IDM_SETTING_TAB_SIZE**
+- [ ] [IMPL] **IDM_SETTING_TAB_REPLACESPACE**
+- [ ] [IMPL] **IDM_SETTING_HISTORY_SIZE**
+- [ ] [IMPL] **IDM_SETTING_EDGE_SIZE**
+- [ ] [IMPL] **IDM_SETTING_IMPORTPLUGIN**
+- [ ] [IMPL] **IDM_SETTING_IMPORTSTYLETHEMES**
+- [ ] [IMPL] **IDM_SETTING_TRAYICON**
+- [ ] [IMPL] **IDM_SETTING_SHORTCUT_MAPPER**
+- [ ] [IMPL] **IDM_SETTING_REMEMBER_LAST_SESSION**
+- [ ] [IMPL] **IDM_SETTING_PREFERENCE**
+- [ ] [IMPL] **IDM_SETTING_OPENPLUGINSDIR**
+- [ ] [IMPL] **IDM_SETTING_PLUGINADM**
+- [ ] [IMPL] **IDM_SETTING_SHORTCUT_MAPPER_MACRO**
+- [ ] [IMPL] **IDM_SETTING_SHORTCUT_MAPPER_RUN**
+- [ ] [IMPL] **IDM_SETTING_EDITCONTEXTMENU**
+- [ ] [IMPL] **IDM_TOOL_MD5_GENERATE**
+- [ ] [IMPL] **IDM_TOOL_MD5_GENERATEFROMFILE**
+- [ ] [IMPL] **IDM_TOOL_MD5_GENERATEINTOCLIPBOARD**
+- [ ] [IMPL] **IDM_TOOL_SHA256_GENERATE**
+- [ ] [IMPL] **IDM_TOOL_SHA256_GENERATEFROMFILE**
+- [ ] [IMPL] **IDM_TOOL_SHA256_GENERATEINTOCLIPBOARD**
+- [ ] [IMPL] **IDM_TOOL_SHA1_GENERATE**
+- [ ] [IMPL] **IDM_TOOL_SHA1_GENERATEFROMFILE**
+- [ ] [IMPL] **IDM_TOOL_SHA1_GENERATEINTOCLIPBOARD**
+- [ ] [IMPL] **IDM_TOOL_SHA512_GENERATE**
+- [ ] [IMPL] **IDM_TOOL_SHA512_GENERATEFROMFILE**
+- [ ] [IMPL] **IDM_TOOL_SHA512_GENERATEINTOCLIPBOARD**
+- [ ] [IMPL] **IDM_EXECUTE_VALIDATE_SHORTCUTSXML**
+- [ ] [IMPL] **IDM_SYSTRAYPOPUP**
+- [ ] [IMPL] **IDM_SYSTRAYPOPUP_ACTIVATE**
+- [ ] [IMPL] **IDM_SYSTRAYPOPUP_NEWDOC**
+- [ ] [IMPL] **IDM_SYSTRAYPOPUP_NEW_AND_PASTE**
+- [ ] [IMPL] **IDM_SYSTRAYPOPUP_OPENFILE**
+- [ ] [IMPL] **IDM_SYSTRAYPOPUP_CLOSE**
+- [ ] [IMPL] **IDM_WINDOW_WINDOWS**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FN_ASC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FN_DSC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FP_ASC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FP_DSC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FT_ASC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FT_DSC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FS_ASC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FS_DSC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FD_ASC**
+- [ ] [IMPL] **IDM_WINDOW_SORT_FD_DSC**
+- [ ] [IMPL] **IDM_WINDOW_MRU_FIRST**
+- [ ] [IMPL] **IDM_WINDOW_MRU_LIMIT**
+- [ ] [IMPL] **IDM_WINDOW_COPY_NAME**
+- [ ] [IMPL] **IDM_WINDOW_COPY_PATH**
+- [ ] [IMPL] **IDM_DROPLIST_LIST**
+- [ ] [IMPL] **IDM_DROPLIST_MRU_FIRST**
+
+
+## Temas de cor (22 do Notepad++) (22)
+
+- [ ] [IMPL] **Bespin**
+- [ ] [IMPL] **Black board**
+- [ ] [IMPL] **Choco**
+- [ ] [IMPL] **DansLeRuSH-Dark**
+- [ ] [IMPL] **DarkModeDefault**
+- [ ] [IMPL] **Deep Black**
+- [ ] [IMPL] **Hello Kitty**
+- [ ] [IMPL] **HotFudgeSundae**
+- [ ] [IMPL] **Mono Industrial**
+- [ ] [IMPL] **Monokai**
+- [ ] [IMPL] **MossyLawn**
+- [ ] [IMPL] **Navajo**
+- [ ] [IMPL] **Obsidian**
+- [ ] [IMPL] **Plastic Code Wrap**
+- [ ] [IMPL] **Ruby Blue**
+- [ ] [IMPL] **Solarized-light**
+- [ ] [IMPL] **Solarized**
+- [ ] [IMPL] **Twilight**
+- [ ] [IMPL] **Vibrant Ink**
+- [ ] [IMPL] **Zenburn**
+- [ ] [IMPL] **khaki**
+- [ ] [IMPL] **vim Dark Blue**
+
+
+## Idiomas de interface (96 do Notepad++) (96)
+
+- [ ] [IMPL] **abkhazian**
+- [ ] [IMPL] **afrikaans**
+- [ ] [IMPL] **albanian**
+- [ ] [IMPL] **arabic**
+- [ ] [IMPL] **aragonese**
+- [ ] [IMPL] **aranese**
+- [ ] [IMPL] **azerbaijani**
+- [ ] [IMPL] **basque**
+- [ ] [IMPL] **belarusian**
+- [ ] [IMPL] **bengali**
+- [ ] [IMPL] **bosnian**
+- [ ] [IMPL] **brazilian_portuguese**
+- [ ] [IMPL] **breton**
+- [ ] [IMPL] **bulgarian**
+- [ ] [IMPL] **catalan**
+- [ ] [IMPL] **chineseSimplified**
+- [ ] [IMPL] **corsican**
+- [ ] [IMPL] **croatian**
+- [ ] [IMPL] **czech**
+- [ ] [IMPL] **danish**
+- [ ] [IMPL] **dutch**
+- [x] [IMPL] **english**
+- [ ] [IMPL] **english_customizable**
+- [ ] [IMPL] **esperanto**
+- [ ] [IMPL] **estonian**
+- [ ] [IMPL] **extremaduran**
+- [ ] [IMPL] **farsi**
+- [ ] [IMPL] **finnish**
+- [ ] [IMPL] **french**
+- [ ] [IMPL] **friulian**
+- [ ] [IMPL] **galician**
+- [ ] [IMPL] **georgian**
+- [ ] [IMPL] **german**
+- [ ] [IMPL] **greek**
+- [ ] [IMPL] **gujarati**
+- [ ] [IMPL] **hebrew**
+- [ ] [IMPL] **hindi**
+- [ ] [IMPL] **hongKongCantonese**
+- [ ] [IMPL] **hungarian**
+- [ ] [IMPL] **indonesian**
+- [ ] [IMPL] **irish**
+- [ ] [IMPL] **italian**
+- [ ] [IMPL] **japanese**
+- [ ] [IMPL] **kabyle**
+- [ ] [IMPL] **kannada**
+- [ ] [IMPL] **kazakh**
+- [ ] [IMPL] **korean**
+- [ ] [IMPL] **kurdish**
+- [ ] [IMPL] **kyrgyz**
+- [ ] [IMPL] **lao**
+- [ ] [IMPL] **latvian**
+- [ ] [IMPL] **ligurian**
+- [ ] [IMPL] **lithuanian**
+- [ ] [IMPL] **luxembourgish**
+- [ ] [IMPL] **macedonian**
+- [ ] [IMPL] **malay**
+- [ ] [IMPL] **malayalam**
+- [ ] [IMPL] **marathi**
+- [ ] [IMPL] **mongolian**
+- [ ] [IMPL] **nepali**
+- [ ] [IMPL] **norwegian**
+- [ ] [IMPL] **nynorsk**
+- [ ] [IMPL] **occitan**
+- [ ] [IMPL] **piglatin**
+- [ ] [IMPL] **polish**
+- [ ] [IMPL] **portuguese**
+- [ ] [IMPL] **punjabi**
+- [ ] [IMPL] **romanian**
+- [ ] [IMPL] **russian**
+- [ ] [IMPL] **samogitian**
+- [ ] [IMPL] **sardinian**
+- [ ] [IMPL] **serbian**
+- [ ] [IMPL] **serbianCyrillic**
+- [ ] [IMPL] **sinhala**
+- [ ] [IMPL] **slovak**
+- [ ] [IMPL] **slovenian**
+- [ ] [IMPL] **spanish**
+- [ ] [IMPL] **spanish_ar**
+- [ ] [IMPL] **swedish**
+- [ ] [IMPL] **tagalog**
+- [ ] [IMPL] **taiwaneseMandarin**
+- [ ] [IMPL] **tajikCyrillic**
+- [ ] [IMPL] **tamil**
+- [ ] [IMPL] **tatar**
+- [ ] [IMPL] **telugu**
+- [ ] [IMPL] **thai**
+- [ ] [IMPL] **turkish**
+- [ ] [IMPL] **ukrainian**
+- [ ] [IMPL] **urdu**
+- [ ] [IMPL] **uyghur**
+- [ ] [IMPL] **uzbek**
+- [ ] [IMPL] **uzbekCyrillic**
+- [ ] [IMPL] **venetian**
+- [ ] [IMPL] **vietnamese**
+- [ ] [IMPL] **welsh**
+- [ ] [IMPL] **zulu**
+
+
+## Parâmetros de linha de comando (30)
+
+- [ ] [IMPL] **-alwaysOnTop**
+- [ ] [IMPL] **-export**
+- [ ] [IMPL] **-fullReadOnly**
+- [ ] [IMPL] **-fullReadOnlySavingForbidden**
+- [ ] [IMPL] **-lLANG**
+- [ ] [IMPL] **-loadingTime**
+- [ ] [IMPL] **-monitor**
+- [ ] [IMPL] **-monitoringMode**
+- [ ] [IMPL] **-multiInst**
+- [ ] [IMPL] **-noPlugin**
+- [ ] [IMPL] **-nosession**
+- [ ] [IMPL] **-notabbar**
+- [ ] [IMPL] **-notepadStyleCmdline**
+- [ ] [IMPL] **-openFoldersAsWorkspace**
+- [ ] [IMPL] **-openSession**
+- [ ] [IMPL] **-options**
+- [ ] [IMPL] **-pluginMessage**
+- [ ] [IMPL] **-qSpeed**
+- [ ] [IMPL] **-qf**
+- [ ] [IMPL] **-qn**
+- [ ] [IMPL] **-qt**
+- [ ] [IMPL] **-quickPrint**
+- [ ] [IMPL] **-r**
+- [ ] [IMPL] **-ro**
+- [ ] [IMPL] **-settingsDir**
+- [ ] [IMPL] **-systemtray**
+- [ ] [IMPL] **-titleAdd**
+- [ ] [IMPL] **-udl**
+- [ ] [IMPL] **-v**
+- [ ] [IMPL] **-z**
+
+
+## Arquivos de configuração e formatos (8)
+
+- [ ] [IMPL] **config.xml (preferências gerais)**
+- [ ] [IMPL] **shortcuts.xml (atalhos)**
+- [ ] [IMPL] **stylers.xml (cores e fontes por linguagem)**
+- [ ] [IMPL] **langs.xml (linguagens e extensões)**
+- [ ] [IMPL] **session.xml (sessão salva)**
+- [ ] [IMPL] **contextMenu.xml (menu de contexto)**
+- [ ] [IMPL] **UDL (linguagens definidas pelo usuário)**
+- [ ] [IMPL] **Pasta de plugins e configuração de plugins**
+
+
+## Parsers da Lista de funções (48 do Notepad++) (48)
+
+- [ ] [IMPL] **ada**
+- [ ] [IMPL] **asm**
+- [ ] [IMPL] **autoit**
+- [ ] [IMPL] **baanc**
+- [ ] [IMPL] **bash**
+- [ ] [IMPL] **batch**
+- [ ] [IMPL] **c**
+- [ ] [IMPL] **cobol-free**
+- [ ] [IMPL] **cobol**
+- [ ] [IMPL] **cpp**
+- [ ] [IMPL] **cs**
+- [ ] [IMPL] **css**
+- [ ] [IMPL] **d**
+- [ ] [IMPL] **fortran**
+- [ ] [IMPL] **fortran77**
+- [ ] [IMPL] **gdscript**
+- [ ] [IMPL] **haskell**
+- [ ] [IMPL] **hollywood**
+- [ ] [IMPL] **ini**
+- [ ] [IMPL] **inno**
+- [ ] [IMPL] **java**
+- [ ] [IMPL] **javascript.js**
+- [ ] [IMPL] **krl**
+- [ ] [IMPL] **latex**
+- [ ] [IMPL] **lua**
+- [ ] [IMPL] **makefile**
+- [ ] [IMPL] **nim**
+- [ ] [IMPL] **nppexec**
+- [ ] [IMPL] **nsis**
+- [ ] [IMPL] **overrideMap**
+- [ ] [IMPL] **pascal**
+- [ ] [IMPL] **perl**
+- [ ] [IMPL] **php**
+- [ ] [IMPL] **powershell**
+- [ ] [IMPL] **python**
+- [ ] [IMPL] **raku**
+- [ ] [IMPL] **ruby**
+- [ ] [IMPL] **rust**
+- [ ] [IMPL] **sas**
+- [ ] [IMPL] **sinumerik**
+- [ ] [IMPL] **sql**
+- [ ] [IMPL] **tex**
+- [ ] [IMPL] **toml**
+- [ ] [IMPL] **typescript**
+- [ ] [IMPL] **universe_basic**
+- [ ] [IMPL] **vb**
+- [ ] [IMPL] **vhdl**
+- [ ] [IMPL] **xml**
+
+
+## Arquivos de autocompletar com APIs (34 do Notepad++) (34)
+
+- [ ] [IMPL] **BaanC**
+- [ ] [IMPL] **actionscript**
+- [ ] [IMPL] **autoit**
+- [ ] [IMPL] **batch**
+- [ ] [IMPL] **c**
+- [ ] [IMPL] **cmake**
+- [ ] [IMPL] **cobol**
+- [ ] [IMPL] **coffee**
+- [ ] [IMPL] **cpp**
+- [ ] [IMPL] **cs**
+- [ ] [IMPL] **css**
+- [ ] [IMPL] **d**
+- [ ] [IMPL] **gdscript**
+- [ ] [IMPL] **go**
+- [ ] [IMPL] **html**
+- [ ] [IMPL] **java**
+- [ ] [IMPL] **javascript**
+- [ ] [IMPL] **lisp**
+- [ ] [IMPL] **lua**
+- [ ] [IMPL] **nsis**
+- [ ] [IMPL] **perl**
+- [ ] [IMPL] **php**
+- [ ] [IMPL] **powershell**
+- [ ] [IMPL] **python**
+- [ ] [IMPL] **raku**
+- [ ] [IMPL] **rc**
+- [ ] [IMPL] **rust**
+- [ ] [IMPL] **sas**
+- [ ] [IMPL] **sql**
+- [ ] [IMPL] **tex**
+- [ ] [IMPL] **typescript**
+- [ ] [IMPL] **vb**
+- [ ] [IMPL] **vhdl**
+- [ ] [IMPL] **xml**
+
+
+## Arquivos de teste do projeto oficial (2)
+
+- [ ] [IMPL] **overrideMap.xml**
+- [ ] [IMPL] **regexGlobalTest.xml**
+
