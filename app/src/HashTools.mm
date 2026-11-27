@@ -34,29 +34,29 @@
 	case QHashMD5:
 		length = CC_MD5_DIGEST_LENGTH;
 		buf = [NSMutableData dataWithLength:length];
-		CC_MD5(data.bytes, (CC_LONG)data.length, buf.mutableBytes);
+		CC_MD5(data.bytes, (CC_LONG)data.length, (unsigned char *)buf.mutableBytes);
 		break;
 	case QHashSHA1:
 		length = CC_SHA1_DIGEST_LENGTH;
 		buf = [NSMutableData dataWithLength:length];
-		CC_SHA1(data.bytes, (CC_LONG)data.length, buf.mutableBytes);
+		CC_SHA1(data.bytes, (CC_LONG)data.length, (unsigned char *)buf.mutableBytes);
 		break;
 	case QHashSHA256:
 		length = CC_SHA256_DIGEST_LENGTH;
 		buf = [NSMutableData dataWithLength:length];
-		CC_SHA256(data.bytes, (CC_LONG)data.length, buf.mutableBytes);
+		CC_SHA256(data.bytes, (CC_LONG)data.length, (unsigned char *)buf.mutableBytes);
 		break;
 	case QHashSHA512:
 		length = CC_SHA512_DIGEST_LENGTH;
 		buf = [NSMutableData dataWithLength:length];
-		CC_SHA512(data.bytes, (CC_LONG)data.length, buf.mutableBytes);
+		CC_SHA512(data.bytes, (CC_LONG)data.length, (unsigned char *)buf.mutableBytes);
 		break;
 	default:
 		return @"";
 	}
 	(void)out;
 	NSMutableString *hex = [NSMutableString stringWithCapacity:length * 2];
-	const unsigned char *b = buf.bytes;
+	const unsigned char *b = (const unsigned char *)buf.bytes;
 	for (NSUInteger i = 0; i < length; i++) [hex appendFormat:@"%02x", b[i]];
 	return hex;
 }
