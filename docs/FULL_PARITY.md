@@ -8,7 +8,7 @@ o mesmo item, com o mesmo comportamento, validado no autoteste.
 Legenda: [IMPL] implementar igual no macOS · [MAC] mesma função com equivalente do macOS · [NA] impossível no macOS (com motivo). A aparência segue o macOS, não o Windows.
 
 Para cada item: a seção (Menu, Dialog, MessageBox, ...) e o texto original em inglês.
-Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualizado pelo script; marque conforme implementa.)
+Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualizado pelo script; marque conforme implementa.)
 
 
 ## Menu (399)
@@ -202,7 +202,7 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Copy All Filenames `id 42087`
 - [ ] [IMPL] **Item**: Copy All File Paths `id 42088`
 - [ ] [IMPL] **Item**: Run a Macro Multiple Times... `id 42032`
-- [ ] [NA] **Item**: Read-Only Attribute in Windows `id 42033` — Atributo somente leitura do Windows
+- [ ] [MAC] **Item**: Read-Only Attribute in Windows `id 42033` — Permissão de arquivo do macOS (flag uchg, travar arquivo no Finder)
 - [ ] [IMPL] **Item**: Single Line Comment `id 42035`
 - [ ] [IMPL] **Item**: Single Line Uncomment `id 42036`
 - [ ] [IMPL] **Item**: Remove Empty Lines `id 42055`
@@ -358,8 +358,8 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Notepad++ Community (Forum) `id 47004`
 - [ ] [IMPL] **Item**: Debug Info... `id 47012`
 - [ ] [IMPL] **Item**: Get More Plugins `id 47005`
-- [ ] [NA] **Item**: Update Notepad++ `id 47006` — Atualizador do Notepad++ (Windows)
-- [ ] [NA] **Item**: Set Updater Proxy... `id 47009` — Atualizador do Notepad++ (Windows)
+- [ ] [MAC] **Item**: Update Notepad++ `id 47006` — Verificar nova versão no GitHub e abrir a página de releases
+- [ ] [MAC] **Item**: Set Updater Proxy... `id 47009` — Proxy do sistema do macOS (já usado pelo app)
 - [ ] [IMPL] **Item**: Import plugin(s)... `id 48005`
 - [ ] [IMPL] **Item**: Import style theme(s)... `id 48006`
 - [ ] [IMPL] **Item**: Edit Popup ContextMenu `id 48018`
@@ -371,7 +371,7 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Generate from files... `id 48502`
 - [ ] [IMPL] **Item**: Generate from selection into clipboard `id 48503`
 - [ ] [IMPL] **Item**: Run... `id 49000`
-- [ ] [NA] **Item**: Validate shortcuts.xml `id 49001` — Verificação HMAC do arquivo de atalhos do Windows
+- [ ] [MAC] **Item**: Validate shortcuts.xml `id 49001` — Validar o shortcuts.xml sem assinatura HMAC (checagem de formato)
 - [ ] [IMPL] **Item**: Function Completion `id 50000`
 - [ ] [IMPL] **Item**: Word Completion `id 50001`
 - [ ] [IMPL] **Item**: Function Parameters Hint `id 50002`
@@ -411,7 +411,7 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Activate `id 43101`
 - [ ] [IMPL] **Item**: New and Paste `id 43103`
 - [ ] [IMPL] **Item**: Find in Files... `id 43013`
-- [ ] [NA] **Item**: Close Tray Icon `id 43105` — Ícone da bandeja do Windows (no Mac vira ícone na barra de menus, tratado em MAC)
+- [ ] [MAC] **Item**: Close Tray Icon `id 43105` — Ocultar o ícone da barra de menus
 
 ## Dialog (719)
 
@@ -604,7 +604,7 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Copy Styled Text of Find Mark style `id 43061`
 - [ ] [MAC] **Item**: View current file in Firefox `id 44100` — Navegador do macOS (Safari, Chrome, Firefox ou Edge, os instalados)
 - [ ] [MAC] **Item**: View current file in Chrome `id 44101` — Navegador do macOS (Safari, Chrome, Firefox ou Edge, os instalados)
-- [ ] [NA] **Item**: View current file in IE `id 44103` — Internet Explorer (não existe no Mac)
+- [ ] [MAC] **Item**: View current file in IE `id 44103` — Abrir no Safari
 - [ ] [MAC] **Item**: View current file in Edge `id 44102` — Navegador do macOS (Safari, Chrome, Firefox ou Edge, os instalados)
 - [ ] [IMPL] **Item**: Switch to previous document `id 50003`
 - [ ] [IMPL] **Item**: Switch to next document `id 50004`
@@ -1073,12 +1073,12 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Element**: DirectWrite (DirectX 11)
 - [ ] [IMPL] **Element**: Enable on Notepad++ startup
 - [ ] [IMPL] **Element**: Enable on Notepad++ exit
-- [ ] [NA] **Item**: system tray `id 6308` — Ícone da bandeja do Windows (no Mac vira ícone na barra de menus, tratado em MAC)
+- [ ] [MAC] **Item**: system tray `id 6308` — Ícone na barra de menus (NSStatusItem)
 - [ ] [IMPL] **Item**: rendering mode `id 6363`
-- [ ] [NA] **Item**: Auto-updater: `id 6365` — Atualizador do Notepad++ (Windows)
+- [ ] [MAC] **Item**: Auto-updater: `id 6365` — Verificação manual de releases no GitHub
 - [ ] [IMPL] **Item**: File Status Auto-Detection `id 6312`
-- [ ] [NA] **Item**: Update silently `id 6313` — Atualizador do Notepad++ (Windows)
-- [ ] [NA] **Item**: Scroll to the last line after update `id 6325` — Atualizador do Notepad++ (Windows)
+- [ ] [MAC] **Item**: Update silently `id 6313` — Verificação manual de releases no GitHub
+- [ ] [MAC] **Item**: Scroll to the last line after update `id 6325` — Não se aplica sem atualização automática
 - [ ] [IMPL] **Item**: Session file ext.: `id 6322`
 - [ ] [MAC] **Item**: Document Switcher (Ctrl+TAB) `id 6324` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
 - [ ] [IMPL] **Item**: Show only filename in title bar `id 6331`
@@ -1127,7 +1127,7 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Are you sure you want to save all modified documents? Choose "Always yes" if you don't want to see this dialog again. You can re-activate this dialog in Preferences later. `id 1766`
 - [ ] [IMPL] **Item**: Always yes `id 4`
 - [ ] [IMPL] **NetworkPathWarning**: Notepad++ session loading
-- [ ] [NA] **Item**: Network Path Warning: $STR_REPLACE$ Loading this file will cause Windows to automatically authenticate to its server, potentially exposing your Windows login information. Load anyway? `id 1771` — Caminho de rede UNC do Windows
+- [ ] [MAC] **Item**: Network Path Warning: $STR_REPLACE$ Loading this file will cause Windows to automatically authenticate to its server, potentially exposing your Windows login information. Load anyway? `id 1771` — Caminhos smb:// do macOS, com aviso equivalente
 - [ ] [IMPL] **Item**: Skip `id 2`
 - [ ] [IMPL] **Item**: Always load from this server `id 6`
 - [ ] [IMPL] **Item**: Always skip network path `id 7`
@@ -1190,8 +1190,8 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **DoReloadOrNotAndLooseChange**: Reload
 - [ ] [IMPL] **PrehistoricSystemDetected**: It seems you still use a prehistoric system. This feature works only on a modern system, sorry.
 - [ ] [IMPL] **PrehistoricSystemDetected**: Prehistoric system detected
-- [ ] [NA] **XpUpdaterProblem**: Notepad++ updater is not compatible with XP due to the obsolete security layer under XP. Do you want to go to Notepad++ page to download the latest version? — Windows XP
-- [ ] [NA] **XpUpdaterProblem**: Notepad++ Updater — Atualizador do Notepad++ (Windows)
+- [ ] [MAC] **XpUpdaterProblem**: Notepad++ updater is not compatible with XP due to the obsolete security layer under XP. Do you want to go to Notepad++ page to download the latest version? — Não se aplica (Windows XP)
+- [ ] [MAC] **XpUpdaterProblem**: Notepad++ Updater — Não se aplica (Windows XP)
 - [ ] [IMPL] **DocTooDirtyToMonitor**: The document is dirty. Please save the modification before monitoring it.
 - [ ] [IMPL] **DocTooDirtyToMonitor**: Monitoring problem
 - [ ] [IMPL] **DocNoExistToMonitor**: The file should exist to be monitored.
@@ -1256,12 +1256,12 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **SCMapperDoDeleteOrNot**: Are you sure?
 - [ ] [IMPL] **FindCharRangeValueError**: You should type between 0 and 255.
 - [ ] [IMPL] **FindCharRangeValueError**: Range Value problem
-- [ ] [NA] **OpenInAdminMode**: The file cannot be saved and it may be protected. Do you want to launch Notepad++ in Administrator mode? — Modo administrador do Windows (UAC)
+- [ ] [MAC] **OpenInAdminMode**: The file cannot be saved and it may be protected. Do you want to launch Notepad++ in Administrator mode? — Pedir senha de administrador do macOS ao salvar (Authorization Services)
 - [ ] [IMPL] **OpenInAdminMode**: Save failed
-- [ ] [NA] **OpenInAdminModeWithoutCloseCurrent**: The file cannot be saved and it may be protected. Do you want to launch Notepad++ in Administrator mode? — Modo administrador do Windows (UAC)
+- [ ] [MAC] **OpenInAdminModeWithoutCloseCurrent**: The file cannot be saved and it may be protected. Do you want to launch Notepad++ in Administrator mode? — Pedir senha de administrador do macOS ao salvar (Authorization Services)
 - [ ] [IMPL] **OpenInAdminModeWithoutCloseCurrent**: Save failed
-- [ ] [NA] **OpenInAdminModeFailed**: Notepad++ cannot be opened in Administrator mode. — Modo administrador do Windows (UAC)
-- [ ] [NA] **OpenInAdminModeFailed**: Open in Administrator mode failed — Modo administrador do Windows (UAC)
+- [ ] [MAC] **OpenInAdminModeFailed**: Notepad++ cannot be opened in Administrator mode. — Pedir senha de administrador do macOS ao salvar (Authorization Services)
+- [ ] [MAC] **OpenInAdminModeFailed**: Open in Administrator mode failed — Pedir senha de administrador do macOS ao salvar (Authorization Services)
 - [ ] [IMPL] **ViewInBrowser**: Application cannot be found in your system.
 - [ ] [IMPL] **ViewInBrowser**: View Current File in Browser
 - [ ] [IMPL] **ExitToUpdatePlugins**: If you click YES, you will quit Notepad++ to continue the operations. Notepad++ will be restarted after all the operations are terminated. Continue?
@@ -1270,8 +1270,8 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **NeedToRestartToLoadPlugins**: Notepad++ needs to be relaunched
 - [ ] [IMPL] **ChangeHistoryEnabledWarning**: You have to restart Notepad++ to enable Change History.
 - [ ] [IMPL] **ChangeHistoryEnabledWarning**: Notepad++ needs to be relaunched
-- [ ] [NA] **WindowsSessionExit**: Windows session is about to be terminated but you have some data unsaved. Do you want to exit Notepad++ now? — Encerramento de sessão do Windows
-- [ ] [NA] **WindowsSessionExit**: Notepad++ - Windows session exit — Encerramento de sessão do Windows
+- [ ] [MAC] **WindowsSessionExit**: Windows session is about to be terminated but you have some data unsaved. Do you want to exit Notepad++ now? — Aviso ao encerrar o sistema com dados não salvos (applicationShouldTerminate)
+- [ ] [MAC] **WindowsSessionExit**: Notepad++ - Windows session exit — Aviso ao encerrar o sistema com dados não salvos (applicationShouldTerminate)
 - [ ] [IMPL] **LanguageMenuCompactWarning**: This option will be changed on the next launch.
 - [ ] [IMPL] **LanguageMenuCompactWarning**: Compact Language Menu
 - [ ] [IMPL] **SwitchUnsavedThemeWarning**: Unsaved changes are about to be discarded! Do you want to save your changes before switching themes?
@@ -1296,13 +1296,13 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **FindAutoChangeOfInSelectionWarning**: Search warning
 - [ ] [IMPL] **Need2Restart2ShowMenuShortcuts**: Notepad++ needs to be restarted to show right menu shortcuts.
 - [ ] [IMPL] **Need2Restart2ShowMenuShortcuts**: Notepad++ needs to be restarted
-- [ ] [NA] **NoAdminRight2ChangeReadOnlyFileAttribute**: Please run Notepad++ as administrator to change the file attributes. — Modo administrador do Windows (UAC)
+- [ ] [MAC] **NoAdminRight2ChangeReadOnlyFileAttribute**: Please run Notepad++ as administrator to change the file attributes. — Pedir senha de administrador do macOS para mudar a permissão
 - [ ] [IMPL] **NoAdminRight2ChangeReadOnlyFileAttribute**: Changing file read-only attribute failed
 - [ ] [IMPL] **ReadOnlyFileCannotBeSaved**: "$STR_REPLACE$" The file is read-only and cannot be saved. Please remove read-only then save your file.
 - [ ] [IMPL] **ReadOnlyFileCannotBeSaved**: Save failed - File is Read-Only
-- [ ] [NA] **ShortcutsXmlHMACMissing**: The security information for shortcuts.xml is missing in config.xml. For security reasons, the integrity of shortcuts.xml will be checked. To run your customized command, please review the opened shortcuts.xml. If the file content is OK, use "Validate shortcuts.xml" from the "Run" menu to confirm it. — Verificação HMAC do arquivo de atalhos do Windows
+- [ ] [MAC] **ShortcutsXmlHMACMissing**: The security information for shortcuts.xml is missing in config.xml. For security reasons, the integrity of shortcuts.xml will be checked. To run your customized command, please review the opened shortcuts.xml. If the file content is OK, use "Validate shortcuts.xml" from the "Run" menu to confirm it. — Validar o shortcuts.xml sem assinatura HMAC (checagem de formato)
 - [ ] [IMPL] **ShortcutsXmlHMACMissing**: Security Warning
-- [ ] [NA] **ShortcutsXmlTampered**: The shortcuts.xml file appears to have been modified manually. For security reasons, please review the opened shortcuts.xml. If the file content is OK, use "Validate shortcuts.xml" from the "Run" menu to confirm it. — Verificação HMAC do arquivo de atalhos do Windows
+- [ ] [MAC] **ShortcutsXmlTampered**: The shortcuts.xml file appears to have been modified manually. For security reasons, please review the opened shortcuts.xml. If the file content is OK, use "Validate shortcuts.xml" from the "Run" menu to confirm it. — Validar o shortcuts.xml sem assinatura HMAC (checagem de formato)
 - [ ] [IMPL] **ShortcutsXmlTampered**: Security Warning
 - [ ] [IMPL] **SymlinkLoadingWarning**: Enabling symlink loading in Folder as Workspace may cause Notepad++ to enter an infinite loop and freeze. This can happen when directory symlinks resolve to parent folders or form circular references. Proceed only if you understand the risks.
 - [ ] [IMPL] **SymlinkLoadingWarning**: Warning: Symlink Loading May Cause Freeze
@@ -1544,7 +1544,7 @@ Total de itens: **1499** (IMPL 1444 · MAC 31 · NA 24). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **max-len-on-save-tip**: The length of your input is very long and may not be saved for your next session.
 - [ ] [IMPL] **goto-setting-tip**: Find your setting here
 - [ ] [IMPL] **tabbar-tabcompactlabellen-tip**: Limits the visible length of long tab names. Enter to apply the given value. Value range: 1-257 characters (0 disables the truncation).
-- [ ] [NA] **networkpathwarning-serverwhitelist-tip**: Puts the server of the current file into Notepad++ serverWhiteList.xml. For more info, click on this button to open website with relevant User Manual section. — Caminho de rede UNC do Windows
+- [ ] [MAC] **networkpathwarning-serverwhitelist-tip**: Puts the server of the current file into Notepad++ serverWhiteList.xml. For more info, click on this button to open website with relevant User Manual section. — Equivalente: lista de servidores confiáveis do Quill
 
 
 ## SDK do Quill (itens próprios, não vêm do Notepad++)
