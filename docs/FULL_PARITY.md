@@ -27,7 +27,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [x] [IMPL] **Item**: Window
 - [ ] [MAC] **Item**: Open Containing Folder — Finder (Mostrar no Finder)
 - [ ] [IMPL] **Item**: Close Multiple Documents
-- [ ] [IMPL] **Item**: Recent Files
+- [x] [IMPL] **Item**: Recent Files
 - [ ] [IMPL] **Item**: Insert
 - [ ] [IMPL] **Item**: Copy to Clipboard
 - [x] [IMPL] **Item**: Indent
@@ -88,35 +88,35 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [MAC] **Item**: cmd `id 41020` — Terminal do macOS (substitui cmd e PowerShell)
 - [ ] [MAC] **Item**: PowerShell `id 41027` — Terminal do macOS (substitui cmd e PowerShell)
 - [ ] [IMPL] **Item**: Folder as Workspace `id 41025`
-- [ ] [IMPL] **Item**: Close `id 41003`
-- [ ] [IMPL] **Item**: Close All `id 41004`
-- [ ] [IMPL] **Item**: Close All BUT Current Document `id 41005`
+- [x] [IMPL] **Item**: Close `id 41003`
+- [x] [IMPL] **Item**: Close All `id 41004`
+- [x] [IMPL] **Item**: Close All BUT Current Document `id 41005`
 - [ ] [IMPL] **Item**: Close All BUT Pinned Documents `id 41026`
 - [ ] [IMPL] **Item**: Close All to the Left `id 41009`
 - [ ] [IMPL] **Item**: Close All to the Right `id 41018`
 - [ ] [IMPL] **Item**: Close All Unchanged `id 41024`
 - [ ] [IMPL] **Item**: Save `id 41006`
-- [ ] [IMPL] **Item**: Save All `id 41007`
-- [ ] [IMPL] **Item**: Save As... `id 41008`
-- [ ] [IMPL] **Item**: Print... `id 41010`
+- [x] [IMPL] **Item**: Save All `id 41007`
+- [x] [IMPL] **Item**: Save As... `id 41008`
+- [x] [IMPL] **Item**: Print... `id 41010`
 - [ ] [IMPL] **Item**: Print Now `id 1001`
 - [ ] [IMPL] **Item**: Exit `id 41011`
 - [ ] [IMPL] **Item**: Load Session... `id 41012`
 - [ ] [IMPL] **Item**: Save Session... `id 41013`
-- [ ] [IMPL] **Item**: Reload from Disk `id 41014`
-- [ ] [IMPL] **Item**: Save a Copy As... `id 41015`
+- [x] [IMPL] **Item**: Reload from Disk `id 41014`
+- [x] [IMPL] **Item**: Save a Copy As... `id 41015`
 - [ ] [IMPL] **Item**: Move to Recycle Bin `id 41016`
-- [ ] [IMPL] **Item**: Rename... `id 41017`
+- [x] [IMPL] **Item**: Rename... `id 41017`
 - [ ] [IMPL] **Item**: Restore Recent Closed File `id 41021`
 - [ ] [IMPL] **Item**: Open Folder as Workspace... `id 41022`
 - [ ] [MAC] **Item**: Open in Default Viewer `id 41023` — App padrão do macOS
-- [ ] [IMPL] **Item**: Cut `id 42001`
-- [ ] [IMPL] **Item**: Copy `id 42002`
-- [ ] [IMPL] **Item**: Undo `id 42003`
-- [ ] [IMPL] **Item**: Redo `id 42004`
-- [ ] [IMPL] **Item**: Paste `id 42005`
+- [x] [IMPL] **Item**: Cut `id 42001`
+- [x] [IMPL] **Item**: Copy `id 42002`
+- [x] [IMPL] **Item**: Undo `id 42003`
+- [x] [IMPL] **Item**: Redo `id 42004`
+- [x] [IMPL] **Item**: Paste `id 42005`
 - [ ] [IMPL] **Item**: Delete `id 42006`
-- [ ] [IMPL] **Item**: Select All `id 42007`
+- [x] [IMPL] **Item**: Select All `id 42007`
 - [ ] [IMPL] **Item**: Begin/End Select `id 42020`
 - [ ] [IMPL] **Item**: Begin/End Select in Column Mode `id 42089`
 - [ ] [IMPL] **Item**: Date Time (short) `id 42084`
@@ -128,7 +128,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [x] [IMPL] **Item**: Remove Duplicate Lines `id 42079`
 - [x] [IMPL] **Item**: Remove Consecutive Duplicate Lines `id 42077`
 - [ ] [IMPL] **Item**: Split Lines `id 42012`
-- [ ] [IMPL] **Item**: Join Lines `id 42013`
+- [x] [IMPL] **Item**: Join Lines `id 42013`
 - [ ] [IMPL] **Item**: Move Up Current Line `id 42014`
 - [ ] [IMPL] **Item**: Move Down Current Line `id 42015`
 - [x] [IMPL] **Item**: Sort Lines Lexicographically Ascending `id 42059`
@@ -169,8 +169,8 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Start Recording `id 42018`
 - [ ] [IMPL] **Item**: Stop Recording `id 42019`
 - [ ] [IMPL] **Item**: Playback `id 42021`
-- [ ] [IMPL] **Item**: Toggle Single Line Comment `id 42022`
-- [ ] [IMPL] **Item**: Block Comment `id 42023`
+- [x] [IMPL] **Item**: Toggle Single Line Comment `id 42022`
+- [x] [IMPL] **Item**: Block Comment `id 42023`
 - [ ] [IMPL] **Item**: Block Uncomment `id 42047`
 - [x] [IMPL] **Item**: Trim Trailing Space `id 42024`
 - [x] [IMPL] **Item**: Trim Leading Space `id 42042`
@@ -209,14 +209,14 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [x] [IMPL] **Item**: Remove Empty Lines (Containing Blank characters) `id 42056`
 - [ ] [IMPL] **Item**: Insert Blank Line Above Current `id 42057`
 - [ ] [IMPL] **Item**: Insert Blank Line Below Current `id 42058`
-- [ ] [IMPL] **Item**: Find... `id 43001`
-- [ ] [IMPL] **Item**: Find Next `id 43002`
-- [ ] [IMPL] **Item**: Replace... `id 43003`
+- [x] [IMPL] **Item**: Find... `id 43001`
+- [x] [IMPL] **Item**: Find Next `id 43002`
+- [x] [IMPL] **Item**: Replace... `id 43003`
 - [ ] [IMPL] **Item**: Go to... `id 43004`
-- [ ] [IMPL] **Item**: Toggle Bookmark `id 43005`
-- [ ] [IMPL] **Item**: Next Bookmark `id 43006`
-- [ ] [IMPL] **Item**: Previous Bookmark `id 43007`
-- [ ] [IMPL] **Item**: Clear All Bookmarks `id 43008`
+- [x] [IMPL] **Item**: Toggle Bookmark `id 43005`
+- [x] [IMPL] **Item**: Next Bookmark `id 43006`
+- [x] [IMPL] **Item**: Previous Bookmark `id 43007`
+- [x] [IMPL] **Item**: Clear All Bookmarks `id 43008`
 - [ ] [IMPL] **Item**: Cut Bookmarked Lines `id 43018`
 - [ ] [IMPL] **Item**: Copy Bookmarked Lines `id 43019`
 - [ ] [IMPL] **Item**: Paste to (Replace) Bookmarked Lines `id 43020`
@@ -225,10 +225,10 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Inverse Bookmarks `id 43050`
 - [ ] [IMPL] **Item**: Find characters in range... `id 43052`
 - [ ] [IMPL] **Item**: Select All In-between {} [] or () `id 43053`
-- [ ] [IMPL] **Item**: Go to Matching Brace `id 43009`
-- [ ] [IMPL] **Item**: Find Previous `id 43010`
+- [x] [IMPL] **Item**: Go to Matching Brace `id 43009`
+- [x] [IMPL] **Item**: Find Previous `id 43010`
 - [ ] [IMPL] **Item**: Incremental Search `id 43011`
-- [ ] [IMPL] **Item**: Find in Files `id 43013`
+- [x] [IMPL] **Item**: Find in Files `id 43013`
 - [ ] [IMPL] **Item**: Find (Volatile) Next `id 43014`
 - [ ] [IMPL] **Item**: Find (Volatile) Previous `id 43015`
 - [ ] [IMPL] **Item**: Using 1st Style `id 43022`
@@ -270,11 +270,11 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Post-It `id 44009`
 - [ ] [IMPL] **Item**: Fold All `id 44010`
 - [ ] [IMPL] **Item**: Distraction Free Mode `id 44011`
-- [ ] [IMPL] **Item**: Show All Characters `id 44019`
-- [ ] [IMPL] **Item**: Show Indent Guide `id 44020`
-- [ ] [IMPL] **Item**: Word wrap `id 44022`
-- [ ] [MAC] **Item**: Zoom In (Ctrl+Mouse Wheel Up) `id 44023` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
-- [ ] [MAC] **Item**: Zoom Out (Ctrl+Mouse Wheel Down) `id 44024` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
+- [x] [IMPL] **Item**: Show All Characters `id 44019`
+- [x] [IMPL] **Item**: Show Indent Guide `id 44020`
+- [x] [IMPL] **Item**: Word wrap `id 44022`
+- [x] [MAC] **Item**: Zoom In (Ctrl+Mouse Wheel Up) `id 44023` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
+- [x] [MAC] **Item**: Zoom Out (Ctrl+Mouse Wheel Down) `id 44024` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
 - [ ] [IMPL] **Item**: Show Space and Tab `id 44025`
 - [ ] [IMPL] **Item**: Show End of Line `id 44026`
 - [ ] [IMPL] **Item**: Synchronize Across Views `id 44027`
@@ -309,8 +309,8 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Apply Color 5 `id 44115`
 - [ ] [IMPL] **Item**: Show Non-Printing Characters `id 44130`
 - [ ] [IMPL] **Item**: Show Control Characters Unicode EOL `id 44131`
-- [ ] [IMPL] **Item**: Toggle Full Screen Mode `id 44032`
-- [ ] [IMPL] **Item**: Restore Default Zoom `id 44033`
+- [x] [IMPL] **Item**: Toggle Full Screen Mode `id 44032`
+- [x] [IMPL] **Item**: Restore Default Zoom `id 44033`
 - [ ] [IMPL] **Item**: Always on Top `id 44034`
 - [ ] [IMPL] **Item**: Synchronise Vertical Scrolling `id 44035`
 - [ ] [IMPL] **Item**: Synchronise Horizontal Scrolling `id 44036`
@@ -366,7 +366,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Shortcut Mapper... `id 48009`
 - [ ] [IMPL] **Item**: Preferences... `id 48011`
 - [ ] [IMPL] **Item**: Open Plugins Folder... `id 48014`
-- [ ] [IMPL] **Item**: Plugins Admin... `id 48015`
+- [x] [IMPL] **Item**: Plugins Admin... `id 48015`
 - [ ] [IMPL] **Item**: Generate... `id 48501`
 - [ ] [IMPL] **Item**: Generate from files... `id 48502`
 - [ ] [IMPL] **Item**: Generate from selection into clipboard `id 48503`
@@ -429,7 +429,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Regular expression `id 1605`
 - [ ] [IMPL] **Item**: Wrap around `id 1606`
 - [ ] [IMPL] **Item**: Count `id 1614`
-- [ ] [IMPL] **Item**: Mark All `id 1615`
+- [x] [IMPL] **Item**: Mark All `id 1615`
 - [ ] [IMPL] **Item**: Bookmark line `id 1616`
 - [ ] [IMPL] **Item**: Purge for each search `id 1618`
 - [ ] [IMPL] **Item**: Replace with: `id 1611`
@@ -438,7 +438,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: On losing focus `id 1687`
 - [ ] [IMPL] **Item**: Always `id 1688`
 - [ ] [IMPL] **Item**: In selection `id 1632`
-- [ ] [IMPL] **Item**: Clear all marks `id 1633`
+- [x] [IMPL] **Item**: Clear all marks `id 1633`
 - [ ] [IMPL] **Item**: Replace All in All Opened Documents `id 1635`
 - [ ] [IMPL] **Item**: Find All in All Opened Documents `id 1636`
 - [ ] [IMPL] **Item**: Filters: `id 1654`
@@ -760,10 +760,10 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Menu `id 6131`
 - [ ] [MAC] **Item**: Hide (use Alt or F10 key to toggle) `id 6122` — Tecla ⌘/⌥/⇧/⌃ do macOS (mesma função, atalho do Mac)
 - [ ] [IMPL] **Item**: Hide right shortcuts ＋ ▼ ✕ `id 6132`
-- [ ] [IMPL] **Item**: Status Bar `id 6133`
+- [x] [IMPL] **Item**: Status Bar `id 6133`
 - [ ] [IMPL] **Item**: Hide `id 6134`
 - [ ] [IMPL] **Item**: Dialog Font (Need to restart Notepad++) `id 7165`
-- [ ] [IMPL] **Toolbar**: Toolbar
+- [x] [IMPL] **Toolbar**: Toolbar
 - [ ] [IMPL] **Item**: Fluent UI: small `id 6103`
 - [ ] [IMPL] **Item**: Fluent UI: large `id 6104`
 - [ ] [IMPL] **Item**: Filled Fluent UI: small `id 6129`
@@ -809,7 +809,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Make current level folding/unfolding commands toggleable `id 6246`
 - [ ] [IMPL] **Item**: Line Wrap `id 6227`
 - [ ] [IMPL] **Item**: Aligned `id 6229`
-- [ ] [IMPL] **Item**: Indent `id 6230`
+- [x] [IMPL] **Item**: Indent `id 6230`
 - [ ] [IMPL] **Item**: Disable advanced scrolling feature due to touchpad issue `id 6234`
 - [ ] [IMPL] **Item**: Enable smooth font `id 6215`
 - [ ] [IMPL] **Item**: Enable scrolling beyond last line `id 6236`
@@ -836,7 +836,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Codepoint `id 6255`
 - [ ] [IMPL] **Item**: Apply Appearance settings to C0, C1 Unicode EOL `id 6258`
 - [ ] [IMPL] **Item**: Prevent control character (C0 code) typing into document `id 6259`
-- [ ] [IMPL] **DarkMode**: Dark Mode
+- [x] [IMPL] **DarkMode**: Dark Mode
 - [ ] [IMPL] **Item**: Light mode `id 7131`
 - [ ] [IMPL] **Item**: Dark mode `id 7132`
 - [ ] [IMPL] **Item**: Follow Windows `id 7133`
@@ -879,11 +879,11 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: Right `id 6210`
 - [ ] [IMPL] **Item**: Distraction Free `id 6212`
 - [ ] [IMPL] **NewDoc**: New Document
-- [ ] [IMPL] **Item**: Format (Line ending) `id 6401`
+- [x] [IMPL] **Item**: Format (Line ending) `id 6401`
 - [ ] [IMPL] **Item**: Windows (CR LF) `id 6402`
 - [ ] [IMPL] **Item**: Unix (LF) `id 6403`
 - [ ] [IMPL] **Item**: Macintosh (CR) `id 6404`
-- [ ] [IMPL] **Item**: Encoding `id 6405`
+- [x] [IMPL] **Item**: Encoding `id 6405`
 - [ ] [IMPL] **Item**: ANSI `id 6406`
 - [ ] [IMPL] **Item**: UTF-8 `id 6407`
 - [ ] [IMPL] **Item**: UTF-8 with BOM `id 6408`
@@ -968,7 +968,7 @@ Total de itens: **1499** (recontado após a correção). Feitos: **0**. (Atualiz
 - [ ] [IMPL] **Item**: : Max Characters to Auto-Fill Find Field from Selection `id 6916`
 - [ ] [IMPL] **Item**: Find in Files: Prefer on‑disk file content over open buffers `id 6917`
 - [ ] [IMPL] **RecentFilesHistory**: Recent Files History
-- [ ] [IMPL] **Item**: Recent Files History `id 6304`
+- [x] [IMPL] **Item**: Recent Files History `id 6304`
 - [ ] [IMPL] **Item**: Max. number of entries: `id 6306`
 - [ ] [IMPL] **Item**: Don't check at launch time `id 6305`
 - [ ] [IMPL] **Item**: In Submenu `id 6424`
