@@ -8,6 +8,7 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 
 - Objetivo: 100% do projeto de referência, funcionalidade por funcionalidade. Aparência segue a plataforma solicitada, não precisa ser pixel idêntica.
 - Não pare para reportar que um bloco terminou. Quando acabar um bloco, comece o seguinte.
+- Não precisa gerar relatório de tudo que está fazendo, só as mais pertinentes.
 - Não faça perguntas de rotina. Use o padrão já definido no repositório. Pergunte só se houver bloqueio real que eu precise resolver (diga exatamente qual), por exemplo credencial que não existe, acesso negado ou decisão que mude o escopo.
 - Dúvidas que dependam de decisão minha devem ser tratadas no início, na lista de pendências, e não no meio do trabalho.
 - Ao terminar tudo, entregue um resumo único: o que ficou igual, o que é diferente, o que é impossível (com motivo) e onde está o resultado.
