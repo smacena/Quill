@@ -21,11 +21,12 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 - Commits pequenos e frequentes, com a identidade do dono do projeto e sem citar ferramentas de IA em commits, código ou docs.
 - Textos de interface precisam ser discutidos no início (por exemplo, idiomas). Idiomas já aprovados pelo dono; o inglês também precisa ser testado como os demais.
 - Não apagar branches, não reescrever histórico e não publicar nada fora do repositório sem autorização explícita.
+- Escreva somente no fim de um bloco, e as verificações rodam no CI, para não consumir nada meu.
 
 ## Entrada que só o dono pode dar (uma vez)
 
 - Sem restrições aqui por enquanto.
-- 
+  
 ## Ordens permanentes (não me faça repetir)
 
 1. **Montar sozinho todo ambiente de teste.** Servidores, máquina limpa, tela virtual,
