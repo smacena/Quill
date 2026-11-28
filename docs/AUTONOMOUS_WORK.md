@@ -67,6 +67,9 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
   real, Intel se o MacBook for Intel) vai para o arquivo `docs/MAC_BATCH.md`, como item de lote.
   O dono roda o lote inteiro de uma vez no MacBook, de vez em quando, com um único comando que
   gera um relatório. Não há testes soltos no MacBook durante o trabalho.
+  No CI, esses testes valem como **aproximação** (por exemplo, modo escuro simulado ou checagem
+  de rótulos do VoiceOver). No relatório, cada um é marcado como "aproximação no CI" ou
+  "testado no MacBook", conforme o lote tenha rodado ou não.
 - **O .app precisa trazer as dependências dentro dele** (macdeployqt ou equivalente), incluindo
   o plugin de plataforma cocoa. No Linux esse foi o pior defeito: o pacote instalava e o
   programa não abria janela nenhuma num sistema limpo.
