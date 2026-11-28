@@ -13,19 +13,19 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 - Dúvidas que dependam de decisão minha devem ser tratadas no início, na lista de pendências, e não no meio do trabalho.
 - Ao terminar tudo, entregue um resumo único: o que ficou igual, o que é diferente, o que é impossível (com motivo) e onde está o resultado.
 - Se houverem objeções devido as regras desse documento que sejam apresentadas no início para serem tratadas.
-- Se o limite semanal chegar a 90% durante o trabalho, finalize a sessão, bloco, implementação que esteja fazendo e pare em seguida e me pergunte se deve continuar o trabalho.
 
 ## Regras técnicas
 
 - Lista de trabalho: a do projeto (a lista que for criada a partir da referência).
 - Cada item só vira `[x]` depois de implementado e testado.
-- Commits pequenos e frequentes, com a identidade do dono do projeto e sem citar ferramentas de IA em commits, código ou docs, exceto em situações que precise criar o CLAUDE.md, por exemplo.
+- Commits pequenos e frequentes, com a identidade do dono do projeto e sem citar ferramentas de IA em commits, código ou docs.
 - Textos de interface precisam ser discutido no início (por exemplo, idiomas).
 - Não apagar branches, não reescrever histórico e não publicar nada fora do repositório sem autorização explícita.
 
 ## Entrada que só o dono pode dar (uma vez)
 
 - Sem restrições aqui por enquanto.
+- 
 ## Ordens permanentes (não me faça repetir)
 
 1. **Montar sozinho todo ambiente de teste.** Servidores, máquina limpa, tela virtual,
