@@ -50,6 +50,11 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
    precisar mudar ou se houver bloqueio real.
 9. **Poucos relatórios, curtos, só no fim de cada bloco.** Não me conte que compilou nem que
    o autoteste passou.
+10. **Estrutura de menus igual em todos os idiomas.** No Linux, fora do inglês, o menu File
+   ficava com 7 itens em vez de 32 e a ordem dos menus ficava errada (valia também para o
+   português). Todo idioma tem que ter a mesma quantidade de itens e a mesma ordem do inglês,
+   com os nomes certos nos menus principais. Isso vira teste automático no CI, para todos os
+   idiomas, e não pode ser conferido só a olho.
 
 ## Específico do macOS
 
