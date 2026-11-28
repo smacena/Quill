@@ -12,14 +12,14 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 - Não faça perguntas de rotina. Use o padrão já definido no repositório. Pergunte só se houver bloqueio real que eu precise resolver (diga exatamente qual), por exemplo credencial que não existe, acesso negado ou decisão que mude o escopo.
 - Dúvidas que dependam de decisão minha devem ser tratadas no início, na lista de pendências, e não no meio do trabalho.
 - Ao terminar tudo, entregue um resumo único: o que ficou igual, o que é diferente, o que é impossível (com motivo) e onde está o resultado.
-- Se houverem objeções devido as regras desse documento que sejam apresentadas no início para serem tratadas.
+- Se houver objeções às regras deste documento, apresente-as no início para serem tratadas.
 
 ## Regras técnicas
 
 - Lista de trabalho: a do projeto (a lista que for criada a partir da referência).
 - Cada item só vira `[x]` depois de implementado e testado.
 - Commits pequenos e frequentes, com a identidade do dono do projeto e sem citar ferramentas de IA em commits, código ou docs.
-- Textos de interface precisam ser discutido no início (por exemplo, idiomas).
+- Textos de interface precisam ser discutidos no início (por exemplo, idiomas). Idiomas já aprovados pelo dono; o inglês também precisa ser testado como os demais.
 - Não apagar branches, não reescrever histórico e não publicar nada fora do repositório sem autorização explícita.
 
 ## Entrada que só o dono pode dar (uma vez)
@@ -56,11 +56,12 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 - Você roda num container Linux: **não dá para compilar nem abrir o programa aqui**. Diga isso
   na primeira mensagem e use **GitHub Actions com runner macOS** (macos-14/macos-15) para
   compilar, testar, tirar capturas de tela e empacotar. Não finja ter testado.
+- **Compilação sempre no GitHub Actions**, para poupar o MacBook do dono. Ele não é usado para compilar nem para testar.
 - **O .app precisa trazer as dependências dentro dele** (macdeployqt ou equivalente), incluindo
   o plugin de plataforma cocoa. No Linux esse foi o pior defeito: o pacote instalava e o
   programa não abria janela nenhuma num sistema limpo.
-- **Assinatura e notarização.** Um .dmg baixado sem assinar é barrado pelo Gatekeeper com
-  "arquivo danificado". Teste o caminho real: baixar, montar, arrastar e abrir.
+- **Assinatura, sem notarização** (decisão do dono). Assinatura ad-hoc no .app e instrução de
+  `xattr` no README para o Gatekeeper. Teste o caminho real: baixar, montar, arrastar e abrir.
 - **Apple Silicon e Intel**: diga em qual arquitetura testou e, se for universal, teste as duas.
 - **Permissões do sistema** (acesso a Documentos, Downloads, Área de Trabalho) só aparecem num
   Mac limpo, não no seu build.
@@ -68,5 +69,4 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
   (Quill > Ajustes, Sobre, Serviços, Ocultar, Sair), nomes das janelas padrão do sistema.
 - **Acessibilidade**: o leitor de tela é o VoiceOver, não o Orca.
 - **Modo escuro do sistema**: o programa tem que acompanhar a troca sem reiniciar.
-- **Release**: só com CI verde e com o .dmg aberto num macOS limpo. Repositório privado impede
-  download anônimo.
+- **Release**: só com CI verde e com o .dmg aberto num macOS limpo.
