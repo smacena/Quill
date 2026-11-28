@@ -21,7 +21,7 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 - Commits pequenos e frequentes, com a identidade do dono do projeto e sem citar ferramentas de IA em commits, código ou docs.
 - Textos de interface precisam ser discutidos no início (por exemplo, idiomas). Idiomas já aprovados pelo dono; o inglês também precisa ser testado como os demais.
 - Não apagar branches, não reescrever histórico e não publicar nada fora do repositório sem autorização explícita.
-- Escreva somente no fim de um bloco, e as verificações rodam no CI, para não consumir nada meu.
+- Só escreva ao dono no fim de um bloco. As verificações rodam no CI, para não consumir nada meu.
 
 ## Entrada que só o dono pode dar (uma vez)
 
@@ -52,17 +52,21 @@ Trabalhe de forma autônoma e completa até o fim do projeto indicado.
 9. **Poucos relatórios, curtos, só no fim de cada bloco.** Não me conte que compilou nem que
    o autoteste passou.
 10. **Estrutura de menus igual em todos os idiomas.** No Linux, fora do inglês, o menu File
-   ficava com 7 itens em vez de 32 e a ordem dos menus ficava errada (valia também para o
-   português). Todo idioma tem que ter a mesma quantidade de itens e a mesma ordem do inglês,
-   com os nomes certos nos menus principais. Isso vira teste automático no CI, para todos os
-   idiomas, e não pode ser conferido só a olho.
+    ficava com 7 itens em vez de 32 e a ordem dos menus ficava errada (valia também para o
+    português). Todo idioma tem que ter a mesma quantidade de itens e a mesma ordem do inglês,
+    com os nomes certos nos menus principais. Isso vira teste automático no CI, para todos os
+    idiomas, e não pode ser conferido só a olho.
 
 ## Específico do macOS
 
 - Você roda num container Linux: **não dá para compilar nem abrir o programa aqui**. Diga isso
   na primeira mensagem e use **GitHub Actions com runner macOS** (macos-14/macos-15) para
   compilar, testar, tirar capturas de tela e empacotar. Não finja ter testado.
-- **Compilação sempre no GitHub Actions**, para poupar o MacBook do dono. Ele não é usado para compilar nem para testar.
+- **Compilação e testes no GitHub Actions**, para poupar o MacBook do dono. Ele não compila nem
+  testa no dia a dia. O que só dá para testar num Mac real (VoiceOver, modo escuro com troca
+  real, Intel se o MacBook for Intel) vai para o arquivo `docs/MAC_BATCH.md`, como item de lote.
+  O dono roda o lote inteiro de uma vez no MacBook, de vez em quando, com um único comando que
+  gera um relatório. Não há testes soltos no MacBook durante o trabalho.
 - **O .app precisa trazer as dependências dentro dele** (macdeployqt ou equivalente), incluindo
   o plugin de plataforma cocoa. No Linux esse foi o pior defeito: o pacote instalava e o
   programa não abria janela nenhuma num sistema limpo.
